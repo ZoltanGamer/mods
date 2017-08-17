@@ -1,0 +1,56 @@
+# -*- ck2.dynasties -*-
+
+######################################
+#New andaluzian dynasties
+######################################
+#
+#
+######################################
+#Proper dynasties
+#Range 1.000.053.000 - 1.000.053.024
+######################################
+
+1000053000 = {
+	name = "al-Razidí"
+	culture = andalusian_arabic
+}
+1000053001 = {
+	name = "al-'Amirí"
+	culture = andalusian_arabic
+}
+1000053002 = {
+	name = "al-Aglabí"
+	culture = andalusian_arabic
+}
+1000053003 = {
+	name = "Dil-Nun"
+	culture = andalusian_arabic
+}
+1000053004 = {
+	name = "al-Sumadih"
+	culture = andalusian_arabic
+}
+1000053005 = {
+	name = "al-Qasimí"
+	culture = andalusian_arabic
+}
+1000053006 = {
+	name = "al-Khayraní"
+	culture = andalusian_arabic
+}
+1000053007 = {
+	name = "al-Saburí"
+	culture = andalusian_arabic
+}
+1000053008 = {
+	name = "al-Ya'ishí"
+	culture = andalusian_arabic
+}
+1000053009 = {
+	name = "al-Haruní"
+	culture = andalusian_arabic
+}
+1000053010 = {
+	name = "al-Tayfurí"
+	culture = andalusian_arabic
+}

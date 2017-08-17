@@ -1,0 +1,10 @@
+name="Military_Info_ver_1_0"
+path="mod/Military_Info_ver_1_0"
+tags=
+{
+"graphics"
+ "guide"
+ "military"
+ "utilities"
+ }
+picture="ck2militaryinfocover.jpg"

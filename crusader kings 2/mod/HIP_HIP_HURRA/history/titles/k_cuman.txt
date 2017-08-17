@@ -1,0 +1,44 @@
+# -*- ck2.history.titles -*-
+
+20.1.1 = {
+	historical_nomad = yes
+}
+1030.1.1 = {
+	holder = 1229732 # Sokal
+}
+1065.1.1 = {
+	holder = 1233089 # Togortac
+}
+1096.7.19 = {
+	holder = 1233125 # Urusoba
+}
+1102.1.1 = {
+	holder = 1233114 # Arslanopa
+}
+1103.4.1 = {
+	holder = 1233093 # Asalup
+}
+1120.1.1 = {
+	holder = 1233200 # Aepa/Girgen
+}
+1140.1.1 = {
+	holder = 1233116
+}
+1149.1.1 = {
+	holder = 1233101 # Gzak
+}
+1190.1.1 = {
+	holder = 1233146 # Vlur
+}
+1203.1.1 = {
+	holder = 1233133 # Koban
+}
+1223.1.1 = {
+	holder = 1233105 # Köten
+}
+1238.1.1 = {
+	holder = 1233211 # Begovars
+}
+1240.1.1 = {
+	holder = 0
+}

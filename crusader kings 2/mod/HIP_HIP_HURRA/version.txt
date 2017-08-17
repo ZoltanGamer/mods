@@ -1,0 +1,9 @@
+[HIP Release 2017-05-05 (Cacao3)]
+EMF: Extended Mechanics & Flavor (v7.02 - 2017-05-05)
+Arumba and Internal Tab Shortcuts (2017-05-04)
+ARKO Interface (2017-04-25)
+SWMH (v3.02 - 2017-05-05)
+MiniSWMH: Performance-Friendly SWMH (v1.3.3 - 2017-05-05)
+SED: English Localisation for SWMH (v2.2.14 - 2017-05-05)
+ARKO Armoiries (2017-04-25)
+LTM (C - 2017-03-20)

@@ -1,0 +1,261 @@
+# -*- ck2.history.characters -*-
+
+###############################################################
+#  Franconian characters
+###############################################################
+#Franconian character Range: 1236500-1236649
+###########
+### Patriarch of Aquileia
+1236500 = { 
+	name="Eberhard" # Patriarch 1045-1048
+	religion="catholic"
+	culture="franconian"  # german
+
+	994.1.1={
+		birth = yes
+	}
+	1048.11.13={
+		death = yes
+	}
+}
+1236501 = { 
+	name="Godwalt" # Patriarch 1048-1063
+	religion="catholic"
+	culture="franconian"  # german
+
+	1005.1.1={
+		birth = yes
+	}
+	1063.1.1={
+		death = yes
+	}
+}
+1236502 = { 
+	name="Baldwin" # Archbishop of Salzburg 1041-1060
+	religion="catholic"
+	culture="franconian"  # german
+
+	999.1.1={
+		birth = yes
+	}
+	1060.1.1={
+		death = yes
+	}
+}
+1236503 = {
+	name="Berengar"
+	dynasty=101693
+	religion="catholic"
+	culture="franconian"  # melted from: german
+	father=1236504
+	1008.1.1 = {
+		birth=yes
+	}
+	1072.1.1 = {
+		death=yes
+	}
+}
+1236504 = {
+	name="Berengar" #Placeholder
+	dynasty=101693
+	religion="catholic"
+	culture="franconian"  # melted from: german
+	father=1236505
+	986.1.1 = {
+		birth=yes
+	}
+	1050.1.1 = {
+		death=yes
+	}
+}
+1236505 = {
+	name="Hugo" #Placeholder
+	dynasty=101693
+	religion="catholic"
+	culture="franconian"  # melted from: german
+	958.1.1 = {
+		birth=yes
+	}
+	1021.1.1 = {
+		death=yes
+	}
+}
+1236506 = {
+	name="Hermann"
+	dynasty=101554
+	religion="catholic"
+	culture="franconian"  # melted from: german
+	father=20208
+	mother=20207
+	997.1.1 = {
+		birth=yes
+	}
+	1056.2.11 = {
+		death=yes
+	}
+}
+1236507 = { 
+	name="Bardo" # Archbishop of Mainz 1031-1051
+	religion="catholic"
+	culture="franconian"  # german
+
+	994.1.1={
+		birth = yes
+	}
+	1051.6.11={
+		death = yes
+	}
+}
+1236508 = { 
+	name="Eberhard" # Archbishop of Bamberg 1007-1040
+	dynasty=1000103200
+	religion="catholic"
+	culture="franconian"  # german
+
+	977.1.1={
+		birth = yes
+	}
+	1040.1.1={
+		death = yes
+	}
+}
+1236509 = { 
+	name="Gunther" # Archbishop of Bamberg 1057-1065
+	religion="catholic"
+	culture="franconian"  # german
+
+	1013.1.1={
+		birth = yes
+	}
+	1065.7.23={
+		death = yes
+	}
+}
+1236510 = { 
+	name="Hermann" # Archbishop of Bamberg 1065-1075
+	religion="catholic"
+	culture="franconian"  # german
+
+	1028.1.1={
+		birth = yes
+	}
+	1084.1.1={
+		death = yes
+	}
+}
+1236511 = { 
+	name="Rupert" # Archbishop of Bamberg 1075-1102
+	religion="catholic"
+	culture="franconian"  # german
+
+	1038.1.1={
+		birth = yes
+	}
+	1102.6.11={
+		death = yes
+	}
+}
+1236512 = { 
+	name="Otto" # Archbishop of Bamberg 1102-1139
+	religion="catholic"
+	culture="franconian"  # german
+
+	1064.1.1={
+		birth = yes
+	}
+	1139.6.30={
+		death = yes
+	}
+}
+1236513 = { 
+	name="Eberhard" # Archbishop of Trier 1047-1066
+	religion="catholic"
+	culture="franconian"  # german
+
+	1009.1.1={
+		birth = yes
+	}
+	1066.6.1={
+		death = yes
+	}
+}
+###########
+1236514 = { 
+	name="Werner" #Werner von Lenzburg-Baden(should be son of 40701 and Richenza von Habsburg) made duke of spoleto and margrave of Ancona 1093-1120(died)
+	dynasty=672
+	religion="catholic"
+	culture="franconian"  # german
+	father=40700
+	1047.1.1={
+		birth = yes
+	}
+	1120.1.1={
+		death = yes
+	}
+}
+1236515 = { 
+	name="Friedrich" #Friedrich von Lenzburg-Baden, son of Werner I and ALtrude. co rulcer of spoleto and march of Ancona. died in 1139.
+	dynasty=672
+	religion="catholic"
+	culture="franconian"  # german
+	father=1236514
+	1075.1.1={
+		birth = yes
+	}
+	1139.1.1={
+		death = yes
+	}
+}
+1236516 = { 
+	name="Werner" #Werner II, von Lenzburg-Baden, son of previous and Altrude. Joint ruler with his brother Freidrich(died 1139) upon his fathers death. died 1152
+	dynasty=672
+	religion="catholic"
+	culture="franconian"  # german
+	father=1236514
+	1080.1.1={
+		birth = yes
+	}
+	1152.1.1={
+		death = yes
+	}
+}
+1236517 = { 
+	name="Heribert" # Archbishop of Cologne 999-1021, maybe part of the Conradine family, but that is not proven so a separate dynasty for him
+	dynasty=1000103282
+	religion="catholic"
+	culture="franconian"  # german
+
+	970.1.1={
+		birth = yes
+	}
+	1021.3.16={
+		death = yes
+	}
+}
+1236518 = { 
+	name="Erkanbald" # From the family of the Counts of Ölsburg. Archbishop of Mainz between 1011-1021
+	dynasty=1000103362
+	religion="catholic"
+	culture="low_saxon"  # german
+
+	978.1.1={
+		birth = yes
+	}
+	1021.8.17={
+		death = yes
+	}
+}
+1236519 = { 
+	name="Willigis" # Archbishop of Mainz between 975-1011. Saint. From a free, but non-noble family
+	religion="catholic"
+	culture="franconian"  # german
+
+	940.1.1={
+		birth = yes
+	}
+	1011.2.23={
+		name = "Saint Willigis"
+		trait = "saint"	
+		death = yes
+	}	
+}

@@ -1,0 +1,8 @@
+# -*- ck2.history.titles -*-
+
+569.1.1 = {
+	de_jure_liege = k_italy
+}
+976.1.1 = {
+	de_jure_liege = k_carinthia
+}

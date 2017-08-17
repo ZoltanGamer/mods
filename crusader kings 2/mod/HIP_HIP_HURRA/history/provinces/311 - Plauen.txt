@@ -1,0 +1,27 @@
+# -*- ck2.history.provinces -*-
+
+# 311 - Plauen
+
+# County Title
+title = c_plauen
+
+# Settlements
+max_settlements = 4
+
+b_plassenburg = castle
+b_kulmbach = city
+b_bayreuth = city
+
+#b_wunsiedel = city
+#b_guttenberg = castle
+#b_cheb = temple
+#b_hof = city
+#b_kirchenlamitz = temple
+
+# Misc
+culture = franconian
+religion = catholic
+
+# History
+1170.1.1 = { culture = german }
+

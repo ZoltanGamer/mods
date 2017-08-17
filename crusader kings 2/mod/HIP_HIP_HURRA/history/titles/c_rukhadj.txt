@@ -1,0 +1,150 @@
+# -*- ck2.history.titles -*-
+
+680.1.1={
+	liege=d_zunbil
+	holder = 188701 # Zunbil founder
+}
+687.1.1={
+	holder = 188702 
+}
+725.1.1={
+	holder = 188703
+}
+738.1.1={
+	holder = 188628
+}
+770.1.1={
+	holder = 188705
+}
+780.1.1={
+	holder = 188707
+}
+815.1.1={
+	holder = 188708
+}
+850.1.1={
+	holder = 188711 # Kabak Zunbil
+}
+865.1.1={
+	liege = d_sistan
+	holder = 188710 # Zunbil cousin
+}
+870.1.1 = {
+	liege = d_sistan
+	holder = 163101
+}
+879.6.5 = {
+	holder = 163164
+}
+901.1.1 = {
+	holder = 1230517
+}
+961.1.1 = {
+	liege = d_zabolestan
+	holder = 170303 # Took Ghazna from Lawiks
+}
+975.1.1 = {
+	holder = 170304
+}
+977.1.1 = {
+	holder = 144123
+}
+997.1.1 = {
+	holder = 144124
+}
+998.1.1 = {
+	holder = 144125
+}
+1010.1.1 = {
+	holder = 1230354
+}
+1033.1.1 = {
+	holder = 1230355
+}
+1059.1.1 = {
+	holder = 1230356
+}
+1068.1.1 = {
+	holder = 1230357
+}
+1094.1.1 = {
+	holder = 144133
+}
+1099.1.1 = {
+	holder = 144134
+}
+1115.1.1 = {
+	holder = 144135
+}
+1115.6.1 = {
+	holder = 144136
+}
+1118.1.1 = {
+	holder = 144137
+}
+1152.1.1 = {
+	holder = 144138
+}
+1160.1.1 = {
+	holder = 144139
+}
+1173.1.1 = {
+	holder = 144142
+}
+1206.3.15 = {
+	holder = 170302
+}
+1216.2.15 = {
+	liege = d_herat
+	holder = 93053
+}
+1221.1.1 = {
+	liege = k_khwarezmia
+}
+1230.1.1 = {
+	liege = e_mongol_empire
+	holder = 172005
+}
+1241.12.11 = {
+	holder = 172007
+}
+1248.1.1 = {
+	liege = e_il-khanate
+	holder = 217265
+}
+1259.8.11 = {
+	holder = 478011
+}
+1265.2.8 = {
+	holder = 478010
+}
+1282.1.1 = {
+	holder = 125523
+}
+1284.1.1 = {
+	holder = 478008
+}
+1291.1.1 = {
+	holder = 125525
+}
+1295.1.1 = {
+	holder = 125522
+}
+1295.8.1 = {
+	holder = 125524
+}
+1304.5.11 = {
+	holder = 478007
+}
+1316.12.16 = {
+	holder = 478006
+}
+1335.12.1 = {
+	holder = 125528
+}
+1336.4.10 = {
+	holder = 478000
+}
+1336.7.24 = {
+	holder = 34432
+}

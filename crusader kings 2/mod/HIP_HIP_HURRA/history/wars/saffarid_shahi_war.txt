@@ -1,0 +1,20 @@
+# -*- ck2.history.wars -*-
+
+name = "Saffarid War to Make the Shahi Pay Tribute"
+
+casus_belli = {
+	actor = 163101
+	recipient = 175060
+	casus_belli=tributary_cb
+	date=867.1.1
+}
+
+867.1.1 = {
+	add_attacker = 163101
+	add_defender = 175060
+}
+
+870.1.1 = {
+	rem_attacker = 163101
+	rem_defender = 175060
+}

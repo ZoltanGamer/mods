@@ -1,0 +1,19 @@
+# -*- ck2.history.provinces -*-
+
+# 783 - Ma'an
+
+# County Title
+title = c_maan
+
+# Settlements
+max_settlements = 2
+b_maan = castle
+#b_madyan = temple
+
+# Misc
+culture = levantine_arabic
+religion = sunni
+
+# History
+
+974.1.1 = { b_maan = tribal } #Tribalisation/Nomadization of al-Urdunn

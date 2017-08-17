@@ -1,0 +1,438 @@
+# -*- ck2.history.characters -*-
+
+###############################################################
+#  Low Saxon characters
+###############################################################
+#Low Saxon character Range: 1236950-1237049
+###########
+### Counts of Rüstringen/Oldenburg
+1236950 = { 
+	name="Huno"
+	dynasty=224
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	trait="tough_soldier"
+	father=1236952
+	1001.1.1 = {
+		birth=yes
+	}
+	1060.1.1 = {
+		death=yes
+	}
+}
+### Counts of Rüstringen/Oldenburg
+1236951 = { 
+	name="Hadwig"
+	female=yes
+	dynasty=224
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=1236952
+	1006.1.1 = {
+		birth=yes
+	}
+	1063.1.1 = {
+		death=yes
+	}
+}
+1236952 = { 
+	name="Huno"
+	dynasty=224
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	trait="tough_soldier"
+	979.1.1 = {
+		birth=yes
+	}
+	1031.1.1 = {
+		death=yes
+	}
+}
+1236953 = { 
+	name="Adalbrand"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+
+	979.1.1 = {
+		birth=yes
+	}
+	1043.4.15 = {
+		death=yes
+	}
+}
+1236954 = { 
+	name="Rudbert"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+
+	999.1.1 = {
+		birth=yes
+	}
+	1063.1.1 = {
+		death=yes
+	}
+}
+1236955 = { 
+	name="Hermann"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+
+	990.1.1 = {
+		birth=yes
+	}
+	1042.1.1 = {
+		death=yes
+	}
+}
+1236956 = { 
+	name="Alberich"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+
+	997.1.1 = {
+		birth=yes
+	}
+	1052.4.19 = {
+		death=yes
+	}
+}
+1236957 = { 
+	name="Wazzo"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+
+	997.1.1 = {
+		birth=yes
+	}
+	1048.7.8 = {
+		death=yes
+	}
+}
+1236958 = { 
+	name="Udalrich"
+	dynasty=1000035156
+	religion="catholic"
+	culture="low_saxon"
+
+	942.1.1 = {
+		birth=yes
+	}
+	1022.1.1 = {
+		death=yes
+	}
+}
+1236959 = {
+	name="Oda"
+	female=yes
+	dynasty=669
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=33460
+	mother=1413
+	996.1.1 = {
+		birth=yes
+	}
+	1027.1.1 = {
+		death=yes
+	}
+}
+1236960 = { 
+	name="Hermann"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+
+	979.1.1 = {
+		birth=yes
+	}
+	1035.1.1 = {
+		death=yes
+	}
+}
+1236961 = { 
+	name="Liawizo"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	mother=1236962
+	970.1.1 = {
+		birth=yes
+	}
+	1032.8.24 = {
+		death=yes
+	}
+}
+1236962 = { 
+	name="Oda"
+	female=yes
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=1236964
+	950.1.1 = {
+		birth=yes
+	}
+	1012.1.1 = {
+		death=yes
+	}
+}
+1236963 = { 
+	name="Liawizo"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=1236964
+	948.1.1 = {
+		birth=yes
+	}
+	1013.1.4 = {
+		death=yes
+	}
+}
+1236964 = { 
+	name="Liawizo"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	922.1.1 = {
+		birth=yes
+	}
+	979.1.4 = {
+		death=yes
+	}
+}
+1236965=  {
+	name="Waldered"
+	dynasty=7282
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=33246
+	935.1.1 = {
+		birth=yes
+	}
+	984.1.1 = {
+		death=yes
+	}
+}
+1236966=  {
+	name="Thiedrich"
+	dynasty=7282
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=1236965
+	957.1.1 = {
+		birth=yes
+	}
+	995.3.6 = {
+		death=yes
+	}
+}
+1236967=  {
+	name="Siegbert"
+	dynasty=7282
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=1236965
+	958.1.1 = {
+		birth=yes
+	}
+	995.10.14 = {
+		death=yes
+	}
+}
+1236968=  {
+	name="Unwan"
+	dynasty=7282
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=1236967
+	980.1.1 = {
+		birth=yes
+	}
+	1029.1.27 = {
+		death=yes
+	}
+}
+1236969 = {
+	name="Siegfried"
+	dynasty=9600
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=168543
+	
+	958.1.1 = {
+		birth = yes
+	}
+	990.3.15 = {
+		death = yes
+	}
+}
+1236970 = {
+	name="Siegfried"
+	dynasty=9600
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=1236969
+	
+	981.1.1 = {
+		birth = yes
+	}
+	1032.11.27 = {
+		death = yes
+	}
+}
+1236971 = {
+	name="Thiedrich"
+	dynasty=12411
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	
+	974.1.1 = {
+		birth = yes
+	}
+	1022.1.23 = {
+		death = yes
+	}
+}
+1236972 = { 
+	name="Gozmar"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+
+	985.1.1 = {
+		birth=yes
+	}
+	1036.12.10 = {
+		death=yes
+	}
+}
+1236973 = { 
+	name="Meginher"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+
+	983.1.1 = {
+		birth=yes
+	}
+	1027.12.10 = {
+		death=yes
+	}
+}
+1236974 = { 
+	name="Thietmar"
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+
+	970.1.1 = {
+		birth=yes
+	}
+	1022.6.18 = {
+		death=yes
+	}
+}
+1236975 = {
+	name="Günther"
+	dynasty=669
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=33460
+	mother=1413
+	986.1.1 = {
+		birth=yes
+	}
+	1025.11.1 = {
+		death=yes
+	}
+}
+1236976 = {
+	name="Meginhard"
+	dynasty=1000103364
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+
+	897.1.1 = {
+		birth=yes
+	}
+	952.1.1 = {
+		death=yes
+	}
+}
+1236977 = {
+	name="Wichmann"
+	dynasty=1000103364
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=1236976
+	920.1.1 = {
+		birth=yes
+	}
+	974.7.20 = {
+		death=yes
+	}
+}
+1236978 = {
+	name="Adela"
+	female=yes
+	dynasty=1000103364
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=1236977
+	950.1.1 = {
+		birth=yes
+	}
+	1021.1.1 = {
+		death=yes
+	}
+}
+1236979 = {
+	name="Liutgard"
+	female=yes
+	dynasty=1000103364
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=1236977
+	953.1.1 = {
+		birth=yes
+	}
+	997.1.1 = {
+		death=yes
+	}
+}
+1236980 = {
+	name="Dietrich"
+	dynasty=7282
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=33245
+	mother=1236978	
+	970.1.1 = {
+		birth=yes
+	}
+	1018.4.7 = {
+		death=yes
+	}
+}
+1236981 = {
+	name="Meinwerk"
+	dynasty=7282
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=33245
+	mother=1236978	
+	974.1.1 = {
+		birth=yes
+	}
+	1036.6.5 = {
+		death=yes
+	}
+}
+1236982 = {
+	name="Glismod"
+	female=yes
+	dynasty=7282
+	religion="catholic"
+	culture="low_saxon"  # melted from: german
+	father=33245
+	mother=1236978	
+	977.1.1 = {
+		birth=yes
+	}
+	1040.2.5 = {
+		death=yes
+	}
+}

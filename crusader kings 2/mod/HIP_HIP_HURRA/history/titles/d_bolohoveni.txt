@@ -1,0 +1,35 @@
+# -*- ck2.history.titles -*-
+
+865.1.1 = {
+	liege = k_bulgaria
+	holder = 1233253
+}
+895.1.1 = {
+	liege = 0
+}
+900.1.1 = {
+	holder = 1233254
+}
+940.1.1 = {
+	holder = 1233255
+}
+970.1.1 = {
+	holder = 1233256
+}
+990.1.1 = {
+	holder = 1233257
+}
+1019.1.2 = {
+	liege = k_ruthenia
+}
+1020.1.1 = {
+	holder = 1233258
+}
+#Kiev besieged by the Uzes
+1055.1.1 = {
+	liege = k_uzes
+}
+# Cumans arrive, Black hats formed
+1060.1.1 = {
+	holder = 0
+}

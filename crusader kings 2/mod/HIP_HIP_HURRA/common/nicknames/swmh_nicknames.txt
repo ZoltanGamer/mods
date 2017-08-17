@@ -1,0 +1,7 @@
+# -*- ck2.nicknames -*-
+
+nick_ironarm = {}
+nick_tzelepes = {}
+nick_tzimiskes = {}
+nick_builder = {}
+nick_caulker = {}

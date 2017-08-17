@@ -1,0 +1,122 @@
+# -*- ck2.history.titles -*-
+
+654.1.1 = {
+	liege = d_itil
+	holder = 74004
+}
+682.1.1 = {
+	holder = 74007
+}
+715.1.1 = {
+	holder = 74008
+}
+731.1.1 = {
+	holder = 74009
+}
+749.1.1 = {
+	holder = 74012
+}
+788.1.1 = {
+	holder = 74018
+}
+802.1.1 = {
+	holder = 74019
+}
+818.1.1 = {
+	holder = 74020
+}
+822.1.1 = {
+	liege = k_khazaria
+}
+829.1.1 = {
+	holder = 74021
+}
+831.1.1 = {
+	holder = 74022
+}
+847.1.1 = {
+	holder = 74023
+}
+852.1.1 = {
+	holder = 74024
+}
+864.1.1 = {
+	holder = 74025
+}
+888.1.1 = {
+	holder = 74026
+}
+899.1.1 = {
+	holder = 146187
+}
+916.1.1 = {
+	holder = 146188
+}
+920.1.1 = {
+	holder = 146189
+}
+928.1.1 = {
+	holder = 146190
+}
+945.1.1 = {
+	holder = 146191
+}
+969.1.1 = {
+	liege = 0
+	holder = 0
+}
+# Oghuz takes over
+1001.1.1 = {
+	liege = d_tekule
+	holder = 1231949
+}
+1024.1.1 = {
+	holder = 1231951
+}
+1044.1.1 = {
+	liege = d_salgur
+	holder = 1231993
+}
+# Cumans arrive
+1050.1.1 = {
+	liege = d_targil
+	holder = 20663 # ?wtf flavour charcter?
+}
+# Targil
+1089.1.1 = {
+	holder = 1233060
+}
+1100.1.1 = {
+	holder = 1233062 # Komana
+}
+1142.1.1 = {
+	holder = 1233064
+}
+1174.1.1 = {
+	holder = 1233066
+}
+1202.1.1 = {
+	holder = 1233068
+}
+1221.1.1 = {
+	holder = 1233070
+}
+# Mongols put down revolt
+1239.1.1 = {
+	liege = k_turkestan_west
+	holder = 125503
+}
+1241.12.11 = {
+	liege = d_ustyurt
+	holder = 125534
+}
+1275.1.2 = {
+	holder = 125540
+}
+1304.1.2 = {
+	holder = 125541
+}
+1327.1.2 = {
+	liege = d_itil
+	holder = 125546
+}

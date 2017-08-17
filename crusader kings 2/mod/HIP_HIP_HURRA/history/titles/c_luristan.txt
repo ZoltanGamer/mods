@@ -1,0 +1,94 @@
+# -*- ck2.history.titles -*-
+
+# Dulafids or Ejlids
+840.10.10 = {
+	liege = d_jebal
+	holder = 1230537
+}
+866.1.1 = {
+	liege = d_kermanshah
+	holder = 163132
+}
+868.10.10 = {
+	liege = d_jebal
+	holder = 1230541
+}
+961.1.1 = {
+	liege = d_kermanshah
+}
+961.1.1 = {
+	holder = 1231401
+}
+979.1.1 = {
+	holder = 1231402
+}
+1011.1.1 = {
+	holder = 159198
+}
+1046.1.1 = {
+	holder = 159199
+}
+1050.1.1 = {
+	liege = d_jebal
+	holder = 3038
+}
+1055.1.1 = {
+	liege = d_kermanshah
+	holder = 1231099
+}
+1094.1.1 = {
+	liege = d_jebal
+	holder = 144013
+}
+1105.3.1 = {
+	holder = 144014
+}
+1118.4.18 = {
+	holder = 144043
+}
+1131.1.1 = {
+	holder = 144048
+}
+1131.6.1 = {
+	holder = 144049
+}
+1132.1.1 = {
+	holder = 144050
+}
+1133.1.1 = {
+	holder = 144049
+}
+1134.1.1 = {
+	holder = 144050
+}
+1134.6.1 = {
+	holder = 144049
+}
+1148.1.1 = {
+	liege = d_kermanshah
+	holder = 93200
+}
+1203.1.1 = {
+	holder = 93201
+}
+1230.1.1 = {
+	holder = 93202
+}
+1259.1.1 = {
+	holder = 93203
+}
+1274.1.1 = {
+	holder = 93204
+}
+1288.1.1 = {
+	holder = 93205
+}
+1296.1.1 = {
+	holder = 93206
+}
+1333.1.1 = {
+	holder = 93207
+}
+1336.1.1 = {
+	holder = 93208
+}

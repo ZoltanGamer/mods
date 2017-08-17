@@ -1,0 +1,28 @@
+# -*- ck2.history.provinces -*-
+
+# 675 - Semender
+
+# County Title
+title = c_semender
+
+# Settlements
+max_settlements = 5
+
+b_semender = tribal
+b_balanjar = temple
+#b_buyanksk = city
+#b_enderi = castle
+#b_tarqi = castle
+
+# Misc
+culture = adhari
+religion = sunni
+
+# History
+
+1238.1.1 = {
+	culture = caucasian_avar
+	#b_balanjar = castle
+	#b_semender = temple
+	b_buyanksk = city
+}

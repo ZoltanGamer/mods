@@ -1,0 +1,147 @@
+# -*- ck2.history.titles -*-
+
+770.1.1 = {
+	liege = d_ustrushana
+	holder = 1230750
+}
+795.1.1 = {
+	holder = 1230751
+}
+823.1.1 = {
+	holder = 1230752
+}
+841.5.6 = {
+	holder = 1230767
+}
+845.1.1 = {
+	holder = 1230753
+}
+870.1.1 = {
+	holder = 1230754
+}
+999.5.5 = {
+	liege = k_turkestan_east
+	holder = 1230264
+}
+1012.1.2 = {
+	holder = 3002
+}
+1032.1.2 = {
+	liege = k_mavarannahr
+	holder = 3012
+}
+1040.1.1 = {
+	holder = 3014
+}
+1068.1.1 = {
+	holder = 3016
+}
+1080.1.1 = {
+	holder = 3018
+}
+1086.1.1 = {
+	holder = 3020
+}
+1095.1.1 = {
+	holder = 144110
+}
+1102.1.1 = {
+	holder = 144111
+}
+1130.1.1 = {
+	holder = 1230271
+}
+1136.1.1 = {
+	holder = 144118
+}
+1141.1.1 = {
+	holder = 144119
+}
+# title passes to Ferghana branch
+1156.1.1 = {
+	holder = 1230272 # Ali b.Hasan
+}
+1158.1.1 = {
+	holder = 1230273 # Ma'súd b.Hasan
+}
+1171.1.1 = {
+	holder = 1230277 # Ibrahím b. Husayn - 63-79 Ferghana
+}
+1195.1.1 = {
+	holder = 1230280 # 'Uthmán' b. Ibrahím
+}
+1212.1.1 = {
+	liege = k_khwarezmia
+	holder = 93052
+}
+1221.1.1 = {
+	liege = e_mongol_empire
+	holder = 125501
+}
+1227.12.2 = {
+	liege = k_turkestan_east
+	holder = 93062
+}
+1242.1.1 = {
+	holder = 93064
+}
+1246.1.1 = {
+	holder = 93065
+}
+1248.1.1 = {
+	liege = e_chagatai
+}
+1252.1.1 = {
+	holder = 93064
+}
+1253.1.1 = {
+	holder = 93066
+}
+1260.1.1 = {
+	holder = 93068
+}
+1266.1.1 = {
+	holder = 93066
+}
+1266.9.1 = {
+	holder = 93070
+}
+1271.1.1 = {
+	holder = 93072
+}
+1272.1.1 = {
+	holder = 93074
+}
+1282.1.1 = {
+	holder = 93075
+}
+1307.1.1 = {
+	holder = 93076
+}
+1308.1.1 = {
+	holder = 93078
+}
+1309.1.1 = {
+	holder = 93079
+}
+1310.1.1 = {
+	holder = 93080
+}
+1318.1.1 = {
+	holder = 93079
+}
+1326.1.1 = {
+	holder = 93081
+}
+1329.1.1 = {
+	holder = 93082
+}
+1330.1.1 = {
+	holder = 93083
+}
+1334.1.1 = {
+	holder = 93084
+}
+1335.1.1 = {
+	holder = 93086
+}

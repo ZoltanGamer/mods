@@ -1,0 +1,23 @@
+# -*- ck2.history.provinces -*-
+
+# 65 - Powys
+
+# County Title
+title = c_powys
+
+# Settlements
+max_settlements = 3
+b_wrexham = tribal
+#b_llangollen = city
+#b_glyndyfrdwy = temple
+
+
+# Misc
+culture = welsh
+religion = catholic
+terrain = mountain
+
+# History
+1283.9.29={
+	b_wrexham = castle
+}

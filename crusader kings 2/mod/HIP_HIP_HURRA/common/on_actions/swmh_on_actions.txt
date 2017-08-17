@@ -1,0 +1,8 @@
+# -*- ck2.on_actions -*-
+
+
+on_startup = {
+	events = {
+		swmh.500 # Correct names for West Francia and Pannonia in 867
+	}
+}

@@ -1,0 +1,196 @@
+# -*- ck2.history.characters -*-
+
+######################################
+#SWMH Kurdish Characters
+######################################
+#Kurdish characters
+#Dynasties: 1000102350 - 1000102399
+#Characters: 1231400 - 1231499
+
+######################################
+#Hasanwayhids in Hulwán
+
+1231401 = {
+	name="Abu'l Fawaris" 
+	dynasty=1029011
+	religion="sunni"
+	culture="kurdish"
+
+	926.1.1={
+		birth=yes
+	}
+	979.1.1={
+		death=yes
+	}
+}
+1231402 = {
+	name="Badr" 
+	dynasty=1029011
+	religion="sunni"
+	culture="kurdish"
+  	father = 1231401 
+	952.1.1={
+		birth=yes
+	}
+	1014.1.1={
+		death=yes
+	}
+}
+1231403 = {
+	name="Hilal" 
+	dynasty=1029011
+	religion="sunni"
+	culture="kurdish"
+  	father = 1231401 
+	972.1.1={
+		birth=yes
+	}
+	1009.1.1={
+		death=yes
+	}
+}
+1231404 = {
+	name="Tahir" 
+	dynasty=1029011
+	religion="sunni"
+	culture="kurdish"
+  	father = 1231403 
+	992.1.1={
+		birth=yes
+	}
+	1015.1.1={
+		death=yes
+	}
+}
+1231410 = {
+	name="Xûscihr" 
+	dynasty=1000102353
+	religion="sunni"
+	culture="kurdish"
+  	father=41604
+	1099.1.1={
+		birth="1099.1.1"
+	}
+	1148.1.1={
+		death="1148.1.1"
+	}
+}
+1231411 = {
+	name="Sedad" 
+	dynasty=1000102353
+	religion="sunni"
+	culture="kurdish"
+  	father=93521
+	1116.1.1={
+		birth=yes
+	}
+	1155.1.1={
+		death="1155.1.1"
+	}
+}
+1231412 = {
+	name="Fezl" 
+	dynasty=1000102353
+	religion="sunni"
+	culture="kurdish"
+  	father=93521
+	1118.1.1={
+		birth=yes
+	}
+	1164.1.1={
+		death=yes
+	}
+}
+1231413 = {
+	name="Sahensah" 
+	dynasty=1000102353
+	religion="sunni"
+	culture="kurdish"
+  	father=93521
+	1119.1.1={
+		birth=yes
+	}
+	1174.1.1={
+		death=yes
+	}
+}
+1231414 = {
+	name="Justan" 
+	dynasty=1042062
+	religion="zaydi"
+	culture="daylamite"
+  	father=180766
+	922.1.1={
+		birth=yes
+	}
+	960.1.1={
+		death=yes
+	}
+}
+1231415 = {
+	name="Ebrahim" 
+	dynasty=1042062
+	religion="zaydi"
+	culture="daylamite"
+  	father=180766
+	924.1.1={
+		birth=yes
+	}
+	983.1.1={
+		death=yes
+	}
+}
+1231416 = {
+	name="Ebu'l-Hajja" 
+	dynasty=1042062
+	religion="zaydi"
+	culture="daylamite"
+  	father=1231415
+	949.1.1={
+		birth=yes
+	}
+	991.1.1={
+		death=yes
+	}
+}
+1231417 = {
+	name="Daisam" 
+	dynasty=1029012
+	religion="kharijite"
+	culture="kurdish"
+
+	900.1.1={
+		birth=yes
+	}
+	957.1.1={
+		death=yes
+	}
+}
+
+1231418 = {
+	name="Mehmûd Nîzamedîn"
+	dynasty=101690
+	religion="sunni"
+	culture="kurdish"
+	father=93232
+	1159.1.1={
+		birth=yes
+	}
+	1228.1.1={
+		death="1228.1.1"
+	}
+}
+
+1231419 = {
+	name="Surxap"
+	dynasty=101688
+	religion="sunni"
+	culture="kurdish"
+	father=159197
+	985.1.1={
+		birth="985.1.1"
+	}
+	1053.1.1={ #alive as of 1050
+		death="1053.1.1"
+	}
+}

@@ -1,0 +1,161 @@
+# -*- ck2.events -*-
+
+
+namespace = emf_cb
+
+# emf_cb.0 [Attacker]
+#
+# A smarter version of occupy_minor_holdings_of_occupied_settlements + gain_all_occupied_titles
+# that, among other things, limits the occupied title gain to only those titles within certain
+# de jure territory.
+#
+# NOTE: Removed due to broken scripting interface for tribal vassals that are called to war by their liege, making this
+# problem intractable for tribals.  Could still be used for special CBs that definitely won't encounter tribals or when,
+# if ever, the fundamentally broken scripting interface for reflecting vassal/liege/realm/hostility/war-participants/etc.
+# status of such tribal vassals is fixed.
+#
+# Relevant scopes:
+#  emf_cb_title: De jure count- to empire-tier title with which to constrain occupation gains (target title in invasion CBs)
+#  ROOT: attacker
+#  FROMFROM: defender
+# character_event = {
+	# id = emf_cb.0
+	# hide_window = yes
+	# is_triggered_only = yes
+	
+	# immediate = {
+		# event_target:emf_cb_title = {
+			# any_de_jure_vassal_title = {
+				# limit = {
+					# tier = BARON
+					# is_capital = yes # County capital is occupied
+					# is_occupied = yes
+					# holder_scope = { # ... and is defender's
+						# or = {
+							# character = FROMFROM
+							# is_liege_or_above = FROMFROM
+						# }
+					# }
+					# controller = { # ... and the controller is a participant on the attacking side of this war
+						# any_war = {
+							# attacker = { character = ROOT }
+							# defender = { character = FROMFROM }
+							# any_attacker = { character = PREVPREV }
+						# }
+					# }
+				# }
+
+				# dejure_liege_title = {
+					# gain_title = ROOT # Gain the county
+					
+					# # Gain all holdings from FROMFROM's realm (and apply recently_conquered holding modifiers and such)
+					# ROOT = {
+						# gain_settlements_under_title = {
+							# title = PREV
+							# enemy = FROMFROM
+							# is_crusade = yes
+							# type = invasion
+						# }
+					# }
+				# }
+			# }
+		# }
+	# }
+# }
+
+
+# emf_cb.10
+#
+# Remove 'recently_conquered' modifiers and refill demesne levies
+# within event_target:emf_cb_title
+character_event = {
+	id = emf_cb.10
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		any_demesne_title = {
+			limit = {
+				tier = BARON
+				de_jure_liege_or_above = event_target:emf_cb_title
+			}
+			remove_holding_modifier = recently_conquered
+			refill_holding_levy = yes
+		}
+	}
+}
+
+
+
+# emf_cb.20 [Attacker]
+#
+# Invalidate all revolts for defender (FROMFROM) for which
+# the revolt title capital is within the de jure territory of emf_cb_title
+character_event = {
+	id = emf_cb.20
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+}
+
+# emf_cb.50 [Roman Emperor]
+#
+# Loop over counties not completely-controlled within IR tier 1.
+character_event = {
+	id = emf_cb.50
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		clear_event_target = emf_ir_uncontrolled_prov
+		random_province = {
+			limit = { has_province_flag = emf_ir_uncontrolled_prov }
+			clr_province_flag = emf_ir_uncontrolled_prov
+			save_event_target_as = emf_ir_uncontrolled_prov
+		}
+	}
+	
+	option = {
+		name = OK
+		trigger = {
+			event_target:emf_ir_uncontrolled_prov = { always = yes }
+		}
+		character_event = { id = emf_cb.51 }
+	}
+	
+	option = {
+		name = CANCEL
+		trigger = {
+			NOT = { event_target:emf_ir_uncontrolled_prov = { always = yes } }
+		}
+	}
+}
+
+character_event = {
+	id = emf_cb.51
+	desc = emf_cb.51.desc
+	picture = GFX_evt_battle_byzantine
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	option = {
+		name = emf_cb.51.opt.next
+		hidden_tooltip = {
+			character_event = { id = emf_cb.50 } # Recurse
+		}
+	}
+	
+	option = {
+		name = emf_cb.51.opt.done
+		hidden_tooltip = {
+			any_province = { # Clear any remaining province flags
+				limit = { has_province_flag = emf_ir_uncontrolled_prov }
+				clr_province_flag = emf_ir_uncontrolled_prov
+			}
+		}
+	}
+}

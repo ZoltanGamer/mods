@@ -1,0 +1,67 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+imperial_duke_greek;Strategos;;;;;;;;;;;;;x
+imperial_king_greek;Exarchos;;;;;;;;;;;;;x
+imperial_duchy_of_byzantine;Thema;;;;;;;;;;;;;x
+imperial_duke_turkmen;Emir;;;;;;;;;;;;;x
+imperial_king_turkmen;Emir;;;;;;;;;;;;;x
+imperial_duchy_of_turkmen;Emirate;;;;;;;;;;;;;x
+imperial_kingdom_of_turkmen;Emirate;;;;;;;;;;;;;x
+imperial_duke_german;Stathaltaere;;;;;;;;;;;;;x
+imperial_king_german;Richvicar;;;;;;;;;;;;;x
+imperial_duke_low_german;Statholdaere;;;;;;;;;;;;;x
+imperial_king_low_german;Rikesvicaries;;;;;;;;;;;;;x
+imperial_duke_dutch;Stathouder;;;;;;;;;;;;;x
+imperial_king_dutch;Rikevicaris;;;;;;;;;;;;;x
+imperial_duke_franconian;Lantheriro;;;;;;;;;;;;;x
+imperial_duke_female_franconian;Lantfrouwa;;;;;;;;;;;;;x
+imperial_king_franconian;Fikari;;;;;;;;;;;;;x
+imperial_duke_bavarian;Lantheriro;;;;;;;;;;;;;x
+imperial_duke_female_bavarian;Lantfrouwa;;;;;;;;;;;;;x
+imperial_king_bavarian;Fikari;;;;;;;;;;;;;x
+imperial_duke_swabian;Lantheriro;;;;;;;;;;;;;x
+imperial_duke_female_swabian;Lantfrouwa;;;;;;;;;;;;;x
+imperial_king_swabian;Fikari;;;;;;;;;;;;;x
+imperial_duke_thuringian;Lantheriro;;;;;;;;;;;;;x
+imperial_duke_female_thuringian;Lantfrouwa;;;;;;;;;;;;;x
+imperial_king_thuringian;Fikari;;;;;;;;;;;;;x
+imperial_duke_low_saxon;Landherro;;;;;;;;;;;;;x
+imperial_duke_female_low_saxon;Landfrua;;;;;;;;;;;;;x
+imperial_king_low_saxon;Fikari;;;;;;;;;;;;;x
+imperial_duke_low_frankish;Landherro;;;;;;;;;;;;;x
+imperial_duke_female_low_frankish;Landfrouwa;;;;;;;;;;;;;x
+imperial_king_low_frankish;Vicaris;;;;;;;;;;;;;x
+imperial_duke_frisian;Landhêra;;;;;;;;;;;;;x
+imperial_duke_female_frisian;Landfrouwe;;;;;;;;;;;;;x
+imperial_king_frisian;Fogid;;;;;;;;;;;;;x
+imperial_duke_old_frankish;Lantheriro;;;;;;;;;;;;;x
+imperial_duke_female_old_frankish;Lantfrouwa;;;;;;;;;;;;;x
+imperial_king_old_frankish;Fikari;;;;;;;;;;;;;x
+imperial_duke_pahlavi;Satrap;;;;;;;;;;;;;x
+imperial_duchy_of_pahlavi;Satrapy of;;;;;;;;;;;;;x
+imperial_duke_persian;Emir;;;;;;;;;;;;;x
+imperial_king_persian;Emir;;;;;;;;;;;;;x
+imperial_duchy_of_persian;Emirat-e;;;;;;;;;;;;;x
+imperial_kingdom_of_persian;Emirat-e;;;;;;;;;;;;;x
+imperial_duke_khorasani;Emir;;;;;;;;;;;;;x
+imperial_king_khorasani;Emir;;;;;;;;;;;;;x
+imperial_duchy_of_khorasani;Emirat-e;;;;;;;;;;;;;x
+imperial_kingdom_of_khorasani;Emirat-e;;;;;;;;;;;;;x
+imperial_duke_tajik;Emir;;;;;;;;;;;;;x
+imperial_king_tajik;Emir;;;;;;;;;;;;;x
+imperial_duchy_of_tajik;Emirat-e;;;;;;;;;;;;;x
+imperial_kingdom_of_tajik;Emirat-e;;;;;;;;;;;;;x
+imperial_duke_afghan;Emir;;;;;;;;;;;;;x
+imperial_king_afghan;Emir;;;;;;;;;;;;;x
+imperial_duchy_of_afghan;Emirat-e;;;;;;;;;;;;;x
+imperial_kingdom_of_afghan;Emirat-e;;;;;;;;;;;;;x
+imperial_duke;Minor Viceroy;Vice-roi mineur;Minderer Vizekönig;;Virrey Menor;;;;;;;;;x
+imperial_king;Viceroy;Vice-roi;Vizekönig;;Virrey;;;;;;;;;x
+imperial_duchy_of;Minor Viceroyalty of;Vice-royauté mineure de;Minderes Vizekönigreich von;;Pequeño Virreinato de;;;;;;;;;x
+imperial_kingdom_of;Viceroyalty of;Vice-royauté de;Vizekönigreich von;;Virreinato de;;;;;;;;;x
+imperial_duke_female;Minor Vicereine;Vice-reine mineure;Geringere Vizekönigin;;Virreina secundaria;;;;;;;;;x
+imperial_king_female;Vicereine;Vice-reine;Vizekönigin;;Virreina;;;;;;;;;x
+imperial_duke_byzantine;Strategos;;;;;;;;;;;;;x
+imperial_king_byzantine;Exarch;Exarque;;;Exarca;;;;;;;;;x
+imperial_kingdom_of_byzantine;Exarchate of;Exarchat de;Exarchat von;;Exarcado de;;;;;;;;;x
+imperial_duke_female_byzantine;Strategitissa;;;;Estratega;;;;;;;;;x
+imperial_king_female_byzantine;Exarchessa;Exarque;;;Exarca;;;;;;;;;x
