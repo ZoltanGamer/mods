@@ -1640,6 +1640,7 @@ country_event = {
 		HUN = { 
 			set_country_flag = HUN_first_vienna_award
 			transfer_state = 664 #Southern Slovakia
+			transfer_state = 748 #Beregszasz
 		}
 	}
 }
@@ -2032,6 +2033,7 @@ country_event = {
 		transfer_state = 70
 		transfer_state = 71
 		transfer_state = 73
+		transfer_state = 748
 		hidden_effect = {
 			GER = {
 				annex_country = { target = CZE }
@@ -2120,7 +2122,14 @@ country_event = {
 		if = {
 			limit = {
 				154 = { is_owned_by = HUN }
+				748 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
 			}
+			HUN = { transfer_state = 748 }
 		}
 		if = {
 			limit = {
@@ -2136,8 +2145,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 154 = { is_owned_by = HUN } }				
+				NOT = { 154 = { is_owned_by = HUN } }
+				748 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
 			}
+			SLO = { transfer_state = 748 }
 		}
 		if = {
 			limit = {
@@ -3165,6 +3181,10 @@ country_event = {
 				transfer_state = 73
 			}
 			if = {
+				limit = { GER = { owns_state = 748 } }
+				transfer_state = 748
+			}
+			if = {
 				limit = { GER = { owns_state = 664 } }
 				transfer_state = 664
 			}
@@ -3240,6 +3260,10 @@ country_event = {
 		if = {
 			limit = { owns_state = 73 }
 			POL = { transfer_state = 73 }
+		}
+		if = {
+			limit = { owns_state = 748 }
+			POL = { transfer_state = 748 }
 		}
 		if = {
 			limit = { owns_state = 664 }

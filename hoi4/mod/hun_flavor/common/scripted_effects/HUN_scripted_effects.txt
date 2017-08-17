@@ -2102,7 +2102,9 @@ get_all_non_claimed_territory_from_hungary = {
 	if = { limit = { 743 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 743 }
 	if = { limit = { 744 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 744 }
 	if = { limit = { 745 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 745 }
+	if = { limit = { 746 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 746 }
 	if = { limit = { 747 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 747 }
+	if = { limit = { 748 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 748 }
 	if = { limit = { 749 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 749 }
 	if = { limit = { 750 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 750 }
 	if = { limit = { 751 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 751 }

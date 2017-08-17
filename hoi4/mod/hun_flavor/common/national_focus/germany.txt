@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = german_focus
 	
 	country = {
@@ -3059,7 +3059,9 @@
 					owns_state = 105
 					owns_state = 105	#Montenegro
 					owns_state = 754	#Kotor
-					owns_state = 758	#Ulcinj					
+					owns_state = 758	#Ulcinj
+					owns_state = 746	#Prekmurje
+					
 				}
 			}
 			OR = {
@@ -3118,7 +3120,8 @@
 				effect_tooltip = {
 					HUN = {
 						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-						transfer_state = 45		#Novi Sad			
+						transfer_state = 45		#Novi Sad
+						transfer_state = 746	#Muraköz
 					}
 				}
 				every_other_country = {

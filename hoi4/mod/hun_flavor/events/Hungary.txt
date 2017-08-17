@@ -123,6 +123,8 @@ country_event = {
 			load_oob = YUG_to_HUN_volunteer_corps
 			transfer_state = 45
 			add_state_core = 45
+			transfer_state = 746
+			add_state_core = 746
 		}
 	}
 }

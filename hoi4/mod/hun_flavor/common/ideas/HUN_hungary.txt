@@ -158,6 +158,26 @@ ideas = {
 			}
 		}
 		
+		arrow_cross_party_banned = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = fascism_losing_popularity
+			
+			modifier = {
+				fascism_drift = -0.2
+			}
+		}
+		
 		revisionist_education = {
 				
 			allowed = {

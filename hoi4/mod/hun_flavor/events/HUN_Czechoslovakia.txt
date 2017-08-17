@@ -452,7 +452,12 @@ country_event = {
 				random_list = { 
 					85 = { 
 						transfer_state = 664 #Southern Slovakia 
-						add_state_core = 664 #Southern Slovakia 					
+						add_state_core = 664 #Southern Slovakia 
+						if = {
+							limit = { CZE = { owns_state = 748 } }	#Beregszasz
+							transfer_state = 748 #Beregszasz
+							add_state_core = 748 #Beregszasz
+						}
 					} 
 					15 = { } 
 				}
@@ -509,6 +514,11 @@ country_event = {
 				85 = { 
 					transfer_state = 664 #Southern Slovakia 
 					add_state_core = 664 #Southern Slovakia 
+					if = {
+						limit = { CZE = { owns_state = 748 } }	#Beregszasz
+						transfer_state = 748 #Beregszasz
+						add_state_core = 748 #Beregszasz
+					}
 				} 
 				15 = { } 
 			}

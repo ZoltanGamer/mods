@@ -202,6 +202,7 @@ country_event = {
 		transfer_state =  70		#Western Slovakia
 		transfer_state =  71		#Eastern Slovakia
 		transfer_state =  73		#Carpathian Ruthenia
+		transfer_state =  748		#Beregszasz
 		transfer_state =  664		#Southern Slovakia
 		hidden_effect = { 
 			#ROOT has been a badboy
@@ -1231,8 +1232,10 @@ country_event = {
 			is_puppet = no
 			has_opinion = { target = ROOT value > 49 }
 			owns_state = 45		#Novi Sad
+			owns_state = 746	#Muraköz
 		}
 		45 = { NOT = { has_state_flag = HUN_claim_forbidden } }		#Novi Sad
+		746 = { NOT = { has_state_flag = HUN_claim_forbidden } }	#Muraköz
 	}
 	
 	mean_time_to_happen = { days = 273 }
@@ -1265,6 +1268,11 @@ country_event = {
 		name = hungary_flavor.58.a		
 		transfer_state = 45		#Novi Sad
 		add_state_core = 45		#Novi Sad	
+		if = { 
+			limit = { YUG = { owns_state = 746 } }	#Muraköz
+			transfer_state = 746	#Muraköz
+			add_state_core = 746	#Muraköz
+		}
 		YUG = {
 			add_opinion_modifier = { target = ROOT modifier = HUN_territorial_settlement }
 			reverse_add_opinion_modifier = { target = ROOT modifier = HUN_territorial_settlement }
@@ -2781,6 +2789,11 @@ country_event = {
 			85 = { 
 				transfer_state = 664 #Southern Slovakia 
 				add_state_core = 664 #Southern Slovakia 
+				if = {
+					limit = { CZE = { owns_state = 748 } }	#Beregszasz
+					transfer_state = 748 #Beregszasz
+					add_state_core = 748 #Beregszasz
+				}
 			} 
 			15 = { } 
 		}
@@ -2824,6 +2837,11 @@ country_event = {
 				85 = { 
 					transfer_state = 664 #Southern Slovakia 
 					add_state_core = 664 #Southern Slovakia  
+					if = {
+						limit = { CZE = { owns_state = 748 } }	#Beregszasz
+						transfer_state = 748 #Beregszasz
+						add_state_core = 748 #Beregszasz
+					}
 				} 
 				15 = { } 
 			}
@@ -2908,6 +2926,7 @@ country_event = {
 	option = {
 		name = hungary_flavor.111.a
 		transfer_state = 45 	#Novi Sad
+		transfer_state = 746 	#Muraköz
 		add_opinion_modifier = { target = YUG modifier = HUN_territorial_settlement }
 	}
 }
@@ -2924,6 +2943,7 @@ country_event = {
 	#A fair agreement nonetheless.
 	option = {
 		name = hungary_flavor.112.a
+		transfer_state = 746 	#Muraköz
 	}
 }
 
@@ -3166,6 +3186,7 @@ country_event = {
 		owns_state = 71		#Eastern Slovakia
 		owns_state = 73		#Carpathian Ruthenia
 		owns_state = 664	#Southern Slovakia
+		owns_state = 748	#Beregszasz
 	}
 	
 	mean_time_to_happen = {
@@ -3189,6 +3210,8 @@ country_event = {
 			add_state_core = 73		#Carpathian Ruthenia
 			transfer_state = 664	#Southern Slovakia
 			add_state_core = 664	#Southern Slovakia
+			transfer_state = 748	#Beregszasz
+			add_state_core = 748	#Beregszasz
 		}
 		if = { limit = { 70 = { is_core_of = ROOT } } remove_state_core = 70 }  				#Western Slovakia
 		70 = { set_state_flag = HUN_claim_forbidden clr_state_flag = HUN_is_claimed_by_HUN }	#Western Slovakia
@@ -3198,6 +3221,8 @@ country_event = {
 		73 = { set_state_flag = HUN_claim_forbidden clr_state_flag = HUN_is_claimed_by_HUN }	#Carpathian Ruthenia
 		if = { limit = { 664 = { is_core_of = ROOT } } remove_state_core = 664 }  				#Southern Slovakia
 		664 = { set_state_flag = HUN_claim_forbidden clr_state_flag = HUN_is_claimed_by_HUN }	#Southern Slovakia
+		if = { limit = { 748 = { is_core_of = ROOT } } remove_state_core = 748 }  				#Beregszasz
+		748 = { set_state_flag = HUN_claim_forbidden clr_state_flag = HUN_is_claimed_by_HUN }	#Beregszasz
 		if = {
 			limit = { has_dlc = "Together for Victory" }
 			set_autonomy = {
@@ -3290,6 +3315,8 @@ country_event = {
 			if = { limit = { 754 = { NOT = { is_owned_by = ROOT } OR = { is_owned_by = YUG is_core_of = YUG } } } remove_state_claim = 754 remove_state_core = 754 754 = { set_state_flag = HUN_claim_forbidden clr_state_flag = HUN_is_claimed_by_HUN } }	#Kotor
 			if = { limit = { 755 = { NOT = { is_owned_by = ROOT } OR = { is_owned_by = YUG is_core_of = YUG } } } remove_state_claim = 755 remove_state_core = 755 755 = { set_state_flag = HUN_claim_forbidden clr_state_flag = HUN_is_claimed_by_HUN } }	#Primorska
 			if = { limit = { 759 = { NOT = { is_owned_by = ROOT } OR = { is_owned_by = YUG is_core_of = YUG } } } remove_state_claim = 759 remove_state_core = 759 759 = { set_state_flag = HUN_claim_forbidden clr_state_flag = HUN_is_claimed_by_HUN } }	#Pag
+			
+			if = { limit = { 746 = { OR = { is_owned_by = YUG is_core_of = YUG } } } remove_state_claim = 746 remove_state_core = 746 746 = { set_state_flag = HUN_claim_forbidden clr_state_flag = HUN_is_claimed_by_HUN } }	#Muraköz
 			if = { limit = { 45 = { OR = { is_owned_by = YUG is_core_of = YUG } } } remove_state_claim = 45 remove_state_core = 45 45 = { set_state_flag = HUN_claim_forbidden clr_state_flag = HUN_is_claimed_by_HUN } }		#Backa
 		}
 	}

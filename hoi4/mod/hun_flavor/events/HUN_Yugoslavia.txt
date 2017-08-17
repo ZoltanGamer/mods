@@ -87,7 +87,11 @@ country_event = {
 			country_event = { hours = 8 id = hungary_flavor.58 }
 			effect_tooltip = {
 				FROM = {
-					transfer_state = 45		#Novi Sad				
+					transfer_state = 45		#Novi Sad
+					if = { 
+						limit = { ROOT = { owns_state = 746 } }	#Muraköz
+						transfer_state = 746	#Muraköz
+					}
 					add_opinion_modifier = { target = ROOT modifier = HUN_territorial_settlement }
 					reverse_add_opinion_modifier = { target = ROOT modifier = HUN_territorial_settlement }
 				}
@@ -349,6 +353,7 @@ country_event = {
 		FROM = { 
 			effect_tooltip = {
 				transfer_state = 45 	#Novi Sad
+				transfer_state = 746 	#Muraköz
 				add_opinion_modifier = { target = ROOT modifier = HUN_territorial_settlement }
 			}
 			country_event = { hours = 4 id = hungary_flavor.111 } 
@@ -363,6 +368,7 @@ country_event = {
 		}
 		add_political_power = 15
 		FROM = { 
+			effect_tooltip = { transfer_state = 746 }	#Muraköz
 			country_event = { hours = 4 id = hungary_flavor.112 } 
 		}
 	}

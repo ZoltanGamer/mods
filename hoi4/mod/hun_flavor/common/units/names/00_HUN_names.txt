@@ -21,7 +21,7 @@
 		prefix = "KH"
 		generic = { "Könnyü Cirkáló" }
 		unique = {
-		        "Esztergom" "Székelyudvarhely" "Visegrád" "Nógrád" "Komárom"                                                  "Hajdú" " Csongrád" "Eger" "Veszprém" "Szigetvár" "Ungvár"                                                    "Eperjes" "Zsolna" "Szolnok" "Tatabánya" " Tokaj" "Marosvásárhely"                                             "Nándorfehérvár" "Brassó" "Temesvár" "Zombor" "Villány" 
+		        "Esztergom" "Székelyudvarhely" "Visegrád" "Nógrád" "Komárom"                                                  "Hajdú" " Csongrád" "Eger" "Veszprém" "Szigetvár" "Ungvár"                                                    "Eperjes" "Zsolna" "Szolnok" "Tatbánya" " Tokaj" "Marosvásárhely"                                             "Nándorfehérvár" "Brassó" "Temesvár" "Zombor" "Villány" 
                         "Kecskemét" "Novara" "Zenta"
 		}
 	}

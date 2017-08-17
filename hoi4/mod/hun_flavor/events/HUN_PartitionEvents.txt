@@ -20,6 +20,7 @@ country_event = {
 	option = {
 		name = hungary_flavor_partition.1.a	
 		transfer_state = 45		#Novi Sad
+		transfer_state = 746	#Prekmurje
 		custom_effect_tooltip = HUN_will_get_one_unit_of_volunteer_corps
 		hidden_effect = { 				
 			load_oob = YUG_to_HUN_volunteer_corps

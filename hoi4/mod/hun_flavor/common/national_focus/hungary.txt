@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = hungarian_focus
 	
 	country = {
@@ -48,7 +48,9 @@
 							owns_state = 743	#Burgenland
 							owns_state = 744	#Pancevo
 							owns_state = 745	#Ruma
+							owns_state = 746	#Muraköz
 							owns_state = 747	#Fiume
+							owns_state = 748	#Beregszasz
 							owns_state = 749	#Croatia
 							owns_state = 759	#Pag
 							owns_state = 752	#Maramaros
@@ -100,7 +102,9 @@
 				if = {
 					limit = { has_completed_focus = HUN_ideological_shift }
 					add_state_core = 664	#Southern Slovakia
+					add_state_core = 748	#Beregszasz
 					add_state_core = 45		#Backa
+					add_state_core = 746	#Muraköz
 					add_state_core = 76		#Northern Transylvania
 				}
 			}
@@ -217,7 +221,9 @@
 				if = { limit = { NOT = { 743 = { has_state_flag = HUN_claim_forbidden } } } 743 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Burgenland
 				if = { limit = { NOT = { 744 = { has_state_flag = HUN_claim_forbidden } } } 744 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Pancevo
 				if = { limit = { NOT = { 745 = { has_state_flag = HUN_claim_forbidden } } } 745 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Ruma
+				if = { limit = { NOT = { 746 = { has_state_flag = HUN_claim_forbidden } } } 746 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Muraköz
 				if = { limit = { NOT = { 747 = { has_state_flag = HUN_claim_forbidden } } } 747 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Fiume
+				if = { limit = { NOT = { 748 = { has_state_flag = HUN_claim_forbidden } } } 748 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Beregszasz
 				if = { limit = { NOT = { 749 = { has_state_flag = HUN_claim_forbidden } } } 749 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Croatia
 				if = { limit = { NOT = { 752 = { has_state_flag = HUN_claim_forbidden } } } 752 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Maramaros
 				if = { limit = { NOT = { 753 = { has_state_flag = HUN_claim_forbidden } } } 753 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Norhtern Partium
@@ -233,6 +239,7 @@
 		available = {	
 			SOV = { exists = yes }
 			owns_state = 73		#Carpathian Ruthenia
+			owns_state = 748	#Beregszasz
 		}
 		x = 3
 		y = 1
@@ -374,7 +381,9 @@
 				if = { limit = { 743 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 743 }		#Burgenland
 				if = { limit = { 744 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 744 }		#Pancevo
 				if = { limit = { 745 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 745 }		#Ruma
+				if = { limit = { 746 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 746 }		#Muraköz
 				if = { limit = { 747 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 747 }		#Fiume
+				if = { limit = { 748 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 748 }		#Beregszasz
 				if = { limit = { 749 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 749 }		#Croatia
 				if = { limit = { 752 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 752 }		#Maramaros
 				if = { limit = { 753 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 753 }		#Norhtern Partium
@@ -412,7 +421,9 @@
 			if = { limit = { 743 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 743 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 744 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 744 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 745 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 745 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
+			if = { limit = { 746 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 746 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 747 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 747 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
+			if = { limit = { 748 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 748 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 749 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 749 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 752 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 752 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 753 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 753 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
@@ -479,7 +490,6 @@
 		}
 		
 		completion_reward = {
-				add_research_slot = 1
 			add_political_power = 30
 			add_ideas = revisionist_education
 		}
@@ -1207,6 +1217,7 @@
 					if = { limit = { NOT = { 752 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 752 }		#Maramaros
 					if = { limit = { NOT = { 753 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 753 }		#Northern Partium
 					if = { limit = { NOT = { 73 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 73 }		#Carpathian Ruthenia
+					if = { limit = { NOT = { 748 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 748 }		#Beregszasz
 					if = { limit = { NOT = { 664 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 664 }		#Southern Slovakia	
 					if = { limit = { NOT = { 71 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 71 }		#Eastern Slovakia	
 					if = { limit = { NOT = { 70 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 70 }		#Western Slovakia	
@@ -1217,7 +1228,9 @@
 					if = { limit = { NOT = { 759 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 759 }		#Pag
 					if = { limit = { NOT = { 45 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 45 }		#Novi Sad	
 					if = { limit = { NOT = { 744 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 744 } 	#Panceva
-					if = { limit = { NOT = { 745 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 745 } 	#Ruma				
+					if = { limit = { NOT = { 745 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 745 } 	#Ruma
+					if = { limit = { NOT = { 746 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 746 } 		#Muraköz
+					
 					#Without realism, all claims are immediately cores
 					else = {
 						if = { limit = { NOT = { 82 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 82 } 		#Banat
@@ -1227,6 +1240,7 @@
 						if = { limit = { NOT = { 752 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 752 }		#Maramaros
 						if = { limit = { NOT = { 753 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 753 }		#Northern Partium
 						if = { limit = { NOT = { 73 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 73 }		#Carpathian Ruthenia
+						if = { limit = { NOT = { 748 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 748 }		#Beregszasz
 						if = { limit = { NOT = { 664 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 664 }		#Southern Slovakia	
 						if = { limit = { NOT = { 71 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 71 }		#Eastern Slovakia	
 						if = { limit = { NOT = { 70 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 70 }		#Western Slovakia	
@@ -1237,7 +1251,8 @@
 						if = { limit = { NOT = { 759 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 759 }		#Pag
 						if = { limit = { NOT = { 45 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 45 }		#Novi Sad	
 						if = { limit = { NOT = { 744 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 744 } 		#Panceva
-						if = { limit = { NOT = { 745 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 745 } 		#Ruma			
+						if = { limit = { NOT = { 745 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 745 } 		#Ruma
+						if = { limit = { NOT = { 746 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 746 } 		#Muraköz
 					}
 				}
 			}
@@ -1344,6 +1359,7 @@
 			owns_state = 70		#Western Slovakia
 			owns_state = 71		#Eastern Slovakia
 			owns_state = 73		#Carpathian Ruthenia
+			owns_state = 748	#Beregszasz
 			owns_state = 664	#Southern Slovakia
 		}
 		x = 1
@@ -1479,6 +1495,7 @@
 				owns_state = 109	#Slavonia
 				owns_state = 744	#Pancevo
 				owns_state = 745	#Ruma
+				owns_state = 746	#Muraköz
 				owns_state = 749	#Croatia
 				owns_state = 759	#Pag
 				owns_state = 754	#Kotor
@@ -1500,6 +1517,7 @@
 		}
 		bypass = { 
 			owns_state = 45		#Novi Sad
+			owns_state = 746	#Muraköz
 			YUG = { exists = no }
 		}
 		x = 0
@@ -2429,7 +2447,28 @@
 							}
 						}
 					}
-				}		
+				}
+				if = {
+					limit = { owns_state = 748 }	#Beregszasz
+					748 = {
+						if = {
+							limit = { owner = { has_country_flag = HUN_realism } }
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+							else = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							}
+						}
+					}
+				}
 				if = {
 					limit = { owns_state = 664 }	#Southern Slovakia
 					664 = {
@@ -2639,7 +2678,28 @@
 							}
 						}
 					}
-				}				
+				}
+				if = {
+					limit = { owns_state = 746 }	#Prekmurje	
+					746 = {
+						if = {
+							limit = { owner = { has_country_flag = HUN_realism } }
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+							else = {
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+							}
+						}
+					}
+				}
 				if = {
 					limit = { owns_state = 747 }	#Fiume	
 					747 = {
@@ -3684,7 +3744,9 @@
 					owns_state = 109	#Slavonia
 					owns_state = 664	#Southern Slovakia
 					owns_state = 743	#Burgenland		
-					owns_state = 744	#Torontal				
+					owns_state = 744	#Torontal		
+					owns_state = 746	#Muraköz		
+					owns_state = 748	#Beregszasz		
 					owns_state = 749	#Croatia		
 					owns_state = 753	#Northern Partium
 				}	
@@ -3949,6 +4011,50 @@
 		}	
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = HUN_nuclear_technology
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = HUN_extra_research_slot2 }
+		x = 4
+		y = 6
+		relative_position_id = HUN_the_gyori_program
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {	
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 1
+				bonus = 0.5
+				category = nuclear
+			}
+		}
+	}
+	
+	focus = {
+		id = HUN_secret_weapons
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = HUN_extra_research_slot2 }
+		x = 6
+		y = 6
+		relative_position_id = HUN_the_gyori_program
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {	
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.6
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
 		}
 	}
 }
