@@ -1,0 +1,78 @@
+﻿
+add_namespace = hungary_flavor_gre
+
+########
+#GREECE#
+########
+
+# Hungarian Alliance (event for Bulgaria upon faction invite)
+country_event = {
+	id = hungary_flavor_gre.1
+	title = hungary_flavor_gre.1.t
+	desc = hungary_flavor_gre.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#Accept
+	option = {
+		name = hungary_flavor_gre.1.a
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 1.5
+				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
+			}		
+			modifier = {
+				factor = 5
+				FROM = { NOT = { has_country_flag = HUN_realism } }
+			}
+		}
+		
+		add_opinion_modifier = { target = FROM modifier = HUN_invited_to_faction }
+		FROM = {
+			effect_tooltip = { add_to_faction = ROOT }
+			country_event = { hours = 8 id = hungary_flavor.134 }
+		}	
+		add_ai_strategy = {
+			type = alliance
+			id = "HUN"
+			value = 200
+		}
+	}
+	
+	#Decline
+	option = {
+		name = hungary_flavor_gre.1.b
+		ai_chance = {
+			factor = 40
+		}
+		FROM = {
+			country_event = { hours = 8 id = hungary_flavor.135 }
+		}
+	}
+}
+
+# [From.GetName] backs our old claims
+country_event = {
+	id = hungary_flavor_gre.2
+	title = hungary_flavor_gre.2.t
+	desc = hungary_flavor_gre.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#This makes us stronger for sure.
+	option = {
+		name = hungary_flavor_gre.2.a
+		add_opinion_modifier = { target = FROM modifier = HUN_backed_claims }
+		add_political_power = 50
+		add_state_claim = 164	#Dodecanese
+		add_state_claim = 183	#Cyprus
+		add_state_claim = 339	#Izmir
+		add_state_claim = 340	#Bursa
+		add_state_claim = 341	#Istanbul
+		add_state_claim = 342	#Antalya
+		add_state_claim = 347	#Izmit
+	}
+}

@@ -1,0 +1,616 @@
+﻿#############################
+# Horthy inheritance events #
+#############################
+
+# Events related to the inheritance of Horthy's regent position
+# These are only relevant, if Horthy has maintained his regency, without electing a king, or abolishing the monarchy
+
+add_namespace = horthy_inheritance
+
+# István Horthy dies in plane crash
+country_event = {
+	id = horthy_inheritance.10
+	title = horthy_inheritance.10.t
+	desc = horthy_inheritance.10.d
+	picture = GFX_report_event_HUN_istvan_horthy_death
+	
+	trigger = {
+		tag = HUN
+		date > 1939.1.1
+		has_war = yes
+		#has_deployed_air_force_size > 1	# To check whether the country is using the air force at all
+		NOT = { has_country_flag = HUN_istvan_horthy_decomissioned }
+		NOT = { has_country_flag = HUN_istvan_horthy_dead }
+		horthy_inheritance_available = yes
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	immediate = {
+		set_country_flag = HUN_istvan_horthy_dead
+	}
+	
+	# The nation mourns with the Horthy family.
+	option = {
+		name = horthy_inheritance.10.a
+		if = {
+			limit = {
+				horthy_inheritance_available = yes
+				OR = {
+					NOT = { horthy_inheritance_settled = yes }
+					has_country_flag = HUN_istvan_horthy_successor
+				}
+			}
+			hidden_effect = {
+				country_event = { hours = 8 id = horthy_inheritance.12 }
+				clr_country_flag = HUN_istvan_horthy_successor
+			}
+		}
+		if = {
+			limit = { date > 1941.1.17 }
+			set_country_flag = HUN_istvan_horthy_jr_available	# István's son was born on January 17th 1941
+		}
+	}
+}
+
+# István Horthy survives plane crash
+country_event = {
+	id = horthy_inheritance.11
+	title = horthy_inheritance.11.t
+	desc = horthy_inheritance.11.d
+	picture = GFX_report_event_HUN_istvan_horthy_survives
+	
+	trigger = {
+		tag = HUN
+		date > 1939.1.1
+		has_war = yes
+		#has_deployed_air_force_size > 1	# To check whether the country is using the air force at all
+		NOT = { has_country_flag = HUN_istvan_horthy_decomissioned }
+		NOT = { has_country_flag = HUN_istvan_horthy_dead }
+		horthy_inheritance_available = yes
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	immediate = {
+		set_country_flag = HUN_istvan_horthy_decomissioned
+	}
+	
+	# Get him home before anything worse happens.
+	option = {
+		name = horthy_inheritance.11.a
+	}
+}
+
+# The question of Horthy's inheritance
+# (After István Horthy's plane crash)
+country_event = {
+	id = horthy_inheritance.12
+	title = horthy_inheritance.12.t
+	desc = horthy_inheritance.12.d
+	picture = GFX_report_event_HUN_horthy_inheritance
+	
+	is_triggered_only = yes
+	
+	# A successor will be chosen
+	option = {
+		name = horthy_inheritance.12.a
+		country_event = { id = horthy_inheritance.100 }
+	}
+	
+	# There is no need to worry about that yet
+	option = {
+		name = horthy_inheritance.12.b
+		add_political_power = -5
+	}
+}
+
+# Horthy's health declines
+country_event = {
+	id = horthy_inheritance.20
+	title = horthy_inheritance.20.t
+	desc = horthy_inheritance.20.d
+	picture = GFX_report_event_HUN_horthy_inheritance
+	
+	trigger = {
+		date > 1938.1.1
+		horthy_inheritance_available = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.8
+			date > 1939.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1940.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1941.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1942.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1943.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1944.1.1
+		}
+	}
+	
+	immediate = {
+		set_country_flag = HUN_horthy_bad_health1
+	}
+	
+	# A successor will be chosen
+	option = {
+		name = horthy_inheritance.20.a
+		trigger = {
+			NOT = { horthy_inheritance_settled = yes }
+		}
+		country_event = { id = horthy_inheritance.100 }
+	}
+	
+	# There is no need to worry about that yet
+	option = {
+		name = horthy_inheritance.20.b
+		trigger = {
+			NOT = { horthy_inheritance_settled = yes }
+		}
+		add_political_power = -10
+	}
+	
+	# Good thing the succession is secured
+	option = {
+		name = horthy_inheritance.20.c
+		trigger = {
+			horthy_inheritance_settled = yes
+		}
+	}
+}
+
+# Horthy's health declines further
+country_event = {
+	id = horthy_inheritance.21
+	title = horthy_inheritance.21.t
+	desc = horthy_inheritance.21.d
+	picture = GFX_report_event_HUN_horthy_inheritance
+	
+	trigger = {
+		has_country_flag = HUN_horthy_bad_health1
+		horthy_inheritance_available = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.8
+			date > 1942.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1943.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1944.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1945.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1946.1.1
+		}
+	}
+	
+	immediate = {
+		set_country_flag = HUN_horthy_bad_health2
+	}
+	
+	# A successor will be chosen
+	option = {
+		name = horthy_inheritance.21.a
+		trigger = {
+			NOT = { horthy_inheritance_settled = yes }
+		}
+		country_event = { id = horthy_inheritance.100 }
+	}
+	
+	# There is no need to worry about that yet
+	option = {
+		name = horthy_inheritance.21.b
+		trigger = {
+			NOT = { horthy_inheritance_settled = yes }
+		}
+		add_political_power = -20
+	}
+	
+	# Good thing the succession is secured
+	option = {
+		name = horthy_inheritance.21.c
+		trigger = {
+			horthy_inheritance_settled = yes
+		}
+	}
+}
+
+# Horthy dies
+country_event = {
+	id = horthy_inheritance.22
+	title = horthy_inheritance.22.t
+	desc = horthy_inheritance.22.d
+	picture = GFX_report_event_generic_funeral
+	
+	trigger = {
+		has_country_flag = HUN_horthy_bad_health2
+		horthy_inheritance_available = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			date > 1944.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1945.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1946.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1947.1.1
+		}
+		modifier = {
+			factor = 0.8
+			date > 1948.1.1
+		}
+	}
+	
+	immediate = {
+		set_country_flag = HUN_horthy_dead
+	}
+	
+	# We cannot delay this decision further. We have to choose a successor.
+	option = {
+		name = horthy_inheritance.22.a
+		trigger = {
+			NOT = { horthy_inheritance_settled = yes }
+		}
+		add_political_power = -50
+		kill_country_leader = yes
+		if = {
+			limit = { has_completed_focus = HUN_reinstate_horthy }
+			remove_unit_leader = 1000
+		}
+		country_event = { id = horthy_inheritance.101 }
+	}
+	
+	# Let the successor assume his rightful position
+	option = {
+		name = horthy_inheritance.22.b
+		trigger = {
+			horthy_inheritance_settled = yes
+		}
+		kill_country_leader = yes
+		if = {
+			limit = { has_completed_focus = HUN_reinstate_horthy }
+			remove_unit_leader = 1000
+		}
+		country_event = { id = horthy_inheritance.102 }
+	}
+}
+
+# Choosing Horthy's successor
+country_event = {
+	id = horthy_inheritance.100
+	title = horthy_inheritance.100.t
+	desc = horthy_inheritance.100.d
+	picture = GFX_report_event_HUN_horthy_inheritance
+	
+	is_triggered_only = yes
+	
+	# Horthy's son, István Horthy
+	option = {
+		name = horthy_inheritance.100.a
+		trigger = {
+			NOT = { has_country_flag = HUN_istvan_horthy_dead }
+		}
+		clear_horthy_inheritance = yes
+		set_country_flag = HUN_istvan_horthy_successor
+		custom_effect_tooltip = HUN_upon_the_death_of_horthy
+		custom_effect_tooltip = HUN_istvan_horthy_will_succeed_to_regency
+	}
+	
+	# Horthy's grandson, István Horthy jr.
+	option = {
+		name = horthy_inheritance.100.b
+		trigger = {
+			has_country_flag = HUN_istvan_horthy_dead
+			has_country_flag = HUN_istvan_horthy_jr_available
+		}
+		clear_horthy_inheritance = yes
+		set_country_flag = HUN_istvan_horthy_jr_successor
+		custom_effect_tooltip = HUN_upon_the_death_of_horthy
+		custom_effect_tooltip = HUN_istvan_horthy_jr_will_succeed_to_regency
+	}
+	
+	# The Italian king, Victor Emmanuel
+	option = {
+		name = horthy_inheritance.100.c
+		trigger = {
+			NOT = { has_country_flag = HUN_victor_emmanuel_forbidden_from_claiming_throne }
+			ITA = { exists = yes }
+			NOT = { has_war_with = ITA }
+		}
+		custom_effect_tooltip = HUN_upon_the_death_of_horthy
+		custom_effect_tooltip = HUN_victor_emmanuel_will_succeed_to_throne
+		ITA = {
+			country_event = { id = hungary_flavor_ita.8 }
+			custom_effect_tooltip = needs_approval
+		}
+	}
+	
+	# The German crown prince, Wilhelm
+	option = {
+		name = horthy_inheritance.100.e
+		trigger = {
+			NOT = { has_country_flag = HUN_wilhelm_von_hohenzollern_forbidden_from_claiming_throne }
+			GER = { exists = yes }
+			NOT = { has_war_with = GER }
+		}
+		
+		custom_effect_tooltip = HUN_upon_the_death_of_horthy
+		custom_effect_tooltip = HUN_wilhelm_von_hohenzollern_will_succeed_to_throne
+		GER = {
+			country_event = { id = hungary_flavor_ger.20 }
+			custom_effect_tooltip = needs_approval
+		}
+	}
+	
+	# The head of the Habsburg dynasty, Otto
+	option = {
+		name = horthy_inheritance.100.f
+		clear_horthy_inheritance = yes
+		set_country_flag = HUN_otto_habsburg_successor
+		custom_effect_tooltip = HUN_upon_the_death_of_horthy
+		custom_effect_tooltip = HUN_otto_von_habsburg_will_succeed_to_throne
+	}
+}
+
+# Electing Miklós Horthy's successor
+country_event = {
+	id = horthy_inheritance.101
+	title = horthy_inheritance.101.t
+	desc = horthy_inheritance.101.d
+	picture = GFX_report_event_HUN_horthy_inheritance
+	
+	is_triggered_only = yes
+	
+	# Horthy's son, István Horthy
+	option = {
+		name = horthy_inheritance.101.a
+		trigger = {
+			NOT = { has_country_flag = HUN_istvan_horthy_dead }
+		}
+		clear_horthy_inheritance = yes
+		set_country_flag = HUN_istvan_horthy_successor
+		custom_effect_tooltip = HUN_istvan_horthy_will_succeed_to_regency
+		hidden_effect = { country_event = { id = horthy_inheritance.102 } }
+	}
+	
+	# Horthy's grandson, István Horthy jr.
+	option = {
+		name = horthy_inheritance.101.b
+		trigger = {
+			has_country_flag = HUN_istvan_horthy_dead
+			has_country_flag = HUN_istvan_horthy_jr_available
+		}
+		clear_horthy_inheritance = yes
+		set_country_flag = HUN_istvan_horthy_jr_successor
+		custom_effect_tooltip = HUN_istvan_horthy_jr_will_succeed_to_regency
+		hidden_effect = { country_event = { id = horthy_inheritance.102 } }
+	}
+	
+	# The Italian king, Victor Emmanuel
+	option = {
+		name = horthy_inheritance.101.c
+		trigger = {
+			NOT = { has_country_flag = HUN_victor_emmanuel_forbidden_from_claiming_throne }
+			ITA = { exists = yes }
+			NOT = { has_war_with = ITA }
+		}
+		custom_effect_tooltip = HUN_victor_emmanuel_will_succeed_to_throne
+		ITA = {
+			country_event = { id = hungary_flavor_ita.8 }
+			custom_effect_tooltip = needs_approval
+		}
+	}
+	
+	# The German crown prince, Wilhelm
+	option = {
+		name = horthy_inheritance.101.e
+		trigger = {
+			NOT = { has_country_flag = HUN_wilhelm_von_hohenzollern_forbidden_from_claiming_throne }
+			GER = { exists = yes }
+			NOT = { has_war_with = GER }
+		}
+		
+		custom_effect_tooltip = HUN_upon_the_death_of_horthy
+		custom_effect_tooltip = HUN_wilhelm_von_hohenzollern_will_succeed_to_throne
+		GER = {
+			country_event = { id = hungary_flavor_ger.20 }
+			custom_effect_tooltip = needs_approval
+		}
+	}
+	
+	# The head of the Habsburg dynasty, Otto
+	option = {
+		name = horthy_inheritance.101.f
+		clear_horthy_inheritance = yes
+		set_country_flag = HUN_otto_habsburg_successor
+		custom_effect_tooltip = HUN_otto_von_habsburg_will_succeed_to_throne
+		hidden_effect = { country_event = { id = horthy_inheritance.102 } }
+	}
+}
+
+# The new head of state
+country_event = {
+	id = horthy_inheritance.102
+	title = horthy_inheritance.102.t
+	desc = {
+		text = horthy_inheritance.102.d_istvan
+		trigger = { has_country_flag = HUN_istvan_horthy_successor }
+	}
+	desc = {
+		text = horthy_inheritance.102.d_istvan_jr
+		trigger = { has_country_flag = HUN_istvan_horthy_jr_successor }
+	}
+	desc = {
+		text = horthy_inheritance.102.d_victor
+		trigger = { has_country_flag = HUN_victor_emmanuel_successor }
+	}
+	desc = {
+		text = horthy_inheritance.102.d_wilhelm
+		trigger = { has_country_flag = HUN_wilhelm_hohenzollern_successor }
+	}
+	desc = {
+		text = horthy_inheritance.102.d_otto
+		trigger = { has_country_flag = HUN_otto_habsburg_successor }
+	}
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	# Long may he reign!
+	option = {
+		name = horthy_inheritance.102.a
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = HUN_istvan_horthy_successor }
+				create_politician_istvan_horthy = yes
+			}
+			if = {
+				limit = { has_country_flag = HUN_istvan_horthy_jr_successor }
+				create_politician_istvan_horthy_jr = yes
+			}
+			if = {
+				limit = { has_country_flag = HUN_victor_emmanuel_successor }
+				create_politician_victor_emmanuel = yes
+			}
+			if = {
+				limit = { has_country_flag = HUN_wilhelm_hohenzollern_successor }
+				create_politician_wilhelm_hohenzollern = yes
+			}
+			if = {
+				limit = { has_country_flag = HUN_otto_habsburg_successor }
+				create_politician_otto_von_habsburg_hun = yes
+				news_event = { hours = 4 id = hun_news.7 }
+			}
+		}
+	}
+}
+
+# Victor Emmanuel accepts the crown
+country_event = {
+	id = horthy_inheritance.110
+	title = horthy_inheritance.110.t
+	desc = horthy_inheritance.110.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	# We will make the necessary arrangements.
+	option = {
+		name = horthy_inheritance.110.a
+		clear_horthy_inheritance = yes
+		set_country_flag = HUN_victor_emmanuel_successor
+		if = {
+			limit = { has_country_flag = HUN_horthy_dead }
+			hidden_effect = { country_event = { id = horthy_inheritance.102 } }
+		}
+	}
+}
+
+# Victor Emmanuel unable to accept the Hungarian crown
+country_event = {
+	id = horthy_inheritance.111
+	title = horthy_inheritance.111.t
+	desc = horthy_inheritance.111.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	# Let us review our options then.
+	option = {
+		name = horthy_inheritance.111.a
+		set_country_flag = HUN_victor_emmanuel_forbidden_from_claiming_throne
+		if = {
+			limit = { has_country_flag = HUN_horthy_dead }
+			country_event = { id = horthy_inheritance.101 }
+			else = {
+				country_event = { id = horthy_inheritance.100 }
+			}
+		}
+	}
+}
+
+# Wilhelm von Hohenzollern accepts the crown
+country_event = {
+	id = horthy_inheritance.120
+	title = horthy_inheritance.120.t
+	desc = horthy_inheritance.120.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	# We will make the necessary arrangements.
+	option = {
+		name = horthy_inheritance.120.a
+		clear_horthy_inheritance = yes
+		set_country_flag = HUN_wilhelm_hohenzollern_successor
+		if = {
+			limit = { has_country_flag = HUN_horthy_dead }
+			hidden_effect = { country_event = { id = horthy_inheritance.102 } }
+		}
+	}
+}
+
+# Wilhelm von Hohenzollern unable to accept the Hungarian crown
+country_event = {
+	id = horthy_inheritance.121
+	title = horthy_inheritance.121.t
+	desc = horthy_inheritance.121.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	# Let us review our options then.
+	option = {
+		name = horthy_inheritance.121.a
+		set_country_flag = HUN_wilhelm_von_hohenzollern_forbidden_from_claiming_throne
+		if = {
+			limit = { has_country_flag = HUN_horthy_dead }
+			country_event = { id = horthy_inheritance.101 }
+			else = {
+				country_event = { id = horthy_inheritance.100 }
+			}
+		}
+	}
+}

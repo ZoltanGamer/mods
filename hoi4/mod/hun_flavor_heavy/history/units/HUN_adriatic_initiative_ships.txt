@@ -1,0 +1,15 @@
+﻿
+
+units = {
+	###### Adriatic initiative fleet ######
+	navy = {				
+		name = "Adriai Flotta"			
+		base = 628
+		location = 628 # Trieste
+		ship = { name = "KH Trieste" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HUN } } }
+		ship = { name = "KH Adria" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = HUN } } }
+		# Tengeralattjárók
+		ship = { name = "KH Luccio" definition = submarine equipment = { submarine_2 = { amount = 1 owner = HUN } } }				
+	}				
+
+}
