@@ -22,7 +22,7 @@ focus_tree = {
 		id = HUN_territorial_policy
 		prerequisite = { focus = HUN_revisionist_education }
 		icon = GFX_goal_generic_position_armies
-		x = 1
+		x = 2
 		y = 2
 		relative_position_id = HUN_revisionist_education
 		cost = 5
@@ -199,7 +199,7 @@ focus_tree = {
 		mutually_exclusive = { focus = HUN_ideological_shift }	
 		x = 2 #X-ANCHOR (for revisionist branch)
 		y = 0
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -320,7 +320,7 @@ focus_tree = {
 			if = { limit = { 755 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 755 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 761 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 761 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 		}
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = HUN_revisionism
 		cost = 10
@@ -330,6 +330,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		remove_ideas = foreign_service
 			if = { limit = { has_idea = revisionist_spirit } remove_ideas = revisionist_spirit }
 			if = { limit = { has_idea = revisionist_spirit_neutrality } remove_ideas = revisionist_spirit_neutrality }
 			if = {
@@ -422,16 +423,17 @@ focus_tree = {
 		id = HUN_support_big_families
 		icon = GFX_focus_research
 		prerequisite = { focus = HUN_revisionism }	
-		x = 3
+		x = 5
 		y = 1
 		relative_position_id = HUN_revisionism
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
 		}
 		
 		completion_reward = {
+		add_political_power = 30
 			add_ideas = big_families
 		}
 	}
@@ -440,7 +442,7 @@ focus_tree = {
 		id = HUN_revisionist_education
 		icon = GFX_focus_research
 		prerequisite = { focus = HUN_revisionism }	
-		x = -11
+		x = -7
 		y = 1
 		relative_position_id = HUN_revisionism
 		cost = 10
@@ -459,10 +461,10 @@ focus_tree = {
         id = HUN_extra_research_slot1
         icon = GFX_focus_research
       prerequisite = { focus = HUN_revisionist_education }	
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = HUN_revisionist_education
-		cost = 10
+		cost = 5
         ai_will_do = {
             factor = 50
         }    
@@ -475,14 +477,14 @@ focus_tree = {
 	focus = {
 		id = HUN_hungary_first
 		icon = GFX_goal_generic_defence
-		prerequisite = { focus = HUN_revisionism }	
+		prerequisite = { focus = HUN_revisionist_education }	
 		available = {
 			is_puppet = no
 		}
-		x = -5
+		x = -2
 		y = 1
-		relative_position_id = HUN_revisionism
-		cost = 10
+		relative_position_id = HUN_revisionist_education
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -724,7 +726,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 5
+		x = -3
 		y = 1
 		relative_position_id = HUN_revisionism
 		cost = 5
@@ -786,7 +788,7 @@ focus_tree = {
 		id = HUN_expand_the_levente_associations
 		icon = GFX_goal_levente_institution
 		prerequisite = { focus = HUN_revisionism }	
-		x = -8
+		x = -5
 		y = 1
 		relative_position_id = HUN_revisionism
 		cost = 10
@@ -798,28 +800,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_ideas = levente_movement
-		}
-	}
-	
-	focus = {
-		id = HUN_introduce_foreign_service
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = HUN_expand_the_levente_associations }
-		available = {
-			has_government = neutrality			
-		}
-		x = 0
-		y = 1
-		relative_position_id = HUN_expand_the_levente_associations
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {			 
-			set_rule = { can_send_volunteers = yes }
-			army_experience = 10
-			remove_ideas = levente_movement
-			add_ideas = foreign_service			
 		}
 	}
 	
@@ -852,32 +832,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = HUN_reinforce_the_regency
-		icon = GFX_focus_generic_home_defense
+		id = HUN_enthrone_horthy
+		icon = GFX_goal_horthy_king
 		prerequisite = { focus = HUN_maintain_conservative_government }
-		available = {
-			has_government = neutrality
-		}
 		x = 0
 		y = 1
 		relative_position_id = HUN_maintain_conservative_government
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {			 
-			add_political_power = 50
-			add_popularity = { ideology = neutrality popularity = 0.1 }
-		}
-	}
-	
-	focus = {
-		id = HUN_enthrone_horthy
-		icon = GFX_goal_horthy_king
-		prerequisite = { focus = HUN_reinforce_the_regency }
-		x = -1
-		y = 1
-		relative_position_id = HUN_reinforce_the_regency
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -955,7 +915,7 @@ focus_tree = {
 	focus = {
 		id = HUN_countryside_development
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = HUN_reinforce_the_regency }
+		prerequisite = { focus = HUN_enthrone_horthy }
 		prerequisite = { focus = HUN_budapest_industrial_district }
 		available = {
 			owns_state = 154	#Alföld
@@ -963,10 +923,10 @@ focus_tree = {
 			owns_state = 750	#Bács-Kiskun
 			owns_state = 43		#Northern Hungary
 		}
-		x = 2
+		x = 3
 		y = 1
-		relative_position_id = HUN_reinforce_the_regency
-		cost = 20
+		relative_position_id = HUN_enthrone_horthy
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}	
@@ -1033,14 +993,15 @@ focus_tree = {
 		available = {
 			is_puppet = no
 		}	
-		x = 2
-		y = 2
+		x = 3
+		y = 1
 		relative_position_id = HUN_revisionism
 		cost = 10
 		ai_will_do = {
 			factor = 20
 		}	
 		completion_reward = {
+		add_ideas = foreign_service
 			add_named_threat = { threat = 2 name = HUN_claimed_old_territory_threat }
 			hidden_effect = {
 				if = {
@@ -1746,118 +1707,6 @@ focus_tree = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
-				}
-			}		
-		}
-	}
-	
-	focus = {
-		id = HUN_hungarian_motorway_network
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = HUN_budapest_industrial_district }
-		available = {	
-			owns_state = 43 	#Northern Hungary
-			owns_state = 154 	#Alföld
-			owns_state = 155 	#Transdanubia
-			owns_state = 750 	#Bács-Kiskun
-			owns_state = 763 	#Budapest
-		}
-		x = -2
-		y = 1
-		relative_position_id = HUN_budapest_industrial_district
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {
-			43 = {
-				if = {
-					limit = { owner = { has_country_flag = HUN_realism } }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					else = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = infrastructure
-							level = 3
-							instant_build = yes
-						}
-					}
-				}
-			}
-			154 = {
-				if = {
-					limit = { owner = { has_country_flag = HUN_realism } }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					else = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = infrastructure
-							level = 3
-							instant_build = yes
-						}
-					}
-				}
-			}
-			155 = {
-				if = {
-					limit = { owner = { has_country_flag = HUN_realism } }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					else = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = infrastructure
-							level = 3
-							instant_build = yes
-						}
-					}
-				}
-			}
-			750 = {
-				if = {
-					limit = { owner = { has_country_flag = HUN_realism } }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					else = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = infrastructure
-							level = 3
-							instant_build = yes
-						}
-					}
-				}
-			}
-			763 = {
-				if = {
-					limit = { owner = { has_country_flag = HUN_realism } }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					else = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = infrastructure
-							level = 3
-							instant_build = yes
-						}
-					}
 				}
 			}		
 		}
@@ -2601,7 +2450,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HUN_the_gyori_program
-		cost = 15
+		cost = 5
         ai_will_do = {
             factor = 50
         }    
@@ -3111,6 +2960,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_revive_the_navy }
 		available = {	
 			owns_state = 759	#Pag
+			owns_state = 747	#Fiume
 		}
 		x = -2
 		y = 1
@@ -3120,11 +2970,25 @@ focus_tree = {
 			factor = 50
 		}	
 		completion_reward = {
-			759 = {
+		747 = {
 				add_extra_state_shared_building_slots = 9
 				add_building_construction = {
 					type = dockyard
 					level = 9
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					province = 591	#Jablanac
+					instant_build = yes
+				}
+			}
+			759 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
 					instant_build = yes
 				}
 				add_building_construction = {

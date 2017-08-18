@@ -116,6 +116,26 @@ ideas = {
 			}
 		}
 		
+		        foreign_service = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		
 		revisionist_education = {
 				
 			allowed = {
@@ -706,28 +726,6 @@ ideas = {
 			modifier = {
 				conscription = 0.01
 				training_time_army_factor = -0.10
-			}
-		}
-
-
-		foreign_service = {
-		
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_manpower_bonus
-			
-			modifier = {		
-			training_time_army_factor = -0.20
-			conscription = 0.01
 			}
 		}
 
