@@ -4,7 +4,7 @@ state={
 	name="STATE_748" # Beregszasz
 	manpower = 150000
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = CZE
@@ -27,6 +27,6 @@ state={
 	}
 
 	provinces={
-		11691 3548
+		11691 3548 3565 6586
 	}
 }

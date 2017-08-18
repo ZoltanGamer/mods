@@ -1,4 +1,8 @@
 ﻿l_hungarian:
+ HUN_call_back_emigrants:0 "Kivándorlók hazahívása"
+ HUN_call_back_emigrants_desc:0 "A sikeres reviziónak hála, honfitársaink hazatérhetnek szülőföldjükre"
+ HUN_support_big_families:0 "Nagycsaládosok támogatása"
+ HUN_support_big_families_desc:0 "A nemzet sikeres fennmaradásának és a régi területek megtartásának kulcsa a népesség gyarapodása."
  HUN_ideological_shift:0 "A Nemzeti Identitás Felszámolása"
  HUN_ideological_shift_desc:0 "Itt az ideje, hogy felhagyjunk az ostoba jobbos eszmékkel, a gyûlölködéssel és a kirekesztéssel. Ahelyett, hogy továbbra is ezekkel foglalkoznánk, ideje keresni, más, nem jobboldali ideológiát a nemzetünknek."
  HUN_home_defense:0 "Honvédelem"

@@ -197,7 +197,7 @@ focus_tree = {
 		id = HUN_revisionism
 		icon = GFX_goal_hun_revisionism
 		mutually_exclusive = { focus = HUN_ideological_shift }	
-		x = 1 #X-ANCHOR (for revisionist branch)
+		x = 2 #X-ANCHOR (for revisionist branch)
 		y = 0
 		cost = 10
 
@@ -320,7 +320,7 @@ focus_tree = {
 			if = { limit = { 755 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 755 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 761 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 761 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 		}
-		x = -9
+		x = -2
 		y = 1
 		relative_position_id = HUN_revisionism
 		cost = 10
@@ -363,6 +363,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_research_slot = 1
+			add_political_power = 100
 		766 = {add_manpower= 20000}
 		43 = {add_manpower= 20000}
 		154 = {add_manpower= 20000}
@@ -414,9 +415,24 @@ focus_tree = {
 		375 = {add_manpower= -20000}
 		376 = {add_manpower= -20000}
 		377 = {add_manpower= -20000}
+		}
+	}
+	
+	focus = {
+		id = HUN_support_big_families
+		icon = GFX_focus_research
+		prerequisite = { focus = HUN_revisionism }	
+		x = 3
+		y = 1
+		relative_position_id = HUN_revisionism
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
 		
-			add_political_power = 100
-			add_ideas = revisionist_education
+		completion_reward = {
+			add_ideas = big_families
 		}
 	}
 
@@ -424,7 +440,7 @@ focus_tree = {
 		id = HUN_revisionist_education
 		icon = GFX_focus_research
 		prerequisite = { focus = HUN_revisionism }	
-		x = -12
+		x = -11
 		y = 1
 		relative_position_id = HUN_revisionism
 		cost = 10
@@ -439,7 +455,7 @@ focus_tree = {
 		}
 	}
 	
-	    focus = {
+	focus = {
         id = HUN_extra_research_slot1
         icon = GFX_focus_research
       prerequisite = { focus = HUN_revisionist_education }	
@@ -463,7 +479,7 @@ focus_tree = {
 		available = {
 			is_puppet = no
 		}
-		x = -4
+		x = -5
 		y = 1
 		relative_position_id = HUN_revisionism
 		cost = 10
@@ -502,9 +518,9 @@ focus_tree = {
 		bypass = {
 			is_in_faction_with = BUL
 		}	
-		x = -3
-		y = 2
-		relative_position_id = HUN_revisionism
+		x = 1
+		y = 1
+		relative_position_id = HUN_hungary_first
 		cost = 5
 
 		ai_will_do = {
@@ -608,9 +624,9 @@ focus_tree = {
 			}
 		}
 
-		x = -5
-		y = 2
-		relative_position_id = HUN_revisionism
+		x = -1
+		y = 1
+		relative_position_id = HUN_hungary_first
 		cost = 5
 
 		ai_will_do = {
@@ -644,9 +660,9 @@ focus_tree = {
 		bypass = {
 			is_in_faction_with = POL
 		}	
-		x = -5
-		y = 3
-		relative_position_id = HUN_revisionism
+		x = 0
+		y = 1
+		relative_position_id = HUN_polish_hungarian_intelligence_exchange
 		cost = 5
 
 		ai_will_do = {
@@ -675,9 +691,9 @@ focus_tree = {
 				is_powerful_or_has_strong_friends_in_europe = yes
 			}
 		}
-		x = -5
-		y = 4
-		relative_position_id = HUN_revisionism
+		x = 0
+		y = 1
+		relative_position_id = HUN_invite_poland
 		cost = 10
 
 		ai_will_do = {
@@ -708,7 +724,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = -7
+		x = 5
 		y = 1
 		relative_position_id = HUN_revisionism
 		cost = 5
@@ -765,100 +781,12 @@ focus_tree = {
  			}
 		}
 	}
-
-	focus = {
-		id = HUN_develop_austrian_ironworking
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = HUN_war_with_austria focus = HUN_befriend_austria }
-		available = {
-			owns_state = 743	#Upper Austria
-		}
-		x = 0
-		y = 1
-		relative_position_id = HUN_war_with_austria
-		cost = 10
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		completion_reward = {
-			add_resource = {
-				type = steel
-				amount = 20
-				state = 743		#Upper Austria
-			}
-			743 = {		#Upper Austria
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = HUN_skoda_steel_works
-		icon = GFX_goal_skoda
-		prerequisite = { focus = HUN_develop_austrian_ironworking }
-		available = {
-			owns_state = 70	#Bohemia
-		}
-		x = 0
-		y = 1
-		relative_position_id = HUN_develop_austrian_ironworking
-		cost = 10
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		completion_reward = {
-			add_resource = {
-				type = steel
-				amount = 10
-				state = 70		#Bohemia
-			}
-			70 = {		#Bohemia
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}	
-	
-	focus = {
-		id = HUN_introduce_foreign_service
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = HUN_revisionism }
-		available = {
-			has_government = neutrality
-			is_in_faction = yes
-		}
-		x = 5
-		y = 1
-		relative_position_id = HUN_revisionism
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {			 
-			set_rule = { can_send_volunteers = yes }
-			army_experience = 10
-			add_ideas = foreign_service			
-		}
-	}
 	
 	focus = {
 		id = HUN_expand_the_levente_associations
 		icon = GFX_goal_levente_institution
 		prerequisite = { focus = HUN_revisionism }	
-		x = -2
+		x = -8
 		y = 1
 		relative_position_id = HUN_revisionism
 		cost = 10
@@ -870,6 +798,28 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_ideas = levente_movement
+		}
+	}
+	
+	focus = {
+		id = HUN_introduce_foreign_service
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = HUN_expand_the_levente_associations }
+		available = {
+			has_government = neutrality			
+		}
+		x = 0
+		y = 1
+		relative_position_id = HUN_expand_the_levente_associations
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {			 
+			set_rule = { can_send_volunteers = yes }
+			army_experience = 10
+			remove_ideas = levente_movement
+			add_ideas = foreign_service			
 		}
 	}
 	
@@ -922,45 +872,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = HUN_reinstate_the_habsburgs
-		icon = GFX_focus_hun_elect_a_king
-		prerequisite = { focus = HUN_reinforce_the_regency }
-		mutually_exclusive = { focus = HUN_enthrone_horthy }
-		x = -5
-		y = 1
-		relative_position_id = HUN_reinforce_the_regency
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}	
-		completion_reward = {			 
-			add_political_power = 50
-			add_national_unity = 0.05
-			hidden_effect = {
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
-			}
-			custom_effect_tooltip = HUN_otto_von_habsburg_will_be_king
-			hidden_effect = {
-				create_politician_otto_von_habsburg_hun = yes
-				set_country_flag = HUN_has_king
-			}
-			news_event = { hours = 4 id = hun_news.7 }
-		}
-	}
-	
-	focus = {
 		id = HUN_enthrone_horthy
 		icon = GFX_goal_horthy_king
 		prerequisite = { focus = HUN_reinforce_the_regency }
-		mutually_exclusive = { focus = HUN_reinstate_the_habsburgs }
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = HUN_reinforce_the_regency
 		cost = 5
@@ -991,7 +906,7 @@ focus_tree = {
 	focus = {
 		id = HUN_swing_politics
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = {focus = HUN_reinforce_the_regency}
+		prerequisite = {focus = HUN_enthrone_horthy}
 		mutually_exclusive = { focus = HUN_expansionism }
 		available = {
 			is_in_faction = no
@@ -1002,7 +917,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		relative_position_id = HUN_reinforce_the_regency
+		relative_position_id = HUN_enthrone_horthy
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1017,11 +932,11 @@ focus_tree = {
 	focus = {
 		id = HUN_expansionism
 		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = HUN_reinforce_the_regency }
+		prerequisite = { focus = HUN_enthrone_horthy }
 		mutually_exclusive = { focus = HUN_swing_politics }
 		x = -1
 		y = 1
-		relative_position_id = HUN_reinforce_the_regency
+		relative_position_id = HUN_enthrone_horthy
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1048,7 +963,7 @@ focus_tree = {
 			owns_state = 750	#Bács-Kiskun
 			owns_state = 43		#Northern Hungary
 		}
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = HUN_reinforce_the_regency
 		cost = 20
@@ -1118,8 +1033,8 @@ focus_tree = {
 		available = {
 			is_puppet = no
 		}	
-		x = 1
-		y = 1
+		x = 2
+		y = 2
 		relative_position_id = HUN_revisionism
 		cost = 10
 		ai_will_do = {
@@ -1454,59 +1369,6 @@ focus_tree = {
 		}	
 		completion_reward = {
 			country_event = { id = hungary_flavor_partition.1 }	
-		}
-	}
-	
-	focus = {
-		id = HUN_yugoslavian_pact_of_everlasting_friendship
-		icon = GFX_goal_hun_yug_eternal_friendship
-		mutually_exclusive = { focus = HUN_partition_yugoslavia }
-		available = {	
-			OR = {
-				date > 1938.1.1
-				threat > 0.25
-			}
-			NOT = { is_in_faction_with = GER }
-			YUG = {				
-				exists = yes
-				is_puppet = no		
-				NOT = { is_in_faction_with = GER }				
-				has_opinion = { target = ROOT value > -51 }		
-			}	
-			
-			custom_trigger_tooltip = {
-				tooltip = HUN_yugoslavian_pact_of_everlasting_friendship_tt
-				AND = {
-					OR = {
-						any_neighbor_country = { is_in_faction_with = GER }
-						GER = { is_neighbor_of = ROOT }
-					}
-					OR = {
-						YUG = { any_neighbor_country = { is_in_faction_with = GER }	}
-						GER = { is_neighbor_of = YUG }
-					}
-				}
-			}
-		}
-		x = 4
-		y = 1
-		relative_position_id = HUN_reassert_old_claims
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {			
-			YUG = {
-				country_event = { id = hungary_flavor_yug.1 days = 1 }
-			}
-			effect_tooltip = {
-				YUG = {
-					diplomatic_relation = { country = ROOT relation = non_aggression_pact }
-					add_opinion_modifier = { target = ROOT modifier = HUN_everlasting_friendship }
-					reverse_add_opinion_modifier = { target = ROOT modifier = HUN_everlasting_friendship }
-					custom_effect_tooltip = needs_approval
-				}
-			}	
 		}
 	}
 	
@@ -1873,7 +1735,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = HUN_agricultural_modernisation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
@@ -2227,506 +2089,70 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = HUN_land_clearance
-		icon = GFX_goal_generic_construct_civilian
+		id = HUN_develop_austrian_ironworking
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = HUN_the_debrecen_industrial_concern focus = HUN_artillery_factory_in_szeged }
-		available = {		
-			owns_state = 43 	#Northern Hungary	
-			owns_state = 154 	#Alföld
-			owns_state = 155 	#Transdanubia
-			owns_state = 750 	#Bács-Kiskun
+		available = {
+			owns_state = 743	#Upper Austria
 		}
 		x = 3
 		y = 5
 		relative_position_id = HUN_agricultural_modernisation
-		cost = 20
+		cost = 10
+		
 		ai_will_do = {
 			factor = 10
-		}	
+		}
+		
 		completion_reward = {
-			43 = {
-				add_extra_state_shared_building_slots = 2
-			}	
-			154 = {
-				add_extra_state_shared_building_slots = 2
-			}	
-			155 = {
-				add_extra_state_shared_building_slots = 2
+			add_resource = {
+				type = steel
+				amount = 20
+				state = 743		#Upper Austria
 			}
-			750 = {
-				add_extra_state_shared_building_slots = 2
-			}		
-			764 = {
-				add_extra_state_shared_building_slots = 2
-			}		
-			765 = {
-				add_extra_state_shared_building_slots = 2
-			}		
-			766 = {
-				add_extra_state_shared_building_slots = 2
-			}		
+			743 = {		#Upper Austria
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
-	
-	
-	
+
 	focus = {
-		id = HUN_concentric_road_network
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = HUN_croatian_smelting_industry }
-		prerequisite = { focus = HUN_coal_mines_in_nyitra }
-		prerequisite = { focus = HUN_mines_in_transylvania }
-		prerequisite = { focus = HUN_metal_processing_in_vojvodina }
-		prerequisite = { focus = HUN_land_clearance }
-		#available = {	
-		#	owns_state = 82 	#Banat
-		#	owns_state = 83		#Grisana
-		#	owns_state = 84		#Transylvania
-		#	owns_state = 76		#North Transylvania
-		#	owns_state = 73		#Carpathian Ruthenia
-		#	owns_state = 664	#Southern Slovakia	
-		#	owns_state = 71		#Eastern Slovakia	
-		#	owns_state = 70		#Western Slovakia	
-		#	owns_state = 109	#Slavonia
-		#	owns_state = 45		#Novi Sad	
-		#}
-		x = -2
-		y = 6
+		id = HUN_skoda_steel_works
+		icon = GFX_goal_skoda
+		prerequisite = { focus = HUN_the_debrecen_industrial_concern focus = HUN_artillery_factory_in_szeged }
+		available = {
+			owns_state = 70	#Bohemia
+		}
+		x = 5
+		y = 5
 		relative_position_id = HUN_agricultural_modernisation
-		cost = 20
+		cost = 10
+		
 		ai_will_do = {
 			factor = 10
-		}	
+		}
+		
 		completion_reward = {
-			if = {
-				limit = { has_country_flag = HUN_realism }
-				custom_effect_tooltip = HUN_concentric_road_network_realism_tt
-				else = { custom_effect_tooltip = HUN_concentric_road_network_tt }
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 70		#Bohemia
 			}
-			hidden_effect = {
-				if = {
-					limit = { owns_state = 82 }	#Banat
-					82 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 83 }	#Grisana
-					83 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 84 }	#Transylvania
-					84 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 76 }	#North Transylvania
-					76 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 752 }	#Maramaros
-					752 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 753 }	#Northern Partium
-					753 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 73 }	#Carpathian Ruthenia
-					73 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 748 }	#Beregszasz
-					748 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 664 }	#Southern Slovakia
-					664 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 71 }	#Eastern Slovakia
-					71 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 70 }	#Western Slovakia
-					70 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 109 }	#Slavonia
-					109 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 749 }	#Croatia
-					749 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 759 }	#Pag
-					759 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 45 }	#Novi Sad	
-					45 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 743 }	#Burgenland	
-					743 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 744 }	#Panceva	
-					744 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 745 }	#Ruma	
-					745 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 746 }	#Prekmurje	
-					746 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
-				}
-				if = {
-					limit = { owns_state = 747 }	#Fiume	
-					747 = {
-						if = {
-							limit = { owner = { has_country_flag = HUN_realism } }
-							add_building_construction = {
-								type = infrastructure
-								level = 1
-								instant_build = yes
-							}
-							else = {
-								add_extra_state_shared_building_slots = 1
-								add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-							}
-						}
-					}
+			70 = {		#Bohemia
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
-	}
+	}	
 	
 	focus = {
 		id = HUN_reintegrate_the_railroads
@@ -3167,42 +2593,22 @@ focus_tree = {
 				}
 			}
 		}
-	
-	
+		
 	focus = {
-		id = HUN_assault_gun_focus
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = HUN_the_gyori_program }
+        id = HUN_extra_research_slot2
+        icon = GFX_focus_research
+     prerequisite = { focus = HUN_the_gyori_program }
 		x = 1
 		y = 1
 		relative_position_id = HUN_the_gyori_program
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_ideas = HUN_assault_gun_focus
-		}
-	}
+		cost = 15
+        ai_will_do = {
+            factor = 50
+        }    
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
 	
 	#MILITARY BRANCH
 	
@@ -3230,7 +2636,7 @@ focus_tree = {
 		available = {
 			GER = { has_completed_focus = GER_first_vienna_award }
 		}
-		x = 3
+		x = 1
 		y = 1
 		relative_position_id = HUN_revisionism
 		cost = 10
@@ -3430,12 +2836,48 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = HUN_jet_propulsion
-		icon = GFX_focus_rocketry
+		id = HUN_saint_ladislaus_paratrooper_division
+		icon = GFX_focus_generic_paratrooper
 		prerequisite = { focus = HUN_bomber_production_innovations focus = HUN_fighter_production_innovations }
 		x = -1
 		y = 4
 		relative_position_id = HUN_the_gyori_program
+		available = {
+			has_tech = paratroopers
+			owns_state = 43		#Northern Hungary
+			if = {
+				limit = { has_country_flag = HUN_realism }
+				has_manpower > 1999
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers2
+				technology = paratroopers3
+			}
+			if = {
+				limit = { has_country_flag = HUN_realism }
+				add_manpower = -2000
+			}
+			custom_effect_tooltip = HUN_saint_ladislaus_division
+			hidden_effect = { load_oob = HUN_saint_ladislaus }
+		}
+	}
+	
+	focus = {
+		id = HUN_jet_propulsion
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = HUN_call_back_emigrants}
+		x = 0
+		y = 1
+		relative_position_id = HUN_call_back_emigrants
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -3476,7 +2918,7 @@ focus_tree = {
 		id = HUN_advanced_infantry_divisions
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = HUN_army_effort }
-		x = 2
+		x = 1
 		y = 2
 		relative_position_id = HUN_the_gyori_program
 		cost = 10
@@ -3498,7 +2940,7 @@ focus_tree = {
 		id = HUN_specialised_training
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = HUN_advanced_infantry_divisions }
-		x = 2
+		x = 1
 		y = 3
 		relative_position_id = HUN_the_gyori_program
 		cost = 10
@@ -3521,121 +2963,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = HUN_saint_ladislaus_paratrooper_division
-		icon = GFX_focus_generic_paratrooper
-		prerequisite = { focus = HUN_specialised_training }
-		available = {
-			has_tech = paratroopers
-			owns_state = 43		#Northern Hungary
-			if = {
-				limit = { has_country_flag = HUN_realism }
-				has_manpower > 1999
-			}
-		}
-		x = 1
-		y = 4
-		relative_position_id = HUN_the_gyori_program
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 0.5
-				uses = 1
-				technology = paratroopers2
-				technology = paratroopers3
-			}
-			if = {
-				limit = { has_country_flag = HUN_realism }
-				add_manpower = -2000
-			}
-			custom_effect_tooltip = HUN_saint_ladislaus_division
-			hidden_effect = { load_oob = HUN_saint_ladislaus }
-		}
-	}
-	
-	focus = {
-		id = HUN_szekely_mountaineers
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = HUN_specialised_training }
-		available = {
-			has_tech = tech_mountaineers
-			owns_state = 76		#Northern Transylvania
-			if = {
-				limit = { has_country_flag = HUN_realism }
-				has_manpower > 1999
-			}
-		}
-		x = 3
-		y = 4
-		relative_position_id = HUN_the_gyori_program
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 0.5
-				uses = 1
-				technology = tech_mountaineers2
-				technology = tech_mountaineers3
-			}
-			if = {
-				limit = { has_country_flag = HUN_realism }
-				add_manpower = -2000
-			}
-			custom_effect_tooltip = HUN_szekely_hegyivadasz_division
-			hidden_effect = { load_oob = HUN_szekely_hegyivadasz }
-		}
-	}
-	
-	focus = {
-		id = HUN_swedish_license_trade
-		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = HUN_army_effort }
-		x = 4
-		y = 2
-		relative_position_id = HUN_the_gyori_program
-		cost = 10
-		available = {
-			SWE = { has_opinion = { target = ROOT value > -1 } }
-		}
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {
-			SWE = {
-				add_political_power = 30
-				add_opinion_modifier = { target = ROOT modifier = HUN_license_trade_opinion }
-				add_opinion_modifier = { target = ROOT modifier = HUN_license_trade }
-			}
-			if = {
-				limit = { has_dlc = "Death or Dishonor" }
-				add_relation_modifier = {
-					target = SWE
-					modifier = HUN_swedish_license_trade
-				}
-				else = {
-					add_tech_bonus = {
-						name = swedish_license_bonus
-						bonus = 0.4
-						uses = 2
-						category = armor
-						category = artillery
-					}
-				}
-			}				
-		}
-	}
-	
-	focus = {
 		id = HUN_motorization_effort
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = HUN_army_effort }
-		x = 6
+		x = 3
 		y = 2
 		relative_position_id = HUN_the_gyori_program
 		cost = 10
@@ -3673,7 +3004,7 @@ focus_tree = {
 		bypass = { 
 			has_tech = improved_light_tank
 		}
-		x = 6
+		x = 3	
 		y = 3
 		relative_position_id = HUN_the_gyori_program
 		cost = 10
@@ -3695,9 +3026,9 @@ focus_tree = {
 	focus = {
 		id = HUN_advanced_doctrines
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = HUN_specialised_training focus = HUN_project_toldi }
+		prerequisite = { focus = HUN_army_effort }
 		x = 5
-		y = 4
+		y = 2
 		relative_position_id = HUN_the_gyori_program
 		cost = 10
 		ai_will_do = {
@@ -3716,7 +3047,7 @@ focus_tree = {
 	focus = {
 		id = HUN_military_land_survey
 		icon = GFX_goal_military_land_survey
-		prerequisite = { focus = HUN_the_gyori_program }
+		prerequisite = { focus = HUN_advanced_doctrines }
 		available = {
 			date > 1940.1.1
 			custom_trigger_tooltip = {
@@ -3737,7 +3068,7 @@ focus_tree = {
 			}
 		}
 		x = 5
-		y = 1
+		y = 3
 		relative_position_id = HUN_the_gyori_program
 		cost = 10
 		ai_will_do = {
@@ -3756,7 +3087,7 @@ focus_tree = {
 		available = {	
 			any_owned_state = { is_coastal = yes }
 		}
-		x = 9
+		x = 8
 		y = 0
 		relative_position_id = HUN_the_gyori_program
 		cost = 20

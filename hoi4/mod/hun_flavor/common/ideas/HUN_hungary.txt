@@ -116,69 +116,6 @@ ideas = {
 			}
 		}
 		
-		levente_movement = {
-				
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_manpower_bonus
-			
-			modifier = {
-				conscription = 0.01
-				training_time_army_factor = -0.10
-			}
-		}
-		
-		revisionist_education = {
-				
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_research_bonus
-			
-			modifier = {
-				research_time_factor = -0.05
-				consumer_goods_factor = -0.05
-			}
-		}
-		
-		revisionist_education = {
-				
-			allowed = {
-				original_tag = HUN
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_research_bonus
-			
-			modifier = {
-				research_time_factor = -0.05
-				consumer_goods_factor = -0.05
-			}
-		}
-		
 		revisionist_education = {
 				
 			allowed = {
@@ -706,6 +643,26 @@ ideas = {
 				unity_factor = 0.05
 			}
 		}
+		
+		big_families = {
+		
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+			
+			modifier = {	
+				MONTHLY_POPULATION = 1
+			}
+		}
 
 		hungarian_expansionism = {
 		
@@ -720,7 +677,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = revisionist_spirit
 			
 			modifier = {	
 				unity_factor = 0.10
@@ -728,6 +685,27 @@ ideas = {
 				neutrality_drift = 0.10
 				justify_war_goal_time = -0.25
 				generate_wargoal_tension = -0.4
+			}
+		}
+		
+		levente_movement = {
+				
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.01
+				training_time_army_factor = -0.10
 			}
 		}
 
@@ -745,10 +723,11 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_volunteer_expedition_bonus
+			picture = generic_manpower_bonus
 			
 			modifier = {		
 			training_time_army_factor = -0.20
+			conscription = 0.01
 			}
 		}
 

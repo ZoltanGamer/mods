@@ -4,7 +4,7 @@ state={
 	name="STATE_752"
 	manpower=463100
 	
-	state_category = rural
+	state_category = town
 
 	resources={
 		tungsten=1
@@ -19,6 +19,6 @@ state={
 	}
 
 	provinces={
-		727 9704 11676 
+		727 9704 11676 6731 9685
 	}
 }
