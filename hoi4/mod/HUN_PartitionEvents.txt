@@ -70,12 +70,6 @@ country_event = {
 		CRO = { transfer_state = 109 }	#Slavonia
 		hidden_effect = { country_event = { id = hungary_flavor_partition.3 } }			
 	}
-	
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.3 } }
-	}
 }
 
 # The fate of Croatia
@@ -112,12 +106,6 @@ country_event = {
 			set_capital = 749		#Croatia
 		}	
 		hidden_effect = { country_event = { id = hungary_flavor_partition.4 } }			
-	}
-	
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.4 } }
 	}
 }
 
@@ -188,12 +176,6 @@ country_event = {
 			ITA = { add_received_territory_flag = yes }
 		}			
 	}
-	
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.5 } }
-	}
 }
 
 # The fate of Serbia
@@ -233,11 +215,6 @@ country_event = {
 			transfer_state = 107	#Serbia
 			transfer_state = 108	#Morava		
 		}
-		hidden_effect = { country_event = { id = hungary_flavor_partition.6 } }
-	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
 		hidden_effect = { country_event = { id = hungary_flavor_partition.6 } }
 	}
 }
@@ -376,11 +353,6 @@ country_event = {
 			ITA = { add_received_territory_flag = yes }
 		}
 	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.8 } }
-	}
 }
 # The fate of Pancevo
 country_event = {
@@ -423,11 +395,6 @@ country_event = {
 			country_event = { id = hungary_flavor_partition.9 } 
 		}
 	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.9 } }
-	}
 }
 
 # The fate of Ruma
@@ -464,11 +431,6 @@ country_event = {
 		}
 		
 		CRO = {	transfer_state = 745 }	#Ruma
-		hidden_effect = { country_event = { id = hungary_flavor_partition.10 } }
-	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
 		hidden_effect = { country_event = { id = hungary_flavor_partition.10 } }
 	}
 }
@@ -535,11 +497,6 @@ country_event = {
 			country_event = { id = hungary_flavor_partition.11 } 
 			BUL = { add_received_territory_flag = yes }
 		}
-	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.11 } }
 	}
 }
 
@@ -620,11 +577,6 @@ country_event = {
 		SER = { transfer_state = 756 }	#Tetovo
 		hidden_effect = { country_event = { id = hungary_flavor_partition.12 } }
 	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.12 } }
-	}
 }
 
 # The fate of Prizren
@@ -693,11 +645,6 @@ country_event = {
 			country_event = { id = hungary_flavor_partition.13 } 
 			SER = { add_received_territory_flag = yes }
 		}
-	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.13 } }
 	}
 }
 
@@ -787,11 +734,6 @@ country_event = {
 		}
 		hidden_effect = { country_event = { id = hungary_flavor_partition.14 } }
 	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.14 } }
-	}
 }
 
 
@@ -877,11 +819,6 @@ country_event = {
 			country_event = { id = hungary_flavor_partition.15 } 
 			SER = { add_received_territory_flag = yes }
 		}
-	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.15 } }
 	}
 }
 
@@ -1031,11 +968,6 @@ country_event = {
 			country_event = { id = hungary_flavor_partition.16 } 
 			SER = { add_received_territory_flag = yes }
 		}
-	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.16 } }
 	}
 }
 
@@ -1195,11 +1127,6 @@ country_event = {
 		set_country_flag = HUN_slovenia_split_decision
 		hidden_effect = { country_event = { id = hungary_flavor_partition.17 } }
 	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.17 } }
-	}
 }
 
 
@@ -1314,11 +1241,6 @@ country_event = {
 		custom_effect_tooltip = hungary_flavor_partition.17.g.tt
 		set_country_flag = HUN_offering_slovenia_to_italy
 		hidden_effect = { country_event = { id = hungary_flavor_partition.19 } }
-	}
-	#Leave it be
-	option = {
-		name = hungary_flavor_partition.6.e
-		hidden_effect = { country_event = { id = hungary_flavor_partition.18 } }
 	}
 }
 

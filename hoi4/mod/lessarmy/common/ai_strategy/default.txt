@@ -22,7 +22,7 @@ default_unit_production = {
 	}
 	
 	abort = {
-		ai_wants_divisions > 150
+		ai_wants_divisions > 90
 	}
 
 	ai_strategy = {
@@ -192,10 +192,10 @@ default_mountaineers_production = {
 default_marines_production = {
 	enable = {
 		NOT = { original_tag = GER }
-		ai_wants_divisions > 49
+		ai_wants_divisions > 19
 	}
 	abort = {
-		ai_wants_divisions < 50
+		ai_wants_divisions < 20
 	}
 
 	ai_strategy = {
@@ -231,10 +231,10 @@ default_mobile_production = {
 default_armored_production = {
 	enable = {
 		NOT = { original_tag = GER }
-		ai_wants_divisions > 49
+		ai_wants_divisions > 29
 	}
 	abort = {
-		ai_wants_divisions < 50
+		ai_wants_divisions < 30
 	}
 
 	ai_strategy = {

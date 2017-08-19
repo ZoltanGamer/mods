@@ -923,31 +923,7 @@ ideas = {
 				
 			}
 			
-			traits = { naval_manufacturer }
-			
-		}
-		
-		crda_hun = {
-		
-			picture = crda
-			
-			allowed = {
-				original_tag = HUN
-			}
-			
-			available = {
-				has_completed_focus = HUN_the_adriatic_initiative
-			}
-			
-			research_bonus = {
-				naval_equipment = 0.10
-			}
-			
-			equipment_bonus = {
-				
-			}
-			
-			traits = { coastal_defence_naval_manufacturer }
+			traits = { naval_manufacturer coastal_defence_naval_manufacturer }
 			
 		}	
 	}

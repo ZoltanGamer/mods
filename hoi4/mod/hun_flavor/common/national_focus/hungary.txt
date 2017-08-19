@@ -765,7 +765,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = HUN_the_burgenland_referendum
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -875,7 +875,7 @@ focus_tree = {
 				NOT = { has_war_with = GER }
 			}
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = HUN_enthrone_horthy
 		cost = 10
@@ -894,7 +894,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = HUN_enthrone_horthy }
 		mutually_exclusive = { focus = HUN_swing_politics }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = HUN_enthrone_horthy
 		cost = 10
@@ -916,14 +916,14 @@ focus_tree = {
 		id = HUN_countryside_development
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HUN_enthrone_horthy }
-		prerequisite = { focus = HUN_budapest_industrial_district }
+		prerequisite = { focus = HUN_transdanubian_construction_grants }
 		available = {
 			owns_state = 154	#Alföld
 			owns_state = 155	#Transdanubia
 			owns_state = 750	#Bács-Kiskun
 			owns_state = 43		#Northern Hungary
 		}
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = HUN_enthrone_horthy
 		cost = 10
@@ -1519,49 +1519,6 @@ focus_tree = {
 		}
 	}
 	
-	
-	focus = {
-		id = HUN_industrial_effort
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = HUN_agricultural_modernisation }
-		mutually_exclusive = { focus = HUN_fortification_effort }
-		x = 0
-		y = 1
-		relative_position_id = HUN_agricultural_modernisation
-		cost = 10
-		ai_will_do = {
-			factor = 30
-		}	
-		completion_reward = {
-			if = {
-				limit = { has_country_flag = HUN_realism }
-				add_ideas = industrial_effort_realism		
-				else = { add_ideas = industrial_effort	 }
-			}
-		}
-	}
-	
-	focus = {
-		id = HUN_fortification_effort
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = HUN_agricultural_modernisation }
-		mutually_exclusive = { focus = HUN_industrial_effort }
-		x = 2
-		y = 1
-		relative_position_id = HUN_agricultural_modernisation
-		cost = 10
-		ai_will_do = {
-			factor = 20
-		}	
-		completion_reward = {
-			if = {
-				limit = { has_country_flag = HUN_realism }
-				add_ideas = fortification_effort_realism		
-				else = { add_ideas = fortification_effort	 }
-			}	
-		}
-	}
-	
 	focus = {
 		id = HUN_budapest_ferihegy_airport
 		icon = GFX_goal_generic_air_production
@@ -1636,7 +1593,7 @@ focus_tree = {
 			owns_state = 766 	#Transdanubia
 		}
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 10
 		ai_will_do = {
@@ -1662,7 +1619,7 @@ focus_tree = {
 			owns_state = 750 	#Bács-Kiskun
 		}
 		x = 1
-		y = 4
+		y = 3
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 10
 		ai_will_do = {
@@ -1689,12 +1646,12 @@ focus_tree = {
 	focus = {
 		id = HUN_budapest_industrial_district
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = HUN_industrial_effort focus = HUN_fortification_effort }
+		prerequisite = { focus = HUN_agricultural_modernisation}
 		available = {	
 			owns_state = 763 	#Budapest
 		}
 		x = -1
-		y = 2
+		y = 1
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 5
 		ai_will_do = {
@@ -1720,7 +1677,7 @@ focus_tree = {
 			owns_state = 155 	#Transdanubia
 		}
 		x = -1
-		y = 3
+		y = 2
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 10
 		ai_will_do = {
@@ -1749,12 +1706,12 @@ focus_tree = {
 	focus = {
 		id = HUN_expand_the_rubber_industry
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = HUN_transdanubian_construction_grants }
+		prerequisite = { focus = HUN_agricultural_modernisation }
 		available = {		
 			owns_state = 155 	#Transdanubia
 		}
-		x = -3
-		y = 4
+		x = 3
+		y = 1
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 10
 		ai_will_do = {
@@ -1773,6 +1730,11 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -1785,7 +1747,7 @@ focus_tree = {
 			owns_state = 765 	#Alföld
 		}
 		x = -1
-		y = 4
+		y = 3
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 10
 		ai_will_do = {
@@ -1811,8 +1773,8 @@ focus_tree = {
 			owns_state = 109		#Slavonia
 			owns_state = 749		#Croatia
 		}
-		x = -5
-		y = 5
+		x = -7
+		y = 4
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 10
 		ai_will_do = {
@@ -1853,8 +1815,8 @@ focus_tree = {
 			owns_state = 84		#Transylvania
 			owns_state = 76		#North Transylvania	
 		}
-		x = -3
-		y = 5
+		x = -5
+		y = 4
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 10
 		ai_will_do = {
@@ -1893,7 +1855,7 @@ focus_tree = {
 			owns_state = 70		#Western Slovakia
 		}
 		x = -1
-		y = 5
+		y = 4
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 5
 		ai_will_do = {
@@ -1919,7 +1881,7 @@ focus_tree = {
 			owns_state = 45		#Backa
 		}
 		x = 1
-		y = 5
+		y = 4
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 5
 		ai_will_do = {
@@ -1945,7 +1907,7 @@ focus_tree = {
 			owns_state = 743	#Upper Austria
 		}
 		x = 3
-		y = 5
+		y = 4
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 10
 		
@@ -1977,8 +1939,8 @@ focus_tree = {
 		available = {
 			owns_state = 70	#Bohemia
 		}
-		x = 5
-		y = 5
+		x = -3
+		y = 4
 		relative_position_id = HUN_agricultural_modernisation
 		cost = 10
 		
@@ -2006,9 +1968,9 @@ focus_tree = {
 	focus = {
 		id = HUN_reintegrate_the_railroads
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = HUN_fortification_effort focus = HUN_industrial_effort }
+		prerequisite = { focus = HUN_agricultural_modernisation }
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = HUN_agricultural_modernisation
 
 		cost = 10
@@ -2346,7 +2308,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_transdanubian_construction_grants
 
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 60
@@ -2354,6 +2316,8 @@ focus_tree = {
 
 		available = {
 			owns_state = 743
+			owns_state = 753
+			owns_state = 82
 		}
 
 		bypass = {
@@ -2383,6 +2347,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+				753 = {
+					add_extra_state_shared_building_slots = 3
+				}
+				82 = {
+					add_extra_state_shared_building_slots = 3
+				}
 				743={
 					free_building_slots = {
 						building = industrial_complex
@@ -2401,47 +2371,6 @@ focus_tree = {
 				}
 		}
 	}
-	
-	focus = {
-		id = HUN_support_urbanization
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = HUN_transdanubian_construction_grants }
-		x = -4
-		y = 1
-		relative_position_id = HUN_transdanubian_construction_grants
-		cost = 10
-
-		ai_will_do = {
-			factor = 90
-		}
-
-		available = {
-	owns_state = 753
-		owns_state = 82
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			
-				753 = {
-					add_extra_state_shared_building_slots = 3
-				}
-				82 = {
-					add_extra_state_shared_building_slots = 3
-				}
-			}
-		}
 		
 	focus = {
         id = HUN_extra_research_slot2
@@ -2754,6 +2683,7 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {		
+		army_experience = 25
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5
