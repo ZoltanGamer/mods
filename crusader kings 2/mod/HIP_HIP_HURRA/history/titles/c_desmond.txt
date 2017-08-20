@@ -1,5 +1,0 @@
-# -*- ck2.history.titles -*-
-
-850.1.1 = {
-	liege = d_munster
-}

@@ -1,5 +1,0 @@
--- Format for overwriting define values:
-NDefines.NNomad.PROVINCES_PER_CLAN = 1
-NDefines.NNomad.MAX_POPULATION_EMPTY_HOLDING_MULTIPLIER = 1250
-NDefines.NNomad.MAX_MANPOWER_POPULATION_MULTIPLIER = 0.35
-NDefines.NNomad.START_POPULATION = 0.60
