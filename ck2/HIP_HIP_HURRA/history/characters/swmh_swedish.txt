@@ -1,0 +1,262 @@
+# -*- ck2.history.characters -*-
+
+###############################################################
+#  SWMH Swedish Characters
+###############################################################
+#Range: 
+#Characters: 1234000 - 1234250
+#dynasties 1000103101 - 1000103150
+###############################################################
+1234000 = {
+	name="Torkel" # Torgils Knutsson
+	# AKA: Torgils/Tyrgils
+	dynasty=1000053712 # av Aranäs
+	martial=7
+	diplomacy=5
+	intrigue=4
+	stewardship=4
+	religion="norse_pagan"
+	culture="swedish"
+	trait="zealous"
+	trait="ambitious"
+	trait="brave"
+	trait="skilled_tactician"
+	1255.1.1={
+		birth = yes
+	}
+	1292.1.1={
+		add_trait=crusader
+	}
+	1306.2.1={
+		death=yes # executed on behest of king Birger
+	}
+}
+1234001 = {
+	name="Kettil"
+	dynasty=496
+	religion="catholic"
+	culture="norse"
+	trait="just"
+	trait="tough_soldier"
+	father = 100529
+	1022.1.1={
+		birth=yes
+	}
+	1035.1.1={
+		culture=gothic
+	}
+	1061.1.1={
+		death=yes
+	}
+}
+1234002 = {
+	name="Sven"
+	dynasty=496
+	religion="catholic"
+	culture="gothic"
+	trait="just"
+	trait="tough_soldier"
+	father = 100530
+	1052.1.1={
+		birth=yes
+	}
+	1084.1.1={
+		death=yes
+	}
+}
+1234003 = {
+	name="Ulf"
+	dynasty=496
+	religion="catholic"
+	culture="gothic"
+	trait="just"
+	trait="tough_soldier"
+	father = 1234002
+	1080.1.1={
+		birth=yes
+	}
+	1125.1.1={
+		death=yes
+	}
+}
+1234004 = {
+	name="Erik"
+	dynasty=496
+	religion="catholic"
+	culture="gothic"
+	trait="just"
+	trait="tough_soldier"
+	father = 1234002
+	1085.1.1={
+		birth=yes
+	}
+	1128.1.1={
+		death=yes
+	}
+}
+1234005 = {
+	name="Kol"
+	dynasty=496
+	religion="catholic"
+	culture="gothic"
+	trait="just"
+	trait="tough_soldier"
+	father = 1234002
+	1082.1.1={
+		birth=yes
+	}
+	1108.1.1={
+		death=yes
+	}
+}
+1234006 = {
+	name="Cecilia"
+	dynasty=496
+	religion="catholic"
+	culture="gothic"
+	trait="just"
+	trait="tough_soldier"
+	father = 1234002
+	1084.1.1={
+		birth=yes
+	}
+	1127.1.1={
+		death=yes
+	}
+}
+#Värending
+1234007 = {
+	name="Kol" #placeholder
+	dynasty=827 # Värending
+	religion="norse_pagan"
+	culture="norse"
+	father = 1234015	
+	1004.1.1={
+		birth=yes
+	}
+	1035.1.1={
+		culture=gothic
+	}
+	1048.1.1={
+		death=yes
+	}
+}
+1234008 = {
+	name="Kolbjörn" #placeholder
+	dynasty=100287
+	religion="norse_pagan"
+	culture="norse"
+	999.1.1={
+		birth=yes
+	}
+	1035.1.1={
+		culture=swedish
+	}
+	1060.1.1={
+		death=yes
+	}
+}
+1234009 = {
+	name="Thord" #placeholder
+	dynasty=100283
+	religion="norse_pagan"
+	culture="norse"
+	998.1.1={
+		birth=yes
+	}
+	1035.1.1={
+		culture=swedish
+	}
+	1059.1.1={
+		death=yes
+	}
+}
+1234010 = {
+	name="Olaf"
+	dynasty=497
+	religion="norse_pagan"
+	culture="norse"
+	1009.1.1={
+		birth=yes
+	}
+	1035.1.1={
+		culture=swedish
+	}
+	1062.1.1={
+		death=yes
+	}
+}
+1234011 = {
+	name="Helgi"
+	dynasty=491
+	religion="norse_pagan"
+	culture="norse"
+	1000.1.1={
+		birth=yes
+	}
+	1035.1.1={
+		culture=swedish
+	}
+	1056.1.1={
+		death=yes
+	}
+}
+1234012 = {
+	name="Björn"
+	dynasty=100291
+	religion="norse_pagan"
+	culture="norse"
+	1004.1.1={
+		birth=yes
+	}
+	1035.1.1={
+		culture=swedish
+	}
+	1055.1.1={
+		death=yes
+	}
+}
+1234013 = {
+	name="Dyre"
+	#placeholder 
+	dynasty=9520
+	religion="catholic"
+	culture="norse"
+	993.1.1 = {
+		birth=yes
+	}
+	1035.1.1={
+		culture=gothic
+	}
+	1051.1.1 = {
+		death=yes
+	}
+}
+1234014 = {
+	name="Kettil"
+	dynasty=100281
+	religion="norse_pagan"
+	culture="norse"
+	1001.1.1={
+		birth=yes
+	}
+	1035.1.1={
+		culture=swedish
+	}
+	1056.1.1={
+		death=yes
+	}
+}
+#Värending
+1234015 = {
+	name="Toke" #placeholder
+	dynasty=827 # Värending
+	religion="norse_pagan"
+	culture="norse"
+	978.1.1={
+		birth=yes
+	}
+	1027.1.1={
+		death=yes
+	}
+}

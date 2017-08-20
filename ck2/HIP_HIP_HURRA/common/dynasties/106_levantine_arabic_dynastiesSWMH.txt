@@ -1,0 +1,118 @@
+# -*- ck2.dynasties -*-
+
+######################################
+#SWMH Levantine Arabic Dynasties
+######################################
+#Levantine Arabic dynasties
+#Dynasties: 1000103573 - 1000103599
+
+######################################
+
+1000103573 = {
+	name="al-Haythamí"
+	culture = levantine_arabic
+}
+1000103574 = {
+	name="al-Sálihí"
+	culture = levantine_arabic
+}
+1000103575 = {
+	name="al-Lu'lu"
+	culture = levantine_arabic
+}
+1000103576 = {
+	name="al-Jamálí"
+	culture = levantine_arabic
+}
+1000103577 = {
+	name="al-Jahírí"
+	culture = levantine_arabic
+}
+1000103578 = {
+	name="al-Yázúrí"
+	culture = levantine_arabic
+}
+1000103579 = {
+	name="al-Jarjará'í"
+	culture = levantine_arabic
+}
+1000103580 = {
+	name="Tanúkh"
+	culture = levantine_arabic
+}
+1000103581 = {
+	name="al-Abi Aqil"
+	culture = levantine_arabic
+}
+1000103582 = {
+	name="al-Ammarí"
+	culture = levantine_arabic
+}
+1000103583 = {
+	name="al-Lawí"
+	culture = levantine_arabic
+}
+1000103584 = {
+	name="al-Atabekí"
+	culture = levantine_arabic
+}
+1000103585 = {
+	name="al-Sharábí"
+	culture = levantine_arabic
+}
+1000103586 = {
+	name="al-Jarrahí"
+	culture = levantine_arabic
+}
+1000103587 = {
+	name="al-Fadl"
+	culture = levantine_arabic
+}
+1000103588 = {
+	name="al-Faraj"
+	culture = levantine_arabic
+}
+1000103589 = {
+	name="al-Mira"
+	culture = levantine_arabic
+}
+1000103590 = {
+	name="al-Alí"
+	culture = levantine_arabic
+}
+1000103591 = {
+	name="al-Dizbarí"
+	culture = turkmen
+}
+1000103592 = {
+	name="al-Ilyas"
+	culture = levantine_arabic
+}
+1000103593 = {
+	name="al-Qal'í"
+	culture = levantine_arabic
+}
+1000103594 = {
+	name="al-Wasífí"
+	culture = levantine_arabic
+}
+1000103595 = {
+	name="al-Bayakbakí"
+	culture = levantine_arabic
+}
+1000103596 = {
+	name="al-Khaqaní"
+	culture = levantine_arabic
+}
+1000103597 = {
+	name="al-Tarkhaní"
+	culture = levantine_arabic
+}
+1000103598 = {
+	name="al-Haydarí" #Mu'in ad-Dawlah Haydar ibn Adud ad-Dawla, governor of Damascus 1061-1063
+	culture = levantine_arabic
+}
+1000103599 = {
+	name="al-Mansurí" #Hisn ad-Dawlah Haydar ibn Mansur, governor of Damascus 1063-1067
+	culture = levantine_arabic
+}

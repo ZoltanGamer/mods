@@ -1,0 +1,68 @@
+# -*- ck2.history.titles -*-
+
+857.1.1 = {
+	liege = k_khazaria
+	holder = 1233420
+}
+900.1.1 = {
+	holder = 1233422
+}
+940.1.1 = {
+	holder = 1233424
+}
+980.1.1 = {
+	holder = 1233425
+}
+1020.1.1 = {
+	holder = 1233446
+}
+1040.1.1 = {
+	liege = k_pechenegs
+}
+1044.1.1 = {
+	liege = k_uzes
+}
+# Cumans arrive
+# Ören
+1050.1.1 = {
+	liege = d_oren
+	holder = 1233072
+}
+1108.1.1 = {
+	holder = 1233074
+}
+1131.1.1 = {
+	holder = 1233076
+}
+1164.1.1 = {
+	holder = 1233078
+}
+1201.1.1 = {
+	holder = 1233080
+}
+1226.1.1 = {
+	holder = 1233082
+}
+# Mongols put down revolt
+1239.1.1 = {
+	liege = d_azov
+	holder = 125503
+}
+1262.1.13 = {
+	holder = 125504
+}
+1266.1.2 = {
+	holder = 125508
+}
+1280.1.2 = {
+	holder = 125509
+}
+1287.1.2 = {
+	holder = 125511
+}
+1291.1.2 = {
+	holder = 125512
+}
+1312.1.2 = {
+	holder = 480000
+}

@@ -1,0 +1,184 @@
+# -*- ck2.history.characters -*-
+34825 = {
+	name="Bönek"
+	#placeholder
+	religion="tengri_pagan"
+	culture="cuman"
+	1200.1.1={
+		birth="1200.1.1"
+	}
+	1241.1.1={
+		death="1241.1.1"
+	}
+}
+#only wife and mothers of Russian vanilla charcters salvaged.
+125051 = {
+	name="Sirma" # name unkown, daughter of Asalup
+	female=yes
+        dynasty=698 #Terteroba # clan unknwon
+	religion="tengri_pagan"
+	culture="cuman"
+        father=1233093 #Asalup
+        mother=1233094
+	1077.1.1={
+		birth = yes
+	}
+	1094.1.1={
+		religion="orthodox" #must have married Oleg thereabout to seal the alliance.
+	}
+	1120.1.1={
+		death = yes
+	}
+}
+
+125092 = {
+	name="Anna" # Wife of Vsevolod of Kiev, mother of Rostislavl of Pereyaslavl
+	female=yes
+	religion="orthodox"
+	culture="cuman"
+	1050.1.2={
+		birth="1050.1.2"
+	}
+	1111.1.2={
+		death="1111.1.2"
+	}
+}
+
+125145 = {
+	name="Maria" # wife of Mstislav Mstislavic, was eldest daughter of Köten.
+	female=yes
+	religion="tengri_pagan"
+	culture="cuman"
+        father=1233105 
+        mother=1233106
+	1184.1.2={
+		birth = yes
+	}
+	1203.1.1={
+		religion="orthodox" #was married in 1203
+	}
+	1230.1.2={
+		death = yes
+	}
+}
+
+125400 = {
+	name="Svoboda"
+	female=yes
+	dynasty=698 # She and her father was Toqsoba not Tertoba! runs away and cry in corner.... For %&#¤ sake how bad is it possible to make this paradox -_-
+	religion="tengri_pagan"
+	culture="cuman"
+	father=1229737
+	1171.1.2={
+		birth="1171.1.2"
+	}
+	1187.1.2={
+	religion="orthodox"
+	name="Anastasia"
+	# AKA: Svoboda
+	}
+	1220.1.2={
+		death="1220.1.2"
+	}
+}
+
+222633 = {
+	name="Maria" #daugther of Aepa/Girgen, married Sviatoslav Olgovich. Name unkown
+	female = yes
+	dynasty=1000101581#Çortan, clan unkown
+	religion="orthodox"
+	culture="cuman"
+	father=1233200
+	mother=1233201
+	1110.1.2={
+		birth="1110.1.2"
+	}
+	1170.1.2={
+		death="1170.1.2"
+	}
+}
+
+228042 = {
+	name="Garu"
+	dynasty=100615
+	martial=7
+	diplomacy=5
+	intrigue=7
+	stewardship=7
+	religion="tengri_pagan"
+	culture="cuman"
+	trait="amateurish_plotter"
+	1150.1.1={
+		birth="1150.1.1"
+	}
+	1200.1.1={
+		death="1200.1.1"
+	}
+}
+
+34990 = {
+	name="Sunkur"
+	dynasty=7323
+	religion="sunni"
+	culture="cuman"
+	1230.1.1={
+		birth=yes
+	}
+	1280.1.1={
+		death="1280.1.1"
+	}
+}
+
+34991 = {
+	name="Shudja al-Din"
+	dynasty=7324
+	religion="sunni"
+	culture="cuman"
+	1250.1.1={
+		birth=yes
+	}
+	1297.1.1={
+		death="1297.1.1"
+	}
+}
+
+34992 = {
+	name="Sayf-ad-Din"
+	dynasty=100566
+	religion="sunni"
+	culture="cuman"
+	1275.1.1={
+		birth=yes
+	}
+	1312.1.1={
+		death="1312.1.1"
+	}
+}
+
+34993 = {
+	name="Sayf-ad-Din"
+	dynasty=100691
+	religion="sunni"
+	culture="cuman"
+	1280.1.1={
+		birth=yes
+	}
+	1340.1.1={
+		death="1340.1.1"
+	}
+}
+98042 = {
+	name="Elizabeth"
+	female=yes
+	dynasty=698
+	religion="catholic"
+	culture="cuman"
+	father=1233105
+	1236.1.1={
+		birth="1236.1.1"
+	}
+	1290.1.2={
+		death="1290.1.2"
+	}
+}
+######################################## rest of cuman vanilla charaters has been thrown in the bin.

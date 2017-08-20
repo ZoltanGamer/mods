@@ -1,0 +1,23 @@
+# -*- ck2.dynasties -*-
+
+######################################
+#New Occitan Dynasties
+######################################
+#
+#
+######################################
+#Occitan dynasties
+#Range 1000227200 - 1000227349
+######################################
+#1000227200 = {
+#	name="Kermit"
+#	culture = occitan
+#}
+1000227201 = {
+	name="de Mercœur"
+	culture = occitan
+}
+1000227202 = {
+	name="de Tournon"
+	culture = occitan
+}

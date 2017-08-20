@@ -1,0 +1,96 @@
+# -*- ck2.history.titles -*-
+
+769.1.1 = {
+	liege = d_sevilla
+	holder = 73680 # Hisham I Umayyad
+}
+796.6.12 = {
+	liege = k_andalusia
+	holder = 73681 # al-Hakam I Umayyad
+}
+822.5.21 = {
+	holder = 73682 # Abd al-Rahman II Umayyad
+}
+850.1.1 = {
+	holder = 73941 # Attab Nasrid
+}
+910.1.1 = {
+	holder = 73685 # Abdallah Umayyad
+}
+912.10.15 = {
+	holder = 3200 # Abd al-Rahman III Umayyad
+}
+961.10.15 = {
+	holder = 3202 # al-Hakam II Umayyad
+}
+976.10.16 = {
+	holder = 3204 # Hisham II Umayyad
+}
+1009.2.15 = {
+	holder = 73671 # Muhammad II Umayyad
+}
+1009.11.1 = {
+	holder = 73675 # Suleyman Umayyad
+}
+1010.5.10 = {
+	holder = 73671 # Muhammad II Umayyad
+}
+1010.7.23 = {
+	holder = 3204 # Hisham II Umayyad
+}
+1012.1.1 = {
+	liege = 0
+	holder = 73219 # Muhammad Jizrunid
+}
+1030.1.1 = {
+	holder = 73220 # Abdun Jizrunid
+}
+1053.1.1 = {
+	holder = 73221 # Muhammad Jizrunid
+}
+1067.1.1 = {
+	liege = d_sevilla
+	holder = 3212 # Abbad Abbadid
+}
+1069.1.15 = {
+	holder = 3214 # Muhammad II Abbadid
+}
+1091.1.1 = {
+	liege = k_mauretania
+	holder = 155036 # Sir Abu-Bakrid
+}
+1114.1.1 = {
+	holder = 73206 # Ali Yusufid
+}
+1136.1.1 = {
+	holder = 73224 # Ayyub Yaafarid
+}
+1147.1.1 = {
+	liege = k_maghreb
+}
+1148.1.1 = {
+	holder = 224020 # Muhammad Ishbiliyid
+}
+1190.1.1 = {
+	holder = 73611 # Yahya Utmanid
+}
+1212.1.1 = {
+	holder = 73612 # Umar Utmanid
+}
+1228.1.1 = {
+	liege = d_murcia
+	holder = 73625 # Muhammad Hudid
+}
+1238.1.1 = {
+	liege = d_granada
+	holder = 73651 # Muhammad I Nasrid
+}
+1273.1.1 = {
+	holder = 73652 # Yusuf Nasrid
+}
+1295.1.1 = {
+	holder = 73642 # Faraj Nasrid
+}
+1300.1.1 = {
+	holder = 73643 # Muhammad b. Faraj Nasrid
+}

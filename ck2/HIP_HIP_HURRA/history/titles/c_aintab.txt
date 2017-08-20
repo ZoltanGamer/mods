@@ -1,0 +1,161 @@
+# -*- ck2.history.titles -*-
+
+637.1.1 = {
+	liege = d_antioch
+}
+733.1.1 = {
+	holder = 146051
+}
+759.1.1 = {
+	holder = 146052
+}
+774.1.1 = {
+	holder = 146053
+}
+865.1.1 = {
+	liege = d_armenia_minor
+	holder = 1234558
+}
+874.1.1 = {
+	liege = 0
+}
+944.1.1 = {
+	liege = d_aleppo
+	holder = 1234858
+}
+967.1.1 = {
+	holder = 1234874
+}
+990.1.1 = {
+	holder = 1234880
+}
+1012.1.1 = {
+	liege = e_byzantium
+	holder = 1232476
+}
+1031.1.1 = {
+	liege = d_edessa
+	holder = 1232274
+}
+1035.1.1 = {
+	holder = 1232331
+}
+1053.1.1 = {
+	holder = 90089
+}
+1057.1.1 = {
+	holder = 20516
+}
+1059.1.1 = {
+	holder = 1740
+}
+1062.1.1 = {
+	holder = 7242
+}
+1064.1.1 = {
+	holder = 1232148
+}
+1066.1.1 = {
+	holder = 7241
+}
+1073.1.1 = {
+	holder = 85001
+}
+1077.1.1 = {
+	liege = k_armenia_minor
+}
+1084.1.1 = {
+	liege = d_edessa
+}
+1087.1.1 = {
+	liege = k_persia
+	holder = 1232508
+}
+# First Crusade
+1097.1.1 = {
+	liege = 0
+}
+1100.1.1 = {
+	liege = d_edessa
+}
+1117.1.1 = {
+	holder = 93427
+}
+1124.1.1 = {
+	holder = 93428
+}
+1146.11.1 = {
+	holder = 93429
+}
+1149.6.28 = {
+	holder = 231013 # Joscelin II de Courtenay
+}
+1150.1.1 = {
+	liege = d_aleppo
+	holder = 144031
+}
+1174.4.15 = {
+	holder = 144033
+}
+1183.1.1 = {
+	holder = 226052
+}
+1196.1.1 = {
+	liege = d_armenia_minor
+	holder = 223000 # Levon II Rubenid
+}
+1199.1.1 = {
+	liege = k_cilician
+}
+1219.5.2 = {
+	holder = 30998 # Zabel I Rubenid
+}
+1226.1.1 = {
+	holder = 31830 # Hethun I
+}
+1228.1.1 = {
+	liege = d_edessa
+	holder = 32920
+}
+1250.3.1 = {
+	holder = 32930
+}
+1257.1.1 = {
+	holder = 32931
+}
+1259.1.1 = {
+	holder = 32932
+}
+1260.10.24 = {
+	holder = 32933
+}
+1277.7.1 = {
+	holder = 32934
+}
+1279.1.1 = {
+	holder = 32949
+}
+1279.7.1 = {
+	holder = 32936
+}
+1291.11.10 = {
+	holder = 32937
+}
+1293.12.14 = {
+	holder = 485000
+}
+1294.7.1 = {
+	holder = 32938
+}
+1296.1.1 = {
+	holder = 32939
+}
+1299.1.1 = {
+	holder = 485000
+}
+1309.1.1 = {
+	holder = 32940
+}
+1309.11.1 = {
+	holder = 485000
+}

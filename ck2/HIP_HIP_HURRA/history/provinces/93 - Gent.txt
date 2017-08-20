@@ -1,0 +1,34 @@
+# -*- ck2.history.provinces -*-
+
+# 93 - Gent
+
+# County Title
+title = c_gent
+
+# Settlements
+max_settlements = 6
+
+b_gravensteencastle = castle
+b_oudenaarde = city
+b_gent = city
+b_saintbavo = temple
+
+
+#b_dendermonde = castle
+#b_geraarsbergen = castle
+#b_st_niklaas = city
+#b_herzele = castle
+#b_aalst = city
+
+
+
+# Misc
+culture = low_frankish
+religion = catholic
+
+# History
+1150.1.1 = { culture = dutch }
+
+
+
+

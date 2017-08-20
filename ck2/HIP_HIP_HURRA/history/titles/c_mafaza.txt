@@ -1,0 +1,150 @@
+# -*- ck2.history.titles -*-
+
+846.1.1 = {
+	#historical_nomad = yes
+	liege = d_baloch
+	holder = 1230957 # vanilla fantasy ruler
+}
+863.1.1 = {
+	holder = 1230958
+}
+894.1.1 = {
+	holder = 1230959
+}
+910.1.1 = {
+	holder = 1230961
+}
+919.1.1 = {
+	holder = 1230962
+}
+943.1.1 = {
+	holder = 1230966
+}
+966.1.1 = {
+	holder = 1230967
+}
+1002.1.1 = {
+	holder = 1230968
+}
+1035.1.1 = {
+	holder = 1230969
+}
+1051.1.1 = {
+	liege = k_persia
+}
+1066.1.1 = {
+	#historical_nomad = no
+	holder = 1229931
+}
+1072.11.1 = {
+	liege = d_jebal
+}
+1080.1.1 = {
+	holder = 1229932
+}
+1108.1.1 = {
+	holder = 144014
+}
+1110.1.1 = {
+	liege = d_kerman
+	holder = 144034
+}
+1142.1.1 = {
+	holder = 144035
+}
+1156.1.1 = {
+	holder = 144036
+}
+1169.1.1 = {
+	holder = 144037
+}
+1174.1.1 = {
+	holder = 144038
+}
+1176.1.1 = {
+	holder = 144039
+}
+1183.1.1 = {
+	holder = 144040
+}
+1187.1.1 = {
+	#historical_nomad = yes
+	holder = 93256
+}
+1195.1.1 = {
+	holder = 93257
+}
+1196.1.1 = {
+	holder = 1232020
+}
+1200.1.1 = {
+	holder = 1231418
+}
+1204.1.1 = {
+	holder = 1232020
+}
+1209.1.1 = {
+	holder = 93246
+}
+1213.1.1 = {
+	liege = k_khwarezmia
+	holder = 1230174
+}
+1221.1.1 = {
+	liege = d_khoar
+	holder = 93054
+}
+1223.1.1 = {
+	liege = k_khwarezmia
+	holder = 93053
+}
+1225.1.1 = {
+	liege = e_mongol_empire
+	holder = 125501
+}
+1227.12.2 = {
+	liege = k_daylam
+	holder = 125520
+}
+1232.1.2 = {
+	holder = 217265
+}
+1248.1.1 = {
+	liege = e_il-khanate
+}
+1259.8.11 = {
+	holder = 478011
+}
+1265.2.8 = {
+	holder = 478010
+}
+1282.1.1 = {
+	holder = 125523
+}
+1284.1.1 = {
+	holder = 478008
+}
+1291.1.1 = {
+	holder = 125525
+}
+1295.1.1 = {
+	holder = 125522
+}
+1295.8.1 = {
+	holder = 125524
+}
+1304.5.11 = {
+	holder = 478007
+}
+1316.12.16 = {
+	holder = 478006
+}
+1335.12.1 = {
+	holder = 125528
+}
+1336.4.10 = {
+	holder = 478000
+}
+1336.7.24 = {
+	holder = 34432
+}

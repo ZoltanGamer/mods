@@ -1,0 +1,9 @@
+# -*- ck2.history.titles -*-
+
+900.1.1 = {
+	liege = k_asturias
+	holder = 70020 # García I de Cantabria
+}
+910.12.20 = {
+	holder = 0
+}

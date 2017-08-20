@@ -1,0 +1,35 @@
+# -*- ck2.history.characters -*-
+###################################################
+#SWMH Aragonese characters range: 1238700-1238999
+###################################################
+
+1238700 = {
+	name="Pedro Jordan"
+	dynasty=1000053266 #de Urries (y Lascaris di Ventimiglia)
+	religion="catholic"
+	culture="aragonese"
+	father=1238701
+	mother=1237069
+	1304.1.1 = {
+		birth=yes
+	}
+	1361.1.1 = {
+		death=yes
+	}
+}
+1238701 = {
+	name="Pedro Jordan"
+	dynasty=1000053266 #de Urries
+	religion="catholic"
+	culture="aragonese"
+
+	1275.1.1 = {
+		birth=yes
+	}
+	1296.1.1 = {
+		add_spouse = 1237069
+	}	
+	1350.1.1 = {
+		death=yes
+	}
+}

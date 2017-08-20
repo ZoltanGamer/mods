@@ -1,0 +1,67 @@
+# -*- ck2.dynasties -*-
+
+######################################
+#New Croatian, Bulgarian and Serbian Dynasties
+######################################
+#
+#
+######################################
+#Croatian and Serbian dynasties
+#Range1: 1000101400 - 1000101449
+######################################
+1000101400 = {
+	name="Karinjani"
+	culture = croatian
+}
+1000101401 = {
+	name="Nelipic"
+	culture = croatian
+}
+1000101402 = {
+	name="Mogorovic"
+	culture = croatian
+}
+1000101403 = {
+	name="Kukar"
+	culture = croatian
+}
+1000101404 = {
+	name="Viševic"
+	culture = serbian
+}
+1000101405 = {
+	name="Praska"
+	culture = croatian
+}
+1000101406 = {
+	name="Bozetjehvic"
+	culture = croatian
+}
+1000101407 = {
+	name="Ohmucevic"
+	culture = serbian
+}
+1000101408 = {
+	name="Vojinovic"
+	culture = serbian
+}
+1000101409 = {
+	name="Pernishki"
+	culture = bulgarian
+}
+1000101410 = {
+	name="Kastrioti"
+	culture = arberian
+}
+1000101411 = {
+	name="Jonima"
+	culture = arberian
+}
+1000101412 = {
+	name="Blinishti"
+	culture = arberian
+}
+1000101413 = {
+	name="Arianiti"
+	culture = arberian
+}

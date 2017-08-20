@@ -1,0 +1,122 @@
+# -*- ck2.history.titles -*-
+
+691.1.1 = {
+	liege = d_crimea
+	holder = 74005
+}
+709.1.1 = {
+	holder = 74006
+}
+745.1.1 = {
+	holder = 74011
+}
+764.1.1 = {
+	holder = 145786
+}
+812.1.1 = {
+	holder = 74014
+}
+825.1.1 = {
+	holder = 74015
+}
+830.1.1 = {
+	holder = 74016
+}
+833.1.1 = {
+	liege = k_magyar
+	holder = 146230
+}
+845.1.1 = {
+	holder = 159137
+}
+859.1.1 = {
+	holder = 1233322
+}
+# Yawdi-Ertim
+893.1.1 = {
+	liege = d_yawdi_ertim
+	holder = 1231708 # Bayca
+}
+# Küerchi-Chur
+895.1.1 = {
+	liege = d_kuerchi_chur
+	holder = 1231725 # Kügel
+}
+910.1.1 = {
+	holder = 1231727
+}
+940.1.1 = {
+	holder = 1231730
+}
+969.1.1 = {
+	holder = 1231732
+}
+980.1.1 = {
+	holder = 1231734 # Küchük
+}
+1030.1.1 = {
+	holder = 1231736
+}
+# Kegen migrates
+# Suru-Külbej
+1044.1.1 = {
+	holder = 1231778 # Tiraq
+}
+# Tiraq migrates
+# Tiraq migrates, Oghuz takes over.
+1046.1.1 = {
+	liege = k_uzes
+	holder = 1231873
+}
+# Cumans arrive, Black hats formed
+1060.1.1 = {
+	liege = d_black_caps
+	holder = 1231931
+}
+1101.1.1 = {
+	holder = 1231933
+}
+1117.1.1 = {
+	holder = 1231935
+}
+1147.1.1 = {
+	holder = 1231937 # Kovuy
+}
+1182.1.1 = {
+	holder = 1231939 # Kuldeyur
+}
+1204.1.1 = {
+	holder = 1231941
+}
+1228.1.1 = {
+	holder = 1231943
+}
+1240.1.1 = {
+	liege = k_turkestan_west
+	holder = 125503
+}
+1241.12.11 = {
+	liege = e_golden_horde
+}
+1255.1.2 = {
+	holder = 125505
+}
+1256.1.2 = {
+	holder = 125506
+}
+1257.1.2 = {
+	holder = 125504
+}
+1265.1.1 = {
+	liege = d_crimea
+	holder = 125535
+}
+1289.1.2 = {
+	holder = 125536
+}
+1294.1.2 = {
+	holder = 125537
+}
+1321.1.2 = {
+	holder = 125544
+}

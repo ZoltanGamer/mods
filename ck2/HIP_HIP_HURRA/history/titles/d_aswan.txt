@@ -1,0 +1,12 @@
+# -*- ck2.history.titles -*-
+
+#1040.1.1 = {
+#	liege = k_egypt
+#	holder = 1144660
+#}
+#1062.1.1 = {
+#	holder = 1144659
+#}
+#1095.1.1 = {
+#	holder = 0
+#}

@@ -1,0 +1,945 @@
+ # Triggers are in Province scope. The From Scope contains the settlement holder (character)
+ # start trigger is in title scope.
+ 
+ #<tag> = {
+ #	desc = description used in the tooltip of the building
+ #	trigger = used for tech requirement of the building, set to 0 if no requirement so it can be build automatically on new games
+ #	gold_cost = cost to build the building
+ #	build_time = time to build, in days
+ #	
+ #	ai_creation_factor = weight that the AI uses to determine what building to build
+ #	extra_tech_building_start = when starting a new game this building will be pre-built if the province has higher tech than the requirement + this + random 0-1
+ #}
+ 
+#to do list
+
+#check vanilla buildings for requirements
+#change not working moddifiers
+#add more buildings
+#change names
+#!!!finished!!! add more levels
+#!!!important!!! balancing         
+#!!!finished!!! python program for each building?
+
+castle {
+	#gives, light infantry
+	ca_swordsmith_1 = {
+		desc = ca_swordsmith_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 67.2
+		build_time = 120
+		light_infantry = 50
+		ai_creation_factor = 90
+
+		extra_tech_building_start = 2.0
+	}
+	ca_swordsmith_2 = {
+		desc = ca_swordsmith_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_swordsmith_1
+		gold_cost = 156.4
+		build_time = 230
+		light_infantry = 100
+		ai_creation_factor = 89
+
+		extra_tech_building_start = 2.5
+	}
+	ca_swordsmith_3 = {
+		desc = ca_swordsmith_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_swordsmith_2
+		gold_cost = 259.2
+		build_time = 360
+		light_infantry = 150
+		ai_creation_factor = 88
+
+		extra_tech_building_start = 3.0
+	}
+	ca_swordsmith_4 = {
+		desc = ca_swordsmith_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_swordsmith_3
+		gold_cost = 407.0
+		build_time = 550
+		light_infantry = 200
+		ai_creation_factor = 87
+
+		extra_tech_building_start = 3.5
+	}
+	ca_swordsmith_5 = {
+		desc = ca_swordsmith_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_swordsmith_4
+		gold_cost = 455.9
+		build_time = 606
+		light_infantry = 250
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, heavy infantry
+	ca_armory_1 = {
+		desc = ca_armory_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 69.3
+		build_time = 124
+		heavy_infantry = 25
+		ai_creation_factor = 90
+
+		extra_tech_building_start = 2.0
+	}
+	ca_armory_2 = {
+		desc = ca_armory_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_armory_1
+		gold_cost = 178.5
+		build_time = 262
+		heavy_infantry = 50
+		ai_creation_factor = 89
+
+		extra_tech_building_start = 2.5
+	}
+	ca_armory_3 = {
+		desc = ca_armory_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_armory_2
+		gold_cost = 291.6
+		build_time = 405
+		heavy_infantry = 75
+		ai_creation_factor = 88
+
+		extra_tech_building_start = 3.0
+	}
+	ca_armory_4 = {
+		desc = ca_armory_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_armory_3
+		gold_cost = 377.4
+		build_time = 510
+		heavy_infantry = 100
+		ai_creation_factor = 87
+
+		extra_tech_building_start = 3.5
+	}
+	ca_armory_5 = {
+		desc = ca_armory_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_armory_4
+		gold_cost = 441.8
+		build_time = 588
+		heavy_infantry = 125
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, tech
+	ca_archive_1 = {
+		desc = ca_archive_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 69.3
+		build_time = 124
+		economy_techpoints = 0.05
+		military_techpoints = 0.05
+		culture_techpoints = 0.05
+		ai_creation_factor = 85
+
+		extra_tech_building_start = 2.0
+	}
+	ca_archive_2 = {
+		desc = ca_archive_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_archive_1
+		gold_cost = 163.2
+		build_time = 240
+		economy_techpoints = 0.1
+		military_techpoints = 0.1
+		culture_techpoints = 0.1
+		ai_creation_factor = 84
+
+		extra_tech_building_start = 2.5
+	}
+	ca_archive_3 = {
+		desc = ca_archive_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_archive_2
+		gold_cost = 278.1
+		build_time = 386
+		economy_techpoints = 0.15
+		military_techpoints = 0.15
+		culture_techpoints = 0.15
+		ai_creation_factor = 83
+
+		extra_tech_building_start = 3.0
+	}
+	ca_archive_4 = {
+		desc = ca_archive_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_archive_3
+		gold_cost = 358.9
+		build_time = 485
+		economy_techpoints = 0.2
+		military_techpoints = 0.2
+		culture_techpoints = 0.2
+		ai_creation_factor = 82
+
+		extra_tech_building_start = 3.5
+	}
+	ca_archive_5 = {
+		desc = ca_archive_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_archive_4
+		gold_cost = 484.1
+		build_time = 644
+		economy_techpoints = 0.25
+		military_techpoints = 0.25
+		culture_techpoints = 0.25
+		ai_creation_factor = 81
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, economy tech, tax, tradepost
+	ca_administrative_office_1 = {
+		desc = ca_administrative_office_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 71.4
+		build_time = 153
+		economy_techpoints = 0.05
+		tax_income = 1
+		ai_creation_factor = 88
+
+		extra_tech_building_start = 2.0
+	}
+	ca_administrative_office_2 = {
+		desc = ca_administrative_office_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_administrative_office_1
+		gold_cost = 157.5
+		build_time = 315
+		pikemen = 10
+		economy_techpoints = 0.1
+		tax_income = 2
+		ai_creation_factor = 87
+
+		extra_tech_building_start = 2.5
+	}
+	ca_administrative_office_3 = {
+		desc = ca_administrative_office_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_administrative_office_2
+		gold_cost = 253.0
+		build_time = 495
+		economy_techpoints = 0.15
+		tax_income = 3
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 3.0
+	}
+	ca_administrative_office_4 = {
+		desc = ca_administrative_office_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_administrative_office_3
+		gold_cost = 319.3
+		build_time = 618
+		economy_techpoints = 0.2
+		tax_income = 4
+		ai_creation_factor = 85
+
+		extra_tech_building_start = 3.5
+	}
+	ca_administrative_office_5 = {
+		desc = ca_administrative_office_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_administrative_office_4
+		gold_cost = 382.2
+		build_time = 735
+		economy_techpoints = 0.25
+		tax_income = 5
+		ai_creation_factor = 84
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, piety, tax
+	ca_shrine_1 = {
+		desc = ca_shrine_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 65.1
+		build_time = 140
+		tax_income = 1.0
+		liege_piety = 0.25
+		ai_creation_factor = 88
+
+		extra_tech_building_start = 2.0
+	}
+	ca_shrine_2 = {
+		desc = ca_shrine_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_shrine_1
+		gold_cost = 123.6
+		build_time = 258
+		tax_income = 1.5
+		liege_piety = 0.5
+		ai_creation_factor = 87
+
+		extra_tech_building_start = 2.5
+	}
+	ca_shrine_3 = {
+		desc = ca_shrine_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_shrine_2
+		gold_cost = 185.3
+		build_time = 382
+		tax_income = 2.0
+		liege_piety = 0.75
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 3.0
+	}
+	ca_shrine_4 = {
+		desc = ca_shrine_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_shrine_3
+		gold_cost = 239.8
+		build_time = 491
+		tax_income = 2.5
+		liege_piety = 1.0
+		ai_creation_factor = 85
+
+		extra_tech_building_start = 3.5
+	}
+	ca_shrine_5 = {
+		desc = ca_shrine_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_shrine_4
+		gold_cost = 259.2
+		build_time = 528
+		tax_income = 3.0
+		liege_piety = 1.25
+		ai_creation_factor = 84
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, prestige, tax
+	ca_statue_1 = {
+		desc = ca_statue_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 75.6
+		build_time = 162
+		tax_income = 1.0
+		liege_prestige = 0.25
+		ai_creation_factor = 85
+
+		extra_tech_building_start = 2.0
+	}
+	ca_statue_2 = {
+		desc = ca_statue_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_statue_1
+		gold_cost = 108.0
+		build_time = 225
+		tax_income = 1.5
+		liege_prestige = 0.5
+		ai_creation_factor = 84
+
+		extra_tech_building_start = 2.5
+	}
+	ca_statue_3 = {
+		desc = ca_statue_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_statue_2
+		gold_cost = 187.0
+		build_time = 385
+		tax_income = 2.0
+		liege_prestige = 0.75
+		ai_creation_factor = 83
+
+		extra_tech_building_start = 3.0
+	}
+	ca_statue_4 = {
+		desc = ca_statue_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_statue_3
+		gold_cost = 228.8
+		build_time = 468
+		tax_income = 2.5
+		liege_prestige = 1.0
+		ai_creation_factor = 82
+
+		extra_tech_building_start = 3.5
+	}
+	ca_statue_5 = {
+		desc = ca_statue_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_statue_4
+		gold_cost = 291.6
+		build_time = 594
+		tax_income = 3.0
+		pikemen = 10
+		knights = 5
+		liege_prestige = 1.25
+		ai_creation_factor = 81
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, culture techpoints, tax
+	ca_library_1 = {
+		desc = ca_library_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 76.3
+		build_time = 164
+		tax_income = 0.5
+		culture_techpoints = 0.05
+		ai_creation_factor = 88
+
+		extra_tech_building_start = 2.0
+	}
+	ca_library_2 = {
+		desc = ca_library_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_library_1
+		gold_cost = 175.1
+		build_time = 309
+		tax_income = 1.0
+		culture_techpoints = 0.1
+		ai_creation_factor = 87
+
+		extra_tech_building_start = 2.5
+	}
+	ca_library_3 = {
+		desc = ca_library_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_library_2
+		gold_cost = 245.7
+		build_time = 410
+		tax_income = 1.5
+		culture_techpoints = 0.15
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 3.0
+	}
+	ca_library_4 = {
+		desc = ca_library_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_library_3
+		gold_cost = 403.3
+		build_time = 654
+		tax_income = 2.0
+		culture_techpoints = 0.2
+		ai_creation_factor = 85
+
+		extra_tech_building_start = 3.5
+	}
+	ca_library_5 = {
+		desc = ca_library_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_library_4
+		gold_cost = 441.8
+		build_time = 705
+		tax_income = 2.5
+		culture_techpoints = 0.25
+		ai_creation_factor = 84
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, prestige, demesne_size
+	ca_great_hall_1 = {
+		desc = ca_great_hall_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 68.6
+		build_time = 122
+		liege_prestige = 0.25
+		knights = 10
+		ai_creation_factor = 90
+
+		extra_tech_building_start = 2.0
+	}
+	ca_great_hall_2 = {
+		desc = ca_great_hall_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_great_hall_1
+		gold_cost = 180.2
+		build_time = 265
+		liege_prestige = 0.5
+		ai_creation_factor = 89
+
+		extra_tech_building_start = 2.5
+	}
+	ca_great_hall_3 = {
+		desc = ca_great_hall_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_great_hall_2
+		gold_cost = 297.0
+		build_time = 413
+		liege_prestige = 0.75
+		knights = 10
+		ai_creation_factor = 88
+
+		extra_tech_building_start = 3.0
+	}
+	ca_great_hall_4 = {
+		desc = ca_great_hall_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_great_hall_3
+		gold_cost = 384.8
+		build_time = 520
+		liege_prestige = 1.0
+		ai_creation_factor = 87
+
+		extra_tech_building_start = 3.5
+	}
+	ca_great_hall_5 = {
+		desc = ca_great_hall_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_great_hall_4
+		gold_cost = 474.7
+		build_time = 631
+		liege_prestige = 1.25
+		knights = 10
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, fort level, garrison size
+	ca_food_storage_1 = {
+		desc = ca_food_storage_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 76.3
+		build_time = 109
+		fort_level = 0.25
+		garrison_size = 0.05
+		ai_creation_factor = 88
+
+		extra_tech_building_start = 2.0
+	}
+	ca_food_storage_2 = {
+		desc = ca_food_storage_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_food_storage_1
+		gold_cost = 130.8
+		build_time = 218
+		fort_level = 0.5
+		garrison_size = 0.1
+		ai_creation_factor = 87
+
+		extra_tech_building_start = 2.5
+	}
+	ca_food_storage_3 = {
+		desc = ca_food_storage_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_food_storage_2
+		gold_cost = 159.8
+		build_time = 282
+		fort_level = 0.75
+		garrison_size = 0.15000000000000002
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 3.0
+	}
+	ca_food_storage_4 = {
+		desc = ca_food_storage_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_food_storage_3
+		gold_cost = 211.2
+		build_time = 384
+		fort_level = 1.0
+		garrison_size = 0.2
+		ai_creation_factor = 85
+
+		extra_tech_building_start = 3.5
+	}
+	ca_food_storage_5 = {
+		desc = ca_food_storage_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_food_storage_4
+		gold_cost = 275.4
+		build_time = 510
+		fort_level = 1.25
+		garrison_size = 0.25
+		ai_creation_factor = 84
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, garrison size, levy size
+	ca_bakehouse_1 = {
+		desc = ca_bakehouse_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 63.0
+		build_time = 90
+		levy_size = 0.05
+		garrison_size = 0.05
+		ai_creation_factor = 90
+
+		extra_tech_building_start = 2.0
+	}
+	ca_bakehouse_2 = {
+		desc = ca_bakehouse_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_bakehouse_1
+		gold_cost = 126.0
+		build_time = 225
+		levy_size = 0.1
+		garrison_size = 0.1
+		ai_creation_factor = 89
+
+		extra_tech_building_start = 2.5
+	}
+	ca_bakehouse_3 = {
+		desc = ca_bakehouse_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_bakehouse_2
+		gold_cost = 197.4
+		build_time = 376
+		levy_size = 0.15000000000000002
+		garrison_size = 0.15000000000000002
+		ai_creation_factor = 88
+
+		extra_tech_building_start = 3.0
+	}
+	ca_bakehouse_4 = {
+		desc = ca_bakehouse_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_bakehouse_3
+		gold_cost = 308.0
+		build_time = 605
+		levy_size = 0.2
+		garrison_size = 0.2
+		ai_creation_factor = 87
+
+		extra_tech_building_start = 3.5
+	}
+	ca_bakehouse_5 = {
+		desc = ca_bakehouse_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_bakehouse_4
+		gold_cost = 325.5
+		build_time = 651
+		levy_size = 0.25
+		garrison_size = 0.25
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, levy size, tax income
+	ca_brewery_1 = {
+		desc = ca_brewery_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 65.8
+		build_time = 118
+		levy_size = 0.05
+		tax_income = 0.5
+		ai_creation_factor = 90
+
+		extra_tech_building_start = 2.0
+	}
+	ca_brewery_2 = {
+		desc = ca_brewery_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_brewery_1
+		gold_cost = 131.6
+		build_time = 212
+		levy_size = 0.1
+		tax_income = 1.0
+		ai_creation_factor = 89
+
+		extra_tech_building_start = 2.5
+	}
+	ca_brewery_3 = {
+		desc = ca_brewery_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_brewery_2
+		gold_cost = 222.6
+		build_time = 344
+		levy_size = 0.15000000000000002
+		tax_income = 1.5
+		ai_creation_factor = 88
+
+		extra_tech_building_start = 3.0
+	}
+	ca_brewery_4 = {
+		desc = ca_brewery_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_brewery_3
+		gold_cost = 277.2
+		build_time = 421
+		levy_size = 0.2
+		tax_income = 2.0
+		ai_creation_factor = 87
+
+		extra_tech_building_start = 3.5
+	}
+	ca_brewery_5 = {
+		desc = ca_brewery_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_brewery_4
+		gold_cost = 371.0
+		build_time = 556
+		levy_size = 0.25
+		tax_income = 2.5
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, fort level
+	ca_moat_1 = {
+		desc = ca_moat_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 66.5
+		build_time = 190
+		fort_level = 0.5
+		ai_creation_factor = 80
+
+		extra_tech_building_start = 2.0
+	}
+	ca_moat_2 = {
+		desc = ca_moat_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_moat_1
+		gold_cost = 109.2
+		build_time = 341
+		fort_level = 1.0
+		ai_creation_factor = 79
+
+		extra_tech_building_start = 2.5
+	}
+	ca_moat_3 = {
+		desc = ca_moat_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_moat_2
+		gold_cost = 175.1
+		build_time = 566
+		fort_level = 1.5
+		ai_creation_factor = 78
+
+		extra_tech_building_start = 3.0
+	}
+	ca_moat_4 = {
+		desc = ca_moat_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_moat_3
+		gold_cost = 198.0
+		build_time = 652
+		fort_level = 2.0
+		ai_creation_factor = 77
+
+		extra_tech_building_start = 3.5
+	}
+	ca_moat_5 = {
+		desc = ca_moat_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_moat_4
+		gold_cost = 264.6
+		build_time = 882
+		fort_level = 2.5
+		ai_creation_factor = 76
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, archers, fort level
+	ca_towers_1 = {
+		desc = ca_towers_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 72.8
+		build_time = 208
+		archers = 25
+		fort_level = 0.3
+		ai_creation_factor = 88
+
+		extra_tech_building_start = 2.0
+	}
+	ca_towers_2 = {
+		desc = ca_towers_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_towers_1
+		gold_cost = 153.0
+		build_time = 315
+		archers = 50
+		fort_level = 0.6
+		ai_creation_factor = 87
+
+		extra_tech_building_start = 2.5
+	}
+	ca_towers_3 = {
+		desc = ca_towers_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_towers_2
+		gold_cost = 283.5
+		build_time = 525
+		archers = 75
+		fort_level = 0.9
+		ai_creation_factor = 86
+
+		extra_tech_building_start = 3.0
+	}
+	ca_towers_4 = {
+		desc = ca_towers_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_towers_3
+		gold_cost = 344.1
+		build_time = 604
+		archers = 100
+		fort_level = 1.2
+		ai_creation_factor = 85
+
+		extra_tech_building_start = 3.5
+	}
+	ca_towers_5 = {
+		desc = ca_towers_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_towers_4
+		gold_cost = 474.7
+		build_time = 808
+		archers = 125
+		fort_level = 1.5
+		ai_creation_factor = 84
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, garrison size, fort level, heavy infantry
+	ca_barbican_1 = {
+		desc = ca_barbican_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 77.0
+		build_time = 220
+		garrison_size = 0.05
+		fort_level = 0.25
+		heavy_infantry = 25
+		ai_creation_factor = 85
+
+		extra_tech_building_start = 2.0
+	}
+	ca_barbican_2 = {
+		desc = ca_barbican_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_barbican_1
+		gold_cost = 135.8
+		build_time = 388
+		garrison_size = 0.1
+		fort_level = 0.5
+		heavy_infantry = 50
+		ai_creation_factor = 84
+
+		extra_tech_building_start = 2.5
+	}
+	ca_barbican_3 = {
+		desc = ca_barbican_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_barbican_2
+		gold_cost = 207.9
+		build_time = 594
+		garrison_size = 0.15
+		fort_level = 0.75
+		heavy_infantry = 75
+		ai_creation_factor = 83
+
+		extra_tech_building_start = 3.0
+	}
+	ca_barbican_4 = {
+		desc = ca_barbican_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_barbican_3
+		gold_cost = 268.8
+		build_time = 768
+		garrison_size = 0.2
+		fort_level = 1.0
+		heavy_infantry = 100
+		ai_creation_factor = 82
+
+		extra_tech_building_start = 3.5
+	}
+	ca_barbican_5 = {
+		desc = ca_barbican_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_barbican_4
+		gold_cost = 374.5
+		build_time = 1070
+		garrison_size = 0.25
+		fort_level = 1.25
+		heavy_infantry = 125
+		ai_creation_factor = 81
+
+		extra_tech_building_start = 4.0
+	}
+
+	#gives, levy size, fort level, pikemen, light infantry
+	ca_gatehouse_1 = {
+		desc = ca_gatehouse_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 73.5
+		build_time = 210
+		levy_size = 0.05
+		fort_level = 0.25
+		pikemen = 25
+		light_infantry = 25
+		ai_creation_factor = 85
+
+		extra_tech_building_start = 2.0
+	}
+	ca_gatehouse_2 = {
+		desc = ca_gatehouse_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_gatehouse_1
+		gold_cost = 137.2
+		build_time = 343
+		levy_size = 0.1
+		fort_level = 0.5
+		pikemen = 50
+		light_infantry = 50
+		ai_creation_factor = 84
+
+		extra_tech_building_start = 2.5
+	}
+	ca_gatehouse_3 = {
+		desc = ca_gatehouse_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_gatehouse_2
+		gold_cost = 228.9
+		build_time = 545
+		levy_size = 0.15
+		fort_level = 0.75
+		pikemen = 75
+		light_infantry = 75
+		ai_creation_factor = 83
+
+		extra_tech_building_start = 3.0
+	}
+	ca_gatehouse_4 = {
+		desc = ca_gatehouse_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 5 }
+		upgrades_from = ca_gatehouse_3
+		gold_cost = 282.8
+		build_time = 656
+		levy_size = 0.2
+		fort_level = 1.0
+		pikemen = 100
+		light_infantry = 100
+		ai_creation_factor = 82
+
+		extra_tech_building_start = 3.5
+	}
+	ca_gatehouse_5 = {
+		desc = ca_gatehouse_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 7 }
+		upgrades_from = ca_gatehouse_4
+		gold_cost = 336.0
+		build_time = 768
+		levy_size = 0.25
+		fort_level = 1.25
+		pikemen = 125
+		light_infantry = 125
+		ai_creation_factor = 81
+
+		extra_tech_building_start = 4.0
+	}
+}	

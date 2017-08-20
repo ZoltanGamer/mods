@@ -1,0 +1,608 @@
+# -*- ck2.history.characters -*-
+
+# Elvain's flavour and balance characters of various cultures (mainly Zanata, Sanhaja, Egyptian)
+#1144657-1144679 - characters
+
+
+1144553 = {
+	name="Amawal" #1066 - Tuat
+	dynasty=1000054006
+	religion="ibadi"
+	culture="zanata"
+	1030.8.5={
+		birth="1030.8.5"
+	}
+	1111.11.11={
+		death="1111.11.11"
+	}
+}
+1144554 = {
+	name="Gildun" #Tuat
+	dynasty=1000053592
+	religion="sunni"
+	culture="sanhaja"
+	868.1.1={
+		birth="868.1.1"
+	}
+	925.1.1={
+		death="925.1.1"
+	}
+}
+1144555 = {
+	name="Tanan" #Tuat
+	dynasty=1000053592
+	religion="sunni"
+	culture="sanhaja"
+	father=1144554
+	896.1.1={
+		birth="896.1.1"
+	}
+	958.1.1={
+		death="958.1.1"
+	}
+}
+1144556 = {
+	name="Masgava" #Tuat
+	dynasty=1000053592
+	religion="sunni"
+	culture="sanhaja"
+	father=1144555
+	919.1.1={
+		birth="919.1.1"
+	}
+	975.1.1={
+		death="975.1.1"
+	}
+}
+1144557 = {
+	name="Ali" #Tuat
+	dynasty=1000053592
+	religion="sunni"
+	culture="sanhaja"
+	father=1144556
+	944.1.1={
+		birth="944.1.1"
+	}
+	1008.1.1={
+		death="1008.1.1"
+	}
+}
+1144558 = {
+	name="Muhammad" #Tuat
+	dynasty=1000053592
+	religion="sunni"
+	culture="sanhaja"
+	father=1144557
+	974.1.1={
+		birth="974.1.1"
+	}
+	1036.1.1={
+		death="1036.1.1"
+	}
+}
+1144559 = {
+	name="Ibiza" #Tuat
+	dynasty=1000053592
+	religion="sunni"
+	culture="sanhaja"
+	father=1144558
+	1000.1.1={
+		birth="1000.1.1"
+	}
+	1055.1.1={
+		death="1055.1.1"
+	}
+}
+1144560 = {
+	name="Yunes" #Tuat
+	dynasty=1000054006
+	religion="ibadi"
+	culture="zanata"
+	father=1144553
+	1053.1.1={
+		birth="1053.1.1"
+	}
+	1117.1.1={
+		death="1117.1.1"
+	}
+}
+1144561 = {
+	name="Musa" #Tuat
+	dynasty=1000054006
+	religion="ibadi"
+	culture="zanata"
+	father=1144560
+	1073.1.1={
+		birth="1073.1.1"
+	}
+	1140.1.1={
+		death="1140.1.1"
+	}
+}
+1144562 = {
+	name="Mansur" #Tuat
+	dynasty=1000054006
+	religion="ibadi"
+	culture="zanata"
+	father=1144561
+	1100.1.1={
+		birth="1100.1.1"
+	}
+	1164.1.1={
+		death="1164.1.1"
+	}
+}
+1144563 = {
+	name="Umar" #Tuat
+	dynasty=1000054006
+	religion="ibadi"
+	culture="zanata"
+	father=1144562
+	1131.1.1={
+		birth="1131.1.1"
+	}
+	1192.1.1={
+		death="1192.1.1"
+	}
+}
+
+1144657 = {
+	name="Taj al-Muluk"
+	martial=7
+	dynasty=1000053593
+	religion="ismaili"
+	culture="turkish"
+	1022.1.1={
+		birth=yes
+		culture="egyptian_arabic"
+	}
+	1075.1.1={
+		death=yes
+	}
+}
+1144658 = {
+	name="Ildekuz"
+	dynasty=1000053597
+	diplomacy=8
+	intrigue=12
+	religion="ismaili"
+	culture="turkmen"
+	1033.1.1={
+		birth=yes
+	}
+	1048.1.1={
+		culture="egyptian_arabic"
+	}
+	1065.1.1={
+		add_spouse=1144661
+	}
+	1088.1.1={
+		death=yes
+	}
+}
+1144659 = {
+	name="Yaldakuz"
+	dynasty=1000053598
+	martial=7
+	stewardship=9
+	religion="ismaili"
+	culture="nubian"
+	father=1144660
+  	1044.1.1={
+		birth=yes
+		culture="egyptian_arabic"
+	}
+	1095.1.1={
+		death=yes
+	}
+}
+1144660 = { #Yaldakuz's father
+	name="Dembele"
+	dynasty=1000053598
+	religion="ismaili"
+	culture="nubian"
+	1021.1.1={
+		birth=yes
+	}
+	1040.1.1={
+		culture="egyptian_arabic"
+	}
+	1073.1.1={
+		death=yes
+	}
+}
+1144661 = {
+	name="Taszellayt"
+	female=yes
+	dynasty=1000053598
+	religion="ismaili"
+	culture="nubian"
+	father=1144660
+  	1049.1.1={
+		birth="1049.1.1"
+		culture="egyptian_arabic"
+	}
+	1090.1.1={
+		death="1090.1.1"
+	}
+}
+
+#Banu Hilal
+#1144662 = {
+#	name="Hilal"
+#	dynasty=1000053599
+#	religion="ismaili"
+#	culture="bedouin_arabic"
+#	1020.1.1={
+#		birth="1020.1.1"
+#	}
+#	1064.1.1={
+#		death="1064.1.1"
+#	}
+#}
+#1144663 = {
+#	name="Athbej"
+#	dynasty=1000053599
+#	religion="ismaili"
+#	culture="bedouin_arabic"
+#	father=1144662
+#	1040.1.1={
+#		birth="1040.1.1"
+#	}
+#	1084.1.1={
+#		death="1084.1.1"
+#	}
+#}
+#1144664 = {
+#	name="Riyah"
+#	dynasty=1000053599
+#	religion="ismaili"
+#	culture="bedouin_arabic"
+#	father=1144662
+#	1045.1.1={
+#		birth="1045.1.1"
+#	}
+#	1088.1.1={
+#		death="1088.1.1"
+#	}
+#}
+#1144665 = {
+#	name="Zoghua"
+#	dynasty=1000053599
+#	religion="ismaili"
+#	culture="bedouin_arabic"
+#	father=1144662
+#	1048.1.1={
+#		birth="1048.1.1"
+#	}
+#	1094.1.1={
+#		death="1094.1.1"
+#	}
+#}
+# 1144666 moved to berber_zanata
+
+1144667 = {
+	name="Sayyida Rasad"
+	female=yes
+	religion="ismaili"
+	culture="hausa"
+	1012.1.1={
+		birth="1012.1.1"
+		culture="tuareg"
+	}
+	1028.1.1={
+		add_spouse=3094
+	}
+	1074.1.1={
+		death="1074.1.1"
+	}
+}
+1144668 = {
+	name="al-Zanjí"
+	dynasty=589
+	religion="ismaili"
+	culture="hausa"
+	add_trait="sayyid"
+	father=3094
+	mother=1144667
+	1036.8.5={
+		birth="1036.8.5"
+		culture="egyptian_arabic"
+	}
+	1088.1.10={
+		death="1088.1.10"
+	}
+}
+
+
+
+#Tuaregs Awlad Sidi Abid of Hoggar
+#1144669 = {
+#	name="Yahla 'Abd al-Haq" #1066 - Hoggar
+#	dynasty=1000054006
+#	religion="ibadi"
+#	culture="zanata"
+#	father=1144670
+#	1046.8.5={
+#		birth="1046.8.5"
+#	}
+#	1098.10.10={
+#		death="1098.10.10"
+#	}
+#}
+1144670 = {
+	name="'Abd al-Azíz"
+	dynasty=1000054006
+	religion="ibadi"
+	culture="zanata"
+	1026.8.5={
+		birth="1026.8.5"
+	}
+	1068.10.10={
+		death="1068.10.10"
+	}
+}
+#1144671 = {
+#	name="Ahmad Khedír" #1066 - Arigh
+#	dynasty=1000054006
+#	religion="ibadi"
+#	culture="zanata"
+#	father=1144670
+#	1048.8.5={
+#		birth="1048.8.5"
+#	}
+#	1100.10.10={
+#		death="1100.10.10"
+#	}
+#}
+#1144672 = {
+#	name="'Ísá" #1066 - Wargla
+#	dynasty=1000054006
+#	religion="ibadi"
+#	culture="zanata"
+#	father=1144670
+#	1050.8.5={
+#		birth="1050.8.5"
+#	}
+#	1110.10.10={
+#		death="1110.10.10"
+#	}
+#}
+#1144673 = {
+#	name="Ja'far" #1066 - Ilizi
+#	dynasty=1000054006
+#	religion="ibadi"
+#	culture="zanata"
+#	father=1144670
+#	1049.8.5={
+#		birth="1049.8.5"
+#	}
+#	1111.11.11={
+#		death="1111.11.11"
+#	}
+#}
+#Zanata Muqqarí merchant family
+1144674 = {
+	name="Muhammad ibn Muqqarí" #Lived in Tahert
+	dynasty=1000054007
+	religion="ibadi"
+	culture="zanata"
+	1016.8.5={
+		birth="1016.8.5"
+	}
+	1068.10.10={
+		death="1068.10.10"
+	}
+}
+1144675 = {
+	name="'Abd al-Rahmán" #Sijilmasa
+	dynasty=1000054007
+	religion="ibadi"
+	culture="zanata"
+	father=1144674
+	1036.8.5={
+		birth="1036.8.5"
+	}
+	1060.1.1={
+		add_spouse=1144683
+	}
+	1088.10.10={
+		death="1088.10.10"
+	}
+}
+1144676 = {
+	name="Abú-Bakr" #Tlemcen
+	dynasty=1000054007
+	religion="ibadi"
+	culture="zanata"
+	father=1144674
+	1038.8.5={
+		birth="1038.8.5"
+	}
+	1060.1.1={
+		add_spouse=1144681
+	}
+	1090.10.10={
+		death="1090.10.10"
+	}
+}
+1144677 = {
+	name="Muhammad" #Tahert
+	dynasty=1000054007
+	religion="ibadi"
+	culture="zanata"
+	father=1144674
+	1040.8.5={
+		birth="1040.8.5"
+	}
+	1090.10.10={
+		death="1090.10.10"
+	}
+}
+1144678 = {
+	name="'Abd al-Wahíd" #Walata
+	dynasty=1000054007
+	religion="ibadi"
+	culture="zanata"
+	father=1144674
+	1042.8.5={
+		birth="1042.8.5"
+	}
+	1065.1.1={
+		add_spouse=1144682
+	}
+	1096.10.10={
+		death="1096.10.10"
+	}
+}
+1144679 = {
+	name="'Alí" #Tirakka
+	dynasty=1000054007
+	religion="sunni"
+	culture="zanata"
+	father=1144674
+	1044.8.5={
+		birth="1044.8.5"
+	}
+	1088.10.10={
+		death="1088.10.10"
+	}
+}
+
+1144681 = {
+	name="Taninna" #wife of Abú Bakr Muqqarí
+	female=yes
+	religion="sunni"
+	culture="zanata"
+	1043.8.5={
+		birth = yes
+	}
+	1060.1.1={
+		add_spouse=1144676
+	}
+	1109.10.10={
+		death="1109.10.10"
+	}
+}
+1144682 = {
+	name="Kahina" #wife of Abd al-Wahíd Muqqarí
+	female=yes
+	religion="sunni"
+	culture="zanata"
+	1046.8.5={
+		birth="1046.8.5"
+	}
+	1065.1.1={
+		add_spouse=1144678
+	}
+	1108.10.10={
+		death="1108.10.10"
+	}
+}
+1144683 = {
+	name="Taljat" #wife of Abd ar-Rahmán Muqqarí
+	female=yes
+	religion="ibadi"
+	culture="zanata"
+	1040.8.5={
+		birth="1040.8.5"
+	}
+	1060.1.1={
+		add_spouse=1144675
+	}
+	1102.10.10={
+		death="1102.10.10"
+	}
+}
+
+#Other berber mayors of Sudanese cities
+
+1144684 = {
+	name="Alfá Idá" #mayor of b_Dia in Massina
+	dynasty=1000054008  #Massiní
+	religion="sunni"
+	culture="zanata"
+	1041.10.10={
+		birth="1041.10.10"
+	}
+	1098.10.10={
+		death="1098.10.10"
+	}
+}
+1144685 = {
+	name="Isma'íl" #mayor of b_koumbi_saleh in Ghana/Wagadu
+	religion="sunni"
+	culture="zanata"
+	1031.10.10={
+		birth="1031.10.10"
+	}
+	1064.1.1={
+		add_spouse=1144687
+	}
+	1098.10.10={
+		death="1098.10.10"
+	}
+}
+1144686 = {
+	name="Mustafa" #mayor of b_Djenne in Djenne
+	religion="sunni"
+	culture="sanhaja"
+	1036.10.10={
+		birth="1036.10.10"
+	}
+	1088.10.10={
+		death="1088.10.10"
+	}
+}
+1144687 = {
+	name="Marjam" #wife of Isma'íl mayor of Koumbi_Saleh
+	female=yes
+	religion="sunni"
+	culture="soninke"
+	1042.8.5={
+		birth="1042.8.5"
+	}
+	1064.1.1={
+		add_spouse=1144685
+	}
+	1102.10.10={
+		death="1102.10.10"
+	}
+}
+1144688 = {
+	name="Tariq" #1066 - Tadmekka
+	dynasty=1000101120
+	religion="west_african_pagan"
+	culture="tagelmust"
+	father=1236391
+	1047.8.5={
+		birth="1047.8.5"
+	}
+	1098.10.10={
+		death="1098.10.10"
+	}
+}
+1144689 = {
+	name="Abd al-Walíd" #mayor of b_Yaresna in Bambuk
+	religion="sunni"
+	culture="sanhaja"
+	1026.10.10={
+		birth="1026.10.10"
+	}
+	1078.10.10={
+		death="1078.10.10"
+	}
+}
+1228258 = {
+	name="Abdallah"
+	dynasty=595
+	religion="sunni"
+	culture="sanhaja"
+	father=20935
+	1019.1.1 = {
+		birth=yes
+	}
+	1044.1.1 = {
+		death=yes
+	}
+}

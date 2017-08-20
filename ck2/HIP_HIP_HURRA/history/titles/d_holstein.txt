@@ -1,0 +1,29 @@
+# -*- ck2.history.titles -*-
+
+1129.7.1 = {
+	liege = k_denmark
+	holder = 201513 # Knud Lavard
+	#law = agnatic_succession
+	#law = succ_primogeniture
+}
+1131.1.13 = {
+	liege = 0
+	holder = 0
+}
+1202.1.1 = {
+	liege = k_denmark
+	holder = 31795 # Albrecht Askanien
+}
+1227.7.22 = {
+	liege = e_hre
+	holder = 31752 # Adolf IV
+}
+1261.7.8 = {
+	holder = 451975 # Gerhard I
+}
+1290.12.21 = {
+	holder = 451945 # Heinrich I
+}
+1304.8.5 = {
+	holder = 451940 # Gerhard II
+}

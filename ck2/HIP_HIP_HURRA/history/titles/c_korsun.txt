@@ -1,0 +1,93 @@
+# -*- ck2.history.titles -*-
+
+845.1.1 = {
+	liege = k_magyar
+	holder = 159137
+}
+882.1.2 = {
+	liege = d_kiev
+	holder = 40606
+}
+912.1.2 = {
+	holder = 600
+}
+945.1.2 = {
+	holder = 602
+}
+972.1.2 = {
+	holder = 604
+}
+978.1.2 = {
+	holder = 608
+}
+1015.7.15 = {
+	holder = 610
+}
+1016.1.2 = {
+	holder = 612
+}
+1018.1.2 = {
+	holder = 610
+}
+1019.1.2 = {
+	holder = 612
+}
+1054.2.20 = {
+	holder = 626
+}
+# Cumans arrive, Black hats formed
+1060.1.1 = {
+	historical_nomad = yes
+	liege = d_black_caps
+	holder = 1231889
+}
+1094.1.1 = {
+	holder = 1231891
+}
+1107.1.1 = {
+	holder = 1231893 # Satmaz
+}
+1132.1.1 = {
+	holder = 1231895 # Tudar
+}
+1170.1.1 = {
+	holder = 1231897
+}
+1196.1.1 = {
+	holder = 1231899
+}
+1226.1.1 = {
+	holder = 1231901
+}
+1240.1.1 = {
+	historical_nomad = no
+	liege = d_kiev
+	holder = 125154
+}
+1240.1.2 = {
+	holder = 125114
+}
+1241.1.2 = {
+	holder = 222654
+}
+1243.1.2 = {
+	holder = 472885
+}
+1246.9.30 = {
+	holder = 472844
+}
+1263.11.14 = {
+	holder = 125074
+}
+1265.1.2 = {
+	holder = 125075
+}
+1285.1.2 = {
+	holder = 125076
+}
+1303.1.2 = {
+	holder = 125077
+}
+1325.1.2 = {
+	holder = 472100
+}

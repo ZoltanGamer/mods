@@ -1,0 +1,157 @@
+# -*- ck2.history.titles -*-
+
+865.1.1 = {
+	holder = 1230600
+}
+886.1.1 = {
+	holder = 1230601
+}
+919.1.1 = {
+	holder = 1230602
+}
+939.1.1 = {
+	holder = 1230603
+}
+955.1.1 = {
+	holder = 1230626
+}
+991.1.1 = {
+	holder = 1230627
+}
+1003.1.1 = {
+	holder = 1230628
+}
+1015.1.1 = { #by 1031
+	liege = k_kafarestan
+}
+1040.1.1 = {
+	holder = 1230629
+}
+# Seljuks
+1059.1.1 = { #by 1059
+	liege = d_balkh
+	holder = 3040
+}
+#1064.1.1 = {
+#	holder = 3040
+#}
+1066.1.1 = {
+	liege = d_khottal
+	holder = 93123
+}
+1073.1.1 = {
+	liege = d_balkh
+	holder = 1229921
+}
+1073.7.7 = {
+	holder = 1229922
+}
+1084.1.1 = {
+	liege = d_khottal
+	holder = 1230188
+}
+1098.1.1 = {
+	liege = d_balkh
+	holder = 144015
+}
+1118.4.18 = {
+	holder = 1229925
+}
+1135.1.1 = {
+	holder = 1230204
+}
+1153.1.1 = {
+	liege = d_oghuz
+}
+1158.1.1 = {
+	holder = 1230154
+}
+#1160.1.2 = {
+#	liege = d_qarluq
+#	holder = 1230296
+#}
+1164.1.1 = {
+	liege = k_mavarannahr
+	holder = 1230273 # Ma'súd b.Hasan
+}
+1171.1.1 = {
+	holder = 1230277 # Ibrahím b. Husayn - 63-79 Ferghana
+}
+1195.1.1 = {
+	holder = 1230280 # 'Uthmán' b. Ibrahím
+}
+1212.1.1 = {
+	liege = k_khwarezmia
+	holder = 93052
+}
+1221.1.1 = {
+	liege = e_mongol_empire
+	holder = 125501
+}
+1227.12.2 = {
+	liege = k_turkestan_east
+	holder = 93062
+}
+1242.1.1 = {
+	holder = 93064
+}
+1246.1.1 = {
+	holder = 93065
+}
+1248.1.1 = {
+	liege = e_chagatai
+}
+1252.1.1 = {
+	holder = 93064
+}
+1253.1.1 = {
+	holder = 93066
+}
+1260.1.1 = {
+	holder = 93068
+}
+1266.1.1 = {
+	holder = 93066
+}
+1266.9.1 = {
+	holder = 93070
+}
+1271.1.1 = {
+	holder = 93072
+}
+1272.1.1 = {
+	holder = 93074
+}
+1282.1.1 = {
+	holder = 93075
+}
+1307.1.1 = {
+	holder = 93076
+}
+1308.1.1 = {
+	holder = 93078
+}
+1309.1.1 = {
+	holder = 93079
+}
+1310.1.1 = {
+	holder = 93080
+}
+1318.1.1 = {
+	holder = 93079
+}
+1326.1.1 = {
+	holder = 93081
+}
+1329.1.1 = {
+	holder = 93082
+}
+1330.1.1 = {
+	holder = 93083
+}
+1334.1.1 = {
+	holder = 93084
+}
+1335.1.1 = {
+	holder = 93086
+}

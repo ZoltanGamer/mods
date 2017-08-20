@@ -1,0 +1,164 @@
+# -*- ck2.history.titles -*-
+
+755.1.1 = {
+	liege = e_arabia
+	holder = 160290 # Surkhab Bavand II
+}
+858.1.1 = {
+	holder = 146077
+}
+889.1.1 = {
+	liege = 0
+	holder = 1230590
+}
+901.1.1 = {
+	holder = 1230591
+}
+928.1.1 = {
+	holder = 1230592
+}
+929.1.1 = {
+	holder = 1231417
+}
+941.1.1 = {
+	holder = 180766
+}
+949.1.1 = {
+	holder = 1231417
+}
+953.1.1 = {
+	holder = 180766
+}
+957.1.1 = {
+	holder = 1231414
+}
+960.1.1 = {
+	holder = 1231415
+}
+979.1.1 = {
+	holder = 159150
+}
+988.1.1 = {
+	holder = 159151
+}
+1001.1.1 = {
+	holder = 159152
+}
+1019.1.1 = {
+	holder = 159153
+}
+1054.1.1 = {
+	liege = k_khorasan
+	holder = 20722
+}
+1055.1.1 = {
+	liege = e_persia
+}
+1071.1.1 = {
+	holder = 3040
+}
+1072.11.1 = {
+	holder = 1229949 # Isma'îl b.Yaquti
+}
+#1093?-1118?: Muhammad Tapar 144014
+#1118-1131: Mas'ud 144049
+#1131-1143: Dawud 144048
+1093.9.1 = {
+	holder = 144014 # Muhammad Tapar
+}
+1105.3.1 = {
+	holder = 159155
+}
+1117.1.1 = {
+	liege = k_persia
+	holder = 144014 # Muhammad Tapar
+}
+1118.4.18 = {
+	holder = 144049 #Mas'ud  b. Muhammad Tapar
+}
+1131.1.1 = {
+	holder = 144048 #Dâwúd b. Mahmud b. Muhammad Tapar
+}
+1143.1.1 = {
+	holder = 1230224
+}
+1146.1.1 = {
+	holder = 1230225
+}
+1147.1.1 = {
+	holder = 1230159
+}
+1174.1.1 = {
+	holder = 1230160
+}
+1175.1.1 = {
+	holder = 144052
+}
+1186.1.1 = {
+	holder = 225015
+}
+1190.1.1 = {
+	liege = 0 #Qizil Arslan removes the name of the Seljuk sultan from his coins
+}
+1191.1.1 = {
+	holder = 93296
+}
+#1194.3.1 = {
+#	liege = 0
+#}
+1210.1.1 = {
+	holder = 93297
+}
+1216.1.1 = {
+	liege = k_khwarezmia
+}
+1220.1.1 = {
+	holder = 93298
+}
+1221.1.1 = {
+	liege = 0
+}
+1225.1.1 = {
+	liege = k_khwarezmia
+	holder = 93053
+}
+1231.1.1 = {
+	liege = k_daylam
+	holder = 125520
+}
+1232.1.1 = {
+	holder = 217265
+}
+1248.1.1 = {
+	liege = e_il-khanate
+}
+1259.8.11 = {
+	holder = 478011
+}
+1265.2.8 = {
+	holder = 478010
+}
+1282.1.1 = {
+	holder = 125523
+}
+1284.1.1 = {
+	holder = 478008
+}
+1291.1.1 = {
+	holder = 125525
+}
+1295.1.1 = {
+	holder = 125522
+}
+1295.8.1 = {
+	holder = 125524
+}
+1304.5.11 = {
+	holder = 478007
+}
+1316.12.16 = {
+	holder = 478006
+}
+1328.1.1 = {
+	holder = 478033
+}

@@ -1,0 +1,8 @@
+# -*- ck2.landed_titles -*-
+
+
+
+k_germany = {
+	color = { 128 128 128 }
+	color2 = { 220 220 20 }
+}

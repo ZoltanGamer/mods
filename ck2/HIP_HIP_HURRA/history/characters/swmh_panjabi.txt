@@ -1,0 +1,72 @@
+# -*- ck2.history.characters -*-
+
+#Characters: 1240000 - 1240049
+
+1240000 = {
+	name="Salítí" #Faqih Saliti; Sheikh Hindi/Rai Raju?
+	dynasty=1000104001
+	martial=7
+	diplomacy=6
+	religion="hindu"
+	culture="panjabi"
+	trait="kshatriya"
+	trait="scholarly_theologian"
+	trait="charitable"
+	1005.1.1={
+		birth=yes
+	}
+	1021.1.1 = {
+		employer = 1230212
+	}
+	1030.1.1 = {
+		employer = 1230210
+	}
+	1031.1.1 = {
+		employer = 1230211
+	}
+	1035.1.1={
+		religion="sunni"
+		remove_trait="kshatriya"
+	}
+	1036.1.1 = {
+		employer = 1230207 #Majdud
+	}
+	1041.8.1 = {
+		employer = 0
+	}
+	1059.1.1={
+		death=yes
+	}
+}
+
+1240001 = {
+	name="Sa'd"
+	dynasty=1000104003
+	religion="ismaili"
+	culture="bedouin_arabic"
+	1003.1.1={
+		birth=yes
+		culture="panjabi"
+	}
+	1056.1.1={
+		death=yes
+	}
+}
+1240002 = {
+	name="Zaynab" #name fictional
+	female=yes
+	dynasty=1000104003
+	religion="ismaili"
+	culture="bedouin_arabic"
+	father=1240001
+	1028.1.1={
+		birth=yes
+		culture="panjabi"
+	}
+	1051.1.1 = {
+		add_spouse=1240050
+	}
+	1079.1.1={
+		death=yes
+	}
+}
