@@ -1,8 +1,8 @@
 supply_area={
 	id=355
 	name="SUPPLYAREA_355"
-	value=0
+	value=7
 	states={
-		759 
+743 781 766 772 155
 	}
 }

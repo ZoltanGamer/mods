@@ -522,6 +522,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+		remove_ideas = levente_movement
 		remove_ideas = revisionist_education
 		remove_ideas = rongyos_garda	
 			if = { limit = { has_idea = revisionist_spirit } remove_ideas = revisionist_spirit }
@@ -1340,7 +1341,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_countryside_development
 
-		cost = 30
+		cost = 20
 
 		ai_will_do = {
 			factor = 70
@@ -1849,7 +1850,7 @@ focus_tree = {
 		icon = GFX_goal_military_land_survey
 		prerequisite = { focus = HUN_advanced_doctrines }
 		available = {
-			date > 1940.1.1
+			date > 1938.1.1
 			custom_trigger_tooltip = {
 				tooltip = HUN_military_land_survey_tt
 				OR = {
@@ -1890,7 +1891,7 @@ focus_tree = {
 		x = 6
 		y = 0
 		relative_position_id = HUN_the_gyori_program
-		cost = 20
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}	
@@ -1911,54 +1912,55 @@ focus_tree = {
 		prerequisite = { focus = HUN_revive_the_navy }
 		available = {	
 			owns_state = 759	#Pag
+			owns_state = 749	#Croatia
 			owns_state = 747	#Fiume
 		}
 		x = -2
 		y = 1
 		relative_position_id = HUN_revive_the_navy
-		cost = 30
+		cost = 10
 		ai_will_do = {
 			factor = 50
 		}	
 		completion_reward = {
 		747 = {
-				add_extra_state_shared_building_slots = 9
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 9
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = naval_base
-					level = 4
+					level = 3
 					province = 591	#Jablanac
 					instant_build = yes
 				}
 			}
 			759 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = naval_base
-					level = 4
+					level = 3
 					province = 591	#Jablanac
 					instant_build = yes
 				}
 			}
 			749 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = naval_base
-					level = 4
+					level = 3
 					province = 591	#Jablanac
 					instant_build = yes
 				}

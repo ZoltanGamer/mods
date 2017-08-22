@@ -1,0 +1,24 @@
+
+state={
+	id=778
+	name="STATE_778"
+	manpower=463100
+	
+	state_category = town
+
+	resources={
+		tungsten=1
+	}
+	
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ROM
+	}
+
+	provinces={
+		746 9687 11676 
+	}
+}

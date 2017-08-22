@@ -1229,6 +1229,7 @@ focus_tree = {
 		prerequisite = { focus = GER_rhineland }
 		bypass = { AUS = { exists = no } }
 		available = {
+			date > 1938.1.1
 			is_puppet = no
 			has_army_manpower = { size > 549999 }
 			NOT = { has_idea = rhineland_challenge_met }

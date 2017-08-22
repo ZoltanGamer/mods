@@ -825,7 +825,29 @@ ideas = {
 				infantry_weapons = 0.10
 			}
 			
+			equipment_bonus = {
+					infantry_equipment = {
+					reliability = 0.05 soft_attack = 0.05
+					}
+			}		
+			
 			traits = { infantry_equipment_manufacturer }
+		}
+		
+		voros_kereszt = {
+			
+			allowed = {
+				original_tag = HUN
+			}
+			
+			research_bonus = {
+				support_tech = 0.20
+			}
+			
+			equipment_bonus = {
+			}		
+			
+			traits = { support_equipment_manufacturer  }
 		}
 		
 		csepel_muvek = {
@@ -837,6 +859,12 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.10
 			}
+			
+			equipment_bonus = {
+					motorized_equipment = {
+					reliability = 0.05 soft_attack = 0.05
+					}
+			}		
 			
 			traits = { motorized_equipment_manufacturer }
 		}
@@ -920,10 +948,18 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				
+					carrier = {
+						build_cost_ic = -0.25 instant = yes
+					}
+					capital_ship = {
+						build_cost_ic = -0.25 instant = yes
+					}
+					screen_ship = {
+						build_cost_ic = -0.25 instant = yes
+					}
 			}
 			
-			traits = { naval_manufacturer coastal_defence_naval_manufacturer }
+			traits = { naval_manufacturer }
 			
 		}	
 	}
