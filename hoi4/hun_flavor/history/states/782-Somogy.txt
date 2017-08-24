@@ -1,11 +1,13 @@
 
 state={
-	id=769
-	name="STATE_769" # Northern Hungary
-	manpower = 737752
+	id=782
+	name="STATE_782" # Transdanubia
+	manpower = 397605
 	
 	state_category = rural
-
+	resources={	
+		aluminium=77
+	}
 	history={
 		owner = HUN
 		buildings = {
@@ -16,6 +18,6 @@ state={
 	}
 
 	provinces={
-		684 13210
+		6685 9624
 	}
 }

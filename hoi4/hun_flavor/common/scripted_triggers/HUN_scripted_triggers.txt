@@ -1,23 +1,4 @@
 
-is_ahu = {
-	OR = {
-		has_cosmetic_tag = HUN_AHU	
-		has_cosmetic_tag = HUN_AHU_WHITE
-		has_cosmetic_tag = HUN_AHF
-		has_cosmetic_tag = HUN_AHF_WHITE
-		has_cosmetic_tag = HUN_DNF
-		has_cosmetic_tag = HUN_AHC
-	}
-}
-
-is_not_ahu = {
-	NOT = { has_cosmetic_tag = HUN_AHU }
-	NOT = { has_cosmetic_tag = HUN_AHF }
-	NOT = { has_cosmetic_tag = HUN_AHU_WHITE }
-	NOT = { has_cosmetic_tag = HUN_DNF }
-	NOT = { has_cosmetic_tag = HUN_AHC }
-}
-
 horthy_inheritance_available = {
 	NOT = { has_country_flag = HUN_has_king }
 	OR = {

@@ -154,7 +154,6 @@ country_event = {
 			}
 			if = {
 				limit = { has_global_flag = HUN_ITA_negotiation_political_support }
-				HUN = { add_timed_idea = { idea = supporting_italy days = 548 } }
 				ROOT = { add_timed_idea = { idea = support_from_hungary days = 548 } }
 			}
 			if = {
@@ -179,67 +178,6 @@ country_event = {
 			factor = 20		
 		}
 		FROM = { country_event = { hours = 4 id = hungary_flavor.28 } }
-	}
-}
-
-# Austria-Hungary demands their former territories
-country_event = {
-	id = hungary_flavor_ita.5
-	title = hungary_flavor_ita.5.t
-	desc = hungary_flavor_ita.5.d
-	picture = GFX_report_event_ahu_old
-	
-	is_triggered_only = yes
-	
-	#Yes.
-	option = {
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 1.5
-				FROM = { is_powerful_or_has_strong_friends_in_europe = yes }
-			}		
-			modifier = {
-				factor = 10
-				FROM = { NOT = { has_country_flag = HUN_realism } }
-			}
-			modifier = {
-				factor = 0
-				FROM = {
-					has_country_flag = HUN_realism
-					NOT = { has_army_manpower = { size > 499999 } }
-				}
-			}
-			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 599999 } } }
-			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 699999 } } }
-			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 799999 } } }
-			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 899999 } } }
-			modifier = { factor = 1.1 FROM = { has_army_manpower = { size > 999999 } } }	
-		}
-		name = hungary_flavor_ita.5.a
-		FROM = { country_event = { hours = 4 id = hungary_flavor.64 } }
-		
-		effect_tooltip = {
-			diplomatic_relation = { country = FROM relation = non_aggression_pact }
-			FROM = {
-				transfer_state = 736		#Istria
-				transfer_state = 39			#South Tyrol
-				transfer_state = 163		#Zara
-				transfer_state = 747		#Fiume
-				transfer_state = 755		#Primorska
-				transfer_state = 761		#Trieste
-			}
-			transfer_state = 182		#Crete
-			transfer_state = 185		#Epirus	
-		}	
-	}
-	#We will not become the lapdogs of the Monarchy.
-	option = {
-		name = hungary_flavor_ita.5.b
-		ai_chance = {
-			factor = 80		
-		}
-		FROM = { country_event = { hours = 4 id = hungary_flavor.65 } }
 	}
 }
 

@@ -52,6 +52,7 @@ country_event = {
 		name = hungary_flavor_partition.2.a	
 		add_named_threat = { threat = 2 name = HUN_annexed_slavonia_threat }
 		transfer_state = 109	#Slavonia
+		transfer_state = 780	#Slavonia
 		hidden_effect = { country_event = { id = hungary_flavor_partition.3 } }			
 	}
 	
@@ -59,7 +60,10 @@ country_event = {
 	option = {
 		name = hungary_flavor_partition.2.b	
 		add_named_threat = { threat = 1 name = HUN_puppeted_slavonia_threat }
-		CRO = { transfer_state = 109 }	#Slavonia
+		CRO = { 
+		transfer_state = 109 
+		transfer_state = 780 
+		}
 		puppet = CRO
 		hidden_effect = { country_event = { id = hungary_flavor_partition.3 } }			
 	}
@@ -67,7 +71,10 @@ country_event = {
 	#Croatia will become independent.
 	option = {
 		name = hungary_flavor_partition.2.c
-		CRO = { transfer_state = 109 }	#Slavonia
+		CRO = { 
+		transfer_state = 109 
+		transfer_state = 780 
+		}
 		hidden_effect = { country_event = { id = hungary_flavor_partition.3 } }			
 	}
 	
@@ -91,9 +98,10 @@ country_event = {
 	option = {
 		name = hungary_flavor_partition.3.a	
 		trigger = {
-			owns_state = 109	#Slavonia
+			owns_state = 109	#Slavonia			
 		}
-		transfer_state = 749	#Croatia	
+		transfer_state = 749	#Croatia
+		transfer_state = 771	#Slavonia		
 		add_named_threat = { threat = 1 name = HUN_annexed_coastal_croatia_threat }
 		hidden_effect = { country_event = { id = hungary_flavor_partition.4 } }			
 	}
@@ -108,6 +116,7 @@ country_event = {
 			}
 		}
 		CRO = {
+			transfer_state = 771	#Croatia
 			transfer_state = 749	#Croatia
 			set_capital = 749		#Croatia
 		}	
@@ -141,22 +150,7 @@ country_event = {
 		add_named_threat = { threat = 1 name = HUN_annexed_coastal_croatia_threat }
 		hidden_effect = { 
 			#ship "transfer"
-			if = { 
-				limit = { 
-					NOT = { has_cosmetic_tag = HUN_AHU } 
-					NOT = { has_cosmetic_tag = HUN_DNF } 
-				} 			
-				load_oob = YUG_to_HUN_ship_transfer
-			}
-			if = { 
-				limit = { 
-					OR = {
-						has_cosmetic_tag = HUN_AHU 
-						has_cosmetic_tag = HUN_DNF
-					}
-				} 			
-				load_oob = YUG_to_AHU_ship_transfer
-			}	
+				load_oob = YUG_to_HUN_ship_transfer				
 			country_event = { id = hungary_flavor_partition.5 } 
 		}			
 	}

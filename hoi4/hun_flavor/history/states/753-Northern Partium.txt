@@ -1,15 +1,15 @@
 
 state={
 	id=753
-	name="STATE_753"
+	name="STATE_753" #Bihar
 	manpower=712400
 	
-	state_category = town
+	state_category = rural
 	
 	history={
 		owner = ROM
 		buildings = {
-			infrastructure = 5
+			infrastructure = 4
 		}
 		add_core_of = ROM
 	}

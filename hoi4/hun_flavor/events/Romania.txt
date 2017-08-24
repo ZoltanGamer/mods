@@ -74,7 +74,7 @@ country_event = {
 		ai_chance = {
 			factor = 80
 			modifier = { # Don't accept if in a faction that can protect them
-				factor = 0
+				factor = 0.2
 				OR = {
 					is_in_faction_with = ENG
 					is_in_faction_with = FRA
@@ -102,6 +102,9 @@ country_event = {
 				add_state_claim = 76 	#North Transylvania
 				add_state_claim = 752 	#Maramaros
 				add_state_claim = 753 	#Northern Partium
+				add_state_claim = 83 	#Northern Partium
+				add_state_claim = 777 	#Northern Partium
+				add_state_claim = 778 	#Northern Partium
 			}
 		}
 		GER = {
@@ -131,7 +134,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = { # Don't accept if in a faction that can protect them
-				factor = 0
+				factor = 0.2
 				OR = {
 					is_in_faction_with = ENG
 					is_in_faction_with = FRA
@@ -150,11 +153,15 @@ country_event = {
 		HUN = {
 			country_event = { days = 1 id = hungary.5 }
 			effect_tooltip = {
-				add_state_claim = 76	#Northern Transylvania
-				add_state_claim = 83	#Southern Partium
 				add_state_claim = 84	#Transylvania
-				add_state_claim = 752	#Maramaros
-				add_state_claim = 753	#Northern Partium
+				add_state_claim = 76 	#North Transylvania
+				add_state_claim = 752 	#Maramaros
+				add_state_claim = 753 	#Northern Partium
+				add_state_claim = 83 	#Northern Partium
+				add_state_claim = 777 	#Northern Partium
+				add_state_claim = 773 	#Northern Partium
+				add_state_claim = 775 	#Northern Partium
+				add_state_claim = 774 	#Northern Partium
 			}
 		}
 		GER = {

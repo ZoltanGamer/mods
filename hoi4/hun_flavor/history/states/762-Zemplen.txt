@@ -1,19 +1,16 @@
 
 state={
-	id=782
-	name="STATE_782" # Beregszasz
-	manpower = 150000
+	id=762
+	name="STATE_762" # Beregszasz
+	manpower = 102304
 	
-	state_category = town
+	state_category = rural
 
 	history={
 		owner = CZE
 		buildings = {
-			infrastructure = 6
-		}
-		victory_points = {
-			11691 3 
-		}
+			infrastructure = 5
+		}	
 		add_core_of = CZE
 		add_claim_by = HUN
 

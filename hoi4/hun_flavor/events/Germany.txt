@@ -97,11 +97,12 @@ country_event = {
 		name = germany.5.b		#refuse
 		trigger = { NOT = { is_puppet_of = GER } }
 		ai_chance = { 
-			factor = 25 
+			factor = 25 }
+			
 		GER =  { add_opinion_modifier = { target = ROOT modifier = refused_anti_comintern_pact_opinion } }
 	}
 
-}
+	}
 
 # tripartite_pact
 # anti_comintern_pact nations are asked to join pact, agreeing = relations with GER and hit with SOV
@@ -1640,7 +1641,7 @@ country_event = {
 		HUN = { 
 			set_country_flag = HUN_first_vienna_award
 			transfer_state = 664 #Southern Slovakia
-			transfer_state = 748 #Beregszasz
+			transfer_state = 779 #Beregszasz
 		}
 	}
 }

@@ -778,7 +778,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		x = 7
 		y = 4
-		cost = 10
+		cost = 20
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -882,8 +882,11 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		x = 12
 		y = 0
-		cost = 10
-		available = { is_puppet = no }
+		cost = 20
+		available = { 
+		date > 1936.1.1
+		is_puppet = no 
+		}
 		bypass = {
 			42 = { is_demilitarized_zone = no }
 			51 = { is_demilitarized_zone = no }
@@ -1229,7 +1232,7 @@ focus_tree = {
 		prerequisite = { focus = GER_rhineland }
 		bypass = { AUS = { exists = no } }
 		available = {
-			date > 1938.1.1
+			date > 1937.7.1
 			is_puppet = no
 			has_army_manpower = { size > 549999 }
 			NOT = { has_idea = rhineland_challenge_met }
@@ -1968,6 +1971,8 @@ focus_tree = {
 		bypass = {
 			OR = {
 				AND = {
+					NOT = { CZE = { controls_state = 779 } }
+					NOT = { owns_state = 779 }
 					NOT = { CZE = { controls_state = 664 } }
 					NOT = { owns_state = 664 }
 				}

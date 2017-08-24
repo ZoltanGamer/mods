@@ -2,13 +2,9 @@
 state={
 	id=778
 	name="STATE_778"
-	manpower=463100
+	manpower=263100
 	
-	state_category = town
-
-	resources={
-		tungsten=1
-	}
+	state_category = rural
 	
 	history={
 		owner = ROM

@@ -121,18 +121,7 @@ news_event = {
 news_event = {
 	id = hun_news.2
 	title = hun_news.2.t
-	desc = {
-		text = hun_news.2.d
-		trigger = { 
-			HUN = { is_ahu = yes }
-		}
-	}
-	desc = {
-		text = hun_news.2.d_2
-		trigger = { 
-			HUN = { is_not_ahu = yes }
-		}
-	}
+	desc = {text = hun_news.2.d_2	}
 	picture = GFX_news_event_HUN_little_entente
 	
 	major = yes
@@ -182,18 +171,7 @@ news_event = {
 news_event = {
 	id = hun_news.3
 	title = hun_news.3.t
-	desc = {
-		text = hun_news.3.d
-		trigger = { 
-			HUN = { is_ahu = yes }
-		}
-	}
-	desc = {
-		text = hun_news.3.d_2
-		trigger = { 
-			HUN = { is_not_ahu = yes }
-		}
-	}
+	desc = {text = hun_news.3.d_2}
 	picture = GFX_news_event_HUN_little_entente
 	
 	major = yes

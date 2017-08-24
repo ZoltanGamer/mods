@@ -3,7 +3,7 @@ state = {
 	name="STATE_759"
 	manpower = 20400
 	
-	state_category = large_town
+	state_category = rural
 
 	history = {
 		owner = YUG
@@ -13,10 +13,7 @@ state = {
 		add_core_of = YUG
 		add_core_of = CRO
 		buildings = {
-			dockyard = 1
-			591 = {
-				naval_base = 1			
-			}
+			dockyard = 1			
 		}
 	}
 	provinces = {

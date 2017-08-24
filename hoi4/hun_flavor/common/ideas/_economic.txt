@@ -233,7 +233,6 @@ ideas = {
 						tag = HUN
 						has_government = fascism
 					}
-					NOT = { has_idea = domestic_focus }
 				}
 			}
 			
@@ -259,7 +258,6 @@ ideas = {
 						tag = HUN
 						has_government = fascism
 					}
-					NOT = { has_idea = domestic_focus }
 				}
 			}
 			
@@ -287,7 +285,6 @@ ideas = {
 						tag = HUN
 						has_government = fascism
 					}
-					NOT = { has_idea = domestic_focus }
 				}
 				OR = {
 					AND = {

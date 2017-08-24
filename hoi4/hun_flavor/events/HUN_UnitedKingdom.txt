@@ -241,13 +241,7 @@ country_event = {
 	option = {
 		name = hungary_flavor_eng.5.b
 		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				FROM = {
-					is_ahu = yes
-				}
-			}
+			factor = 50			
 		}
 		FROM = {
 			country_event = { hours = 8 id = hungary_flavor.128 }

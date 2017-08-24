@@ -126,9 +126,9 @@ bookmarks = {
 				
 			}
 			focuses = {
-				HUN_axis_membership
+				HUN_expand_the_manfred_weiss_steel_works
 				HUN_reassert_old_claims
-				HUN_project_toldi
+				HUN_fighter_production_innovations
 			}
 		}
 

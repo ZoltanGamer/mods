@@ -2118,7 +2118,6 @@ get_all_non_claimed_territory_from_hungary = {
 	if = { limit = { 759 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 759 }
 	if = { limit = { 760 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 760 }
 	if = { limit = { 761 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 761 }
-	#if = { limit = { 762 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 762 }
 	#if = { limit = { 763 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 763 }
 	#if = { limit = { 764 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 764 }
 	#if = { limit = { 765 = { is_owned_by = HUN NOT = { is_core_of = HUN has_state_flag = HUN_is_claimed_by_HUN } } } transfer_state = 765 }

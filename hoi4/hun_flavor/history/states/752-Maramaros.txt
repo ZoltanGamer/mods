@@ -2,23 +2,23 @@
 state={
 	id=752
 	name="STATE_752"
-	manpower=463100
+	manpower=163100
 	
 	state_category = town
 
 	resources={
-		tungsten=1
+		steel = 10
 	}
 	
 	history={
 		owner = ROM
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
 		}
 		add_core_of = ROM
 	}
 
 	provinces={
-		727 9704 6731 
+		727 9704 
 	}
 }

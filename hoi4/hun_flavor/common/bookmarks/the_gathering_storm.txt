@@ -116,9 +116,9 @@ bookmarks = {
 				trianon_restrictions
 			}
 			focuses = {
-				HUN_hungary_first
-				HUN_restore_the_monarchy
-				HUN_ideological_shift
+				HUN_expand_the_levente_associations
+				HUN_support_domestic_industry
+				HUN_the_gyori_program
 			}
 		}
 

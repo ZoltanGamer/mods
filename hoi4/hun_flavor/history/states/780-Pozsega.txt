@@ -2,25 +2,21 @@
 state={
 	id=780
 	name="STATE_780" # Croatia
-	manpower = 1705800
+	manpower = 905800
 	
-	state_category = large_town
+	state_category = rural
 	
 	resources={
-		steel=2
-                aluminium=8
+		steel=3             
 	}
 
 	history={
 		owner = YUG
 		add_core_of = YUG
 		#add_claim_by = ITA #added by focus
-		add_core_of = CRO
-		victory_points = {
-			11581 3
-		}
+		add_core_of = CRO		
 		buildings = {
-			infrastructure = 6
+			infrastructure = 4
 			industrial_complex = 1
 		}
 	}

@@ -17,7 +17,45 @@ focus_tree = {
 	
 	default = no
 
-	#TERRITORIAL INTEGRATION BRANCH
+	focus = {
+		id = HUN_revisionism
+		icon = GFX_goal_hun_revisionism
+		x = 6 #X-ANCHOR (for revisionist branch)
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+		
+		completion_reward = {
+			add_political_power = 70
+			add_ideas = revisionist_spirit
+			hidden_effect = {				
+				if = { limit = { NOT = { 45 = { has_state_flag = HUN_claim_forbidden } } } 45 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Novi Sad
+				if = { limit = { NOT = { 70 = { has_state_flag = HUN_claim_forbidden } } } 70 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Western Slovakia
+				if = { limit = { NOT = { 71 = { has_state_flag = HUN_claim_forbidden } } } 71 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Eastern Slovakia
+				if = { limit = { NOT = { 73 = { has_state_flag = HUN_claim_forbidden } } } 73 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Carpathian Ruthenia
+				if = { limit = { NOT = { 76 = { has_state_flag = HUN_claim_forbidden } } } 76 = { set_state_flag = HUN_is_claimed_by_HUN } }		#North Transylvania
+				if = { limit = { NOT = { 82 = { has_state_flag = HUN_claim_forbidden } } } 82 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Banat
+				if = { limit = { NOT = { 83 = { has_state_flag = HUN_claim_forbidden } } } 83 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Southern Partium
+				if = { limit = { NOT = { 84 = { has_state_flag = HUN_claim_forbidden } } } 84 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Transylvania
+				if = { limit = { NOT = { 109 = { has_state_flag = HUN_claim_forbidden } } } 109 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Slavonia
+				if = { limit = { NOT = { 664 = { has_state_flag = HUN_claim_forbidden } } } 664 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Southern Slovakia
+				if = { limit = { NOT = { 743 = { has_state_flag = HUN_claim_forbidden } } } 743 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Burgenland
+				if = { limit = { NOT = { 744 = { has_state_flag = HUN_claim_forbidden } } } 744 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Pancevo
+				if = { limit = { NOT = { 745 = { has_state_flag = HUN_claim_forbidden } } } 745 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Ruma
+				if = { limit = { NOT = { 746 = { has_state_flag = HUN_claim_forbidden } } } 746 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Muraköz
+				if = { limit = { NOT = { 747 = { has_state_flag = HUN_claim_forbidden } } } 747 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Fiume
+				if = { limit = { NOT = { 748 = { has_state_flag = HUN_claim_forbidden } } } 748 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Beregszasz
+				if = { limit = { NOT = { 749 = { has_state_flag = HUN_claim_forbidden } } } 749 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Croatia
+				if = { limit = { NOT = { 752 = { has_state_flag = HUN_claim_forbidden } } } 752 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Maramaros
+				if = { limit = { NOT = { 753 = { has_state_flag = HUN_claim_forbidden } } } 753 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Norhtern Partium
+				if = { limit = { NOT = { 759 = { has_state_flag = HUN_claim_forbidden } } } 759 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Pag
+			}
+		}
+	}
+	
 	focus = {
 		id = HUN_territorial_policy
 		prerequisite = { focus = HUN_revisionism }
@@ -31,9 +69,7 @@ focus_tree = {
 			has_country_flag = HUN_realism		
 			custom_trigger_tooltip = {
 				tooltip = HUN_owns_old_core_territory			
-				OR = {
-					AND = {
-						is_not_ahu = yes
+					
 						OR = {
 							owns_state = 45		#Novi Sad
 							owns_state = 70		#Western Slovakia
@@ -55,33 +91,7 @@ focus_tree = {
 							owns_state = 759	#Pag
 							owns_state = 752	#Maramaros
 							owns_state = 753	#Norhtern Partium
-						}
-					}
-					AND = {
-						is_ahu = yes
-						OR = {
-							owns_state = 9		#Bohemia
-							owns_state = 39		#South Tirol
-							owns_state = 69		#Sudetenland
-							owns_state = 72		#Zaolzie
-							owns_state = 74		#Eastern Sudetenland
-							owns_state = 75		#Moravia
-							owns_state = 80		#North Bucovina
-							owns_state = 762	#South Bucovina
-							owns_state = 88		#Krakow
-							owns_state = 89		#Stanislawow
-							owns_state = 91		#Lwow
-							owns_state = 102	#Slovenia
-							owns_state = 103	#Dalmatia
-							owns_state = 104	#Bosnia
-							owns_state = 163	#Zara
-							owns_state = 751	#Ljubljana
-							owns_state = 736	#Istria
-							owns_state = 755	#Gorizia
-							owns_state = 761	#Trieste
-						}
-					}
-				}
+						}												
 			}
 		}
 
@@ -90,23 +100,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			if = {
-				limit = {
-					is_ahu = yes
-				}
-				custom_effect_tooltip = HUN_enables_integration_of_new_territory_ahu
-				else = { custom_effect_tooltip = HUN_enables_integration_of_new_territory }
-			}
+			custom_effect_tooltip = HUN_enables_integration_of_new_territory 
 			hidden_effect = {
 				set_country_flag = HUN_can_integrate
-				if = {
-					limit = { has_completed_focus = HUN_ideological_shift }
-					add_state_core = 664	#Southern Slovakia
-					add_state_core = 748	#Beregszasz
-					add_state_core = 45		#Backa
-					add_state_core = 746	#Muraköz
-					add_state_core = 76		#Northern Transylvania
-				}
 			}
 		}
 	}
@@ -191,44 +187,21 @@ focus_tree = {
 		}
 	}
 
-	#REVISIONIST BRANCH
-	
 	focus = {
-		id = HUN_revisionism
-		icon = GFX_goal_hun_revisionism
-		mutually_exclusive = { focus = HUN_ideological_shift }	
-		x = 6 #X-ANCHOR (for revisionist branch)
-		y = 0
-		cost = 5
-
-		ai_will_do = {
-			factor = 50
+		id = HUN_reinforce_the_regency
+		icon = GFX_focus_generic_home_defense
+		available = {
+			has_government = neutrality
 		}
-		
-		completion_reward = {
-			add_ideas = revisionist_spirit
-			hidden_effect = {				
-				if = { limit = { NOT = { 45 = { has_state_flag = HUN_claim_forbidden } } } 45 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Novi Sad
-				if = { limit = { NOT = { 70 = { has_state_flag = HUN_claim_forbidden } } } 70 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Western Slovakia
-				if = { limit = { NOT = { 71 = { has_state_flag = HUN_claim_forbidden } } } 71 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Eastern Slovakia
-				if = { limit = { NOT = { 73 = { has_state_flag = HUN_claim_forbidden } } } 73 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Carpathian Ruthenia
-				if = { limit = { NOT = { 76 = { has_state_flag = HUN_claim_forbidden } } } 76 = { set_state_flag = HUN_is_claimed_by_HUN } }		#North Transylvania
-				if = { limit = { NOT = { 82 = { has_state_flag = HUN_claim_forbidden } } } 82 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Banat
-				if = { limit = { NOT = { 83 = { has_state_flag = HUN_claim_forbidden } } } 83 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Southern Partium
-				if = { limit = { NOT = { 84 = { has_state_flag = HUN_claim_forbidden } } } 84 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Transylvania
-				if = { limit = { NOT = { 109 = { has_state_flag = HUN_claim_forbidden } } } 109 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Slavonia
-				if = { limit = { NOT = { 664 = { has_state_flag = HUN_claim_forbidden } } } 664 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Southern Slovakia
-				if = { limit = { NOT = { 743 = { has_state_flag = HUN_claim_forbidden } } } 743 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Burgenland
-				if = { limit = { NOT = { 744 = { has_state_flag = HUN_claim_forbidden } } } 744 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Pancevo
-				if = { limit = { NOT = { 745 = { has_state_flag = HUN_claim_forbidden } } } 745 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Ruma
-				if = { limit = { NOT = { 746 = { has_state_flag = HUN_claim_forbidden } } } 746 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Muraköz
-				if = { limit = { NOT = { 747 = { has_state_flag = HUN_claim_forbidden } } } 747 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Fiume
-				if = { limit = { NOT = { 748 = { has_state_flag = HUN_claim_forbidden } } } 748 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Beregszasz
-				if = { limit = { NOT = { 749 = { has_state_flag = HUN_claim_forbidden } } } 749 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Croatia
-				if = { limit = { NOT = { 752 = { has_state_flag = HUN_claim_forbidden } } } 752 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Maramaros
-				if = { limit = { NOT = { 753 = { has_state_flag = HUN_claim_forbidden } } } 753 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Norhtern Partium
-				if = { limit = { NOT = { 759 = { has_state_flag = HUN_claim_forbidden } } } 759 = { set_state_flag = HUN_is_claimed_by_HUN } }		#Pag
-			}
+		x = 0
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {			 
+			add_political_power = 100
+			add_popularity = { ideology = neutrality popularity = 0.1 }
 		}
 	}
 	
@@ -249,24 +222,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 30
 			add_ideas = revisionist_education
-		}
-	}
-	
-	focus = {
-		id = HUN_reinforce_the_regency
-		icon = GFX_focus_generic_home_defense
-		available = {
-			has_government = neutrality
-		}
-		x = 0
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {			 
-			add_political_power = 100
-			add_popularity = { ideology = neutrality popularity = 0.1 }
 		}
 	}
 	
@@ -345,8 +300,7 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {			 
-			add_political_power = 100
-			remove_ideas = {revisionist_spirit_neutrality}
+			add_political_power = 100	
 			add_ideas = { hungarian_expansionism }
 		}
 	}
@@ -458,8 +412,7 @@ focus_tree = {
 				if = { limit = { 72 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 72 }		#Zaolzie
 				if = { limit = { 74 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 74 }		#Eastern Sudetenland
 				if = { limit = { 75 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 75 }		#Moravia
-				if = { limit = { 80 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 80 }		#North Bucovina
-				if = { limit = { 762 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 762 }		#South Bucovina
+				if = { limit = { 80 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 80 }		#North Bucovina			
 				if = { limit = { 88 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 88 }		#Krakow
 				if = { limit = { 89 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 89 }		#Stanislawow
 				if = { limit = { 91 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 91 }		#Lwow
@@ -498,8 +451,7 @@ focus_tree = {
 			if = { limit = { 72 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 72 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 74 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 74 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 75 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 75 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
-			if = { limit = { 80 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 80 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
-			if = { limit = { 762 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 762 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
+			if = { limit = { 80 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 80 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }			
 			if = { limit = { 88 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 88 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 89 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 89 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 91 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 91 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
@@ -522,11 +474,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		remove_ideas = levente_movement
-		remove_ideas = revisionist_education
-		remove_ideas = rongyos_garda	
-			if = { limit = { has_idea = revisionist_spirit } remove_ideas = revisionist_spirit }
-			if = { limit = { has_idea = revisionist_spirit_neutrality } remove_ideas = revisionist_spirit_neutrality }
+			if = { limit = { has_idea = revisionist_spirit } remove_ideas = revisionist_spirit }		
+			if = { limit = { has_idea = revisionist_education } remove_ideas = revisionist_education }		
+			if = { limit = { has_idea = rongyos_garda } remove_ideas = rongyos_garda }		
+			if = { limit = { has_idea = levente_movement } remove_ideas = levente_movement }		
 			if = {
 				limit = { NOT = { has_government = fascism } }
 				add_ideas = successful_revision
@@ -568,8 +519,8 @@ focus_tree = {
 		43 = {add_manpower= 20000}
 		154 = {add_manpower= 20000}
 		155 = {add_manpower= 20000}
-		70 = {add_manpower= 200000}
-		73 = {add_manpower= 100000}
+		70 = {add_manpower= 300000}
+		73 = {add_manpower= 200000}
 		76 = {add_manpower= 200000}
 		82 = {add_manpower= 200000}
 		84 = {add_manpower= 200000}
@@ -581,14 +532,32 @@ focus_tree = {
 		746 = {add_manpower= 20000}
 		747 = {add_manpower= 20000}
 		748 = {add_manpower= 20000}
-		749 = {add_manpower= 200000}
-		750 = {add_manpower= 200000}
-		752 = {add_manpower= 200000}
-		753 = {add_manpower= 200000}
-		759 = {add_manpower= 20000}
-		763 = {add_manpower= 20000}
-		764 = {add_manpower= 20000}
-		765 = {add_manpower= 20000}
+		749 = {add_manpower= 220000}
+		750 = {add_manpower= 210000}
+		752 = {add_manpower= 240000}
+		753 = {add_manpower= 250000}
+		759 = {add_manpower= 260000}
+		763 = {add_manpower= 280000}
+		764 = {add_manpower= 29000}
+		765 = {add_manpower= 50000}
+		766 = {add_manpower= 12000}
+		767 = {add_manpower= 50000}
+		768 = {add_manpower= 50000}
+		769 = {add_manpower= 25000}
+		770 = {add_manpower= 25000}
+		771 = {add_manpower= 25000}
+		772 = {add_manpower= 25000}
+		773 = {add_manpower= 20500}
+		774 = {add_manpower= 25000}
+		775 = {add_manpower= 45000}
+		776 = {add_manpower= 20500}
+		777 = {add_manpower= 25000}
+		778 = {add_manpower= 25000}
+		779 = {add_manpower= 25000}
+		780 = {add_manpower= 25000}
+		781 = {add_manpower= 25000}
+		782 = {add_manpower= 25000}
+		783 = {add_manpower= 25000}
 		
 			357 = {add_manpower= -20000}
 		358 = {add_manpower= -20000}
@@ -707,56 +676,6 @@ focus_tree = {
 				limit = { tag = HUN }
 				custom_effect_tooltip = HUN_reassert_old_claims_tt
 			}
-			if = { 
-				limit = { 
-					is_ahu = yes
-				} 
-				custom_effect_tooltip = HUN_reassert_old_claims_ahu_tt
-				hidden_effect = {
-					#With realism, most of the claimed territories start as claims, some can be later 'cored'
-					if = {
-						limit = { has_country_flag = HUN_realism }
-						if = { limit = { NOT = { 104 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 104 }		#Bosnia
-						if = { limit = { NOT = { 103 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 103 }		#Dalmatia	
-						if = { limit = { NOT = { 163 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 163 }		#Zara	
-						if = { limit = { NOT = { 102 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 102 }		#Slovenia
-						if = { limit = { NOT = { 751 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 751 }		#Ljubljana
-						if = { limit = { NOT = { 736 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 736 }		#Istria
-						if = { limit = { NOT = { 39 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 39 }		#South Tyrol
-						if = { limit = { NOT = { 69 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 69 }		#Sudetenland
-						if = { limit = { NOT = { 9 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 9 }			#Bohemia
-						if = { limit = { NOT = { 75 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 75 }		#Moravia
-						if = { limit = { NOT = { 74 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 74 }		#Eastern Sudetenland
-						if = { limit = { NOT = { 72 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 72 }		#Zaolzie
-						if = { limit = { NOT = { 88 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 88 }		#Krakow	
-						if = { limit = { NOT = { 89 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 89 }		#Stanislawow
-						if = { limit = { NOT = { 91 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 91 }		#Lwow		
-						if = { limit = { NOT = { 80 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 80 }		#North Bucovina
-						if = { limit = { NOT = { 762 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 762 }		#South Bucovina
-						
-						#Without realism, all claims are immediately cores	
-						else = {
-							if = { limit = { NOT = { 104 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 104 }		#Bosnia
-							if = { limit = { NOT = { 103 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 103 }		#Dalmatia	
-							if = { limit = { NOT = { 163 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 163 }		#Zara	
-							if = { limit = { NOT = { 102 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 102 }		#Slovenia
-							if = { limit = { NOT = { 751 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 751 }		#Ljubljana
-							if = { limit = { NOT = { 736 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 736 }		#Istria
-							if = { limit = { NOT = { 39 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 39 }		#South Tyrol
-							if = { limit = { NOT = { 69 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 69 }		#Sudetenland
-							if = { limit = { NOT = { 9 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 9 }			#Bohemia
-							if = { limit = { NOT = { 75 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 75 }		#Moravia
-							if = { limit = { NOT = { 74 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 74 }		#Eastern Sudetenland
-							if = { limit = { NOT = { 72 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 72 }		#Zaolzie
-							if = { limit = { NOT = { 88 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 88 }		#Krakow	
-							if = { limit = { NOT = { 89 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 89 }		#Stanislawow
-							if = { limit = { NOT = { 91 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 91 }		#Lwow		
-							if = { limit = { NOT = { 80 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 80 }		#North Bucovina	
-							if = { limit = { NOT = { 762 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 762 }		#South Bucovina						
-						}
-					}
-				}
-			}
 			if = {
 				limit = { has_country_flag = HUN_YUG_everlasting_friendship_claims_renounced }
 				custom_effect_tooltip = HUN_reassert_old_claims_YUG_tt
@@ -836,15 +755,12 @@ focus_tree = {
 			ROM = {
 				exists = yes
 				is_puppet = no
-				#owns_state = 82 	#Banat
-				owns_state = 83		#Grisana
-				owns_state = 84		#Transylvania
 			}
 			OR = {
 				ROM = {
-					owns_state = 76		#North Transylvania	
-					owns_state = 752	#Maramaros
-					owns_state = 753	#Northern Partium
+					owns_state = 84		#Transylvania
+				owns_state = 773		#Transylvania
+				owns_state = 774		#Transylvania
 				}
 				ROOT = {
 					owns_state = 76		#North Transylvania	
@@ -969,7 +885,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = HUN_reassert_old_claims
-		cost = 10
+		cost = 20
 		ai_will_do = {
 			factor = 50
 			modifier = {
@@ -1091,7 +1007,187 @@ focus_tree = {
 						}
 					}
 				}
-			}		
+			}
+			764 = {
+				if = {
+					limit = { owner = { has_country_flag = HUN_realism } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					else = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			765 = {
+				if = {
+					limit = { owner = { has_country_flag = HUN_realism } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					else = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			766 = {
+				if = {
+					limit = { owner = { has_country_flag = HUN_realism } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					else = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			767 = {
+				if = {
+					limit = { owner = { has_country_flag = HUN_realism } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					else = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			768 = {
+				if = {
+					limit = { owner = { has_country_flag = HUN_realism } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					else = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}			
+			769 = {
+				if = {
+					limit = { owner = { has_country_flag = HUN_realism } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					else = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			772 = {
+				if = {
+					limit = { owner = { has_country_flag = HUN_realism } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					else = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			781 = {
+				if = {
+					limit = { owner = { has_country_flag = HUN_realism } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					else = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+			782 = {
+				if = {
+					limit = { owner = { has_country_flag = HUN_realism } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					else = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}			
+			783 = {
+				if = {
+					limit = { owner = { has_country_flag = HUN_realism } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					else = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -1108,7 +1204,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = HUN_agricultural_modernisation
-		cost = 10
+		cost = 30
 		ai_will_do = {
 			factor = 10
 		}	
@@ -1153,6 +1249,136 @@ focus_tree = {
 				}
 			}
 			750 = {		#Bács-Kiskun
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			763 = {		#Northern Hungary
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			764 = {		#Northern Hungary
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			765 = {		#Northern Hungary
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			766 = {		#Northern Hungary
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			767 = {		#Northern Hungary
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			768 = {		#Northern Hungary
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			769 = {		#Northern Hungary
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			781 = {		#Northern Hungary
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			782 = {		#Northern Hungary
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			783 = {		#Northern Hungary
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1219,7 +1445,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_countryside_development
 
-		cost = 15
+		cost = 20
 
 		ai_will_do = {
 			factor = 60
@@ -1228,6 +1454,11 @@ focus_tree = {
 		available = {
 			owns_state = 743
 			owns_state = 753
+			owns_state = 773
+			owns_state = 774
+			owns_state = 775
+			owns_state = 778
+			owns_state = 777
 			owns_state = 82
 		}
 
@@ -1260,33 +1491,49 @@ focus_tree = {
 		completion_reward = {
 				765 = {
 					add_extra_state_shared_building_slots = 2
+					set_state_flag = HUN_support_domestic_industry_IC
 					add_building_construction = {
 						type = industrial_complex
 						level = 2
 						instant_build = yes
-					}
+					}					
 				}	
 				753 = {
 					add_extra_state_shared_building_slots = 3
+					set_state_flag = HUN_support_domestic_industry_IC
 				}
 				82 = {
 					add_extra_state_shared_building_slots = 3
+					set_state_flag = HUN_support_domestic_industry_IC
 				}
-				743={
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				
-			
+				773 = {
+					add_extra_state_shared_building_slots = 3
+					set_state_flag = HUN_support_domestic_industry_IC
+				}
+				774				= {
+					add_extra_state_shared_building_slots = 3
+					set_state_flag = HUN_support_domestic_industry_IC
+				}
+				775 = {
+					add_extra_state_shared_building_slots = 3
+					set_state_flag = HUN_support_domestic_industry_IC
+				}
+				777 = {
+					add_extra_state_shared_building_slots = 3
+					set_state_flag = HUN_support_domestic_industry_IC
+				}
+				778= {
+					add_extra_state_shared_building_slots = 3
+					set_state_flag = HUN_support_domestic_industry_IC
+				}
+				743={					
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
 				set_state_flag = HUN_support_domestic_industry_IC
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}		
 				}
 		}
 	}
@@ -1301,7 +1548,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = HUN_agricultural_modernisation
-		cost = 10
+		cost = 20
 		ai_will_do = {
 			factor = 10
 		}	
@@ -1314,6 +1561,30 @@ focus_tree = {
 					instant_build = yes
 				}
 			}	
+			781 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+			782 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			783 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}		
 			766 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1322,7 +1593,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			766 = {
+			772 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1348,7 +1619,9 @@ focus_tree = {
 		}
 
 		available = {
-			owns_state = 664
+			owns_state = 779
+			owns_state = 43
+			owns_state = 764
 		}
 
 		bypass = {
@@ -1378,14 +1651,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			664 = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+			779 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1399,13 +1665,6 @@ focus_tree = {
 				}
 			}
 			43 = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1419,13 +1678,6 @@ focus_tree = {
 				}
 			}
 			764 = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1452,7 +1704,7 @@ focus_tree = {
 		x = -5
 		y = 3
 		relative_position_id = HUN_agricultural_modernisation
-		cost = 10
+		cost = 15
 		ai_will_do = {
 			factor = 10
 		}	
@@ -1471,11 +1723,22 @@ focus_tree = {
 				state = 749		#Croatia
 			}	
 			
+			109 = {		#Slavonia
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			
 			add_resource = {
 						type = chromium
 						amount = 16
 						state = 109		#Slavonia
 			}
+			
 		}
 	}
 	
@@ -1758,10 +2021,7 @@ focus_tree = {
 	focus = {
 		id = HUN_the_rongyos_garda
 		icon = GFX_goal_rongyos_garda 
-		prerequisite = { focus = HUN_the_gyori_program }
-		available = {
-			GER = { has_completed_focus = GER_first_vienna_award }
-		}
+		prerequisite = { focus = HUN_the_gyori_program }		
 		x = 2
 		y = 1
 		relative_position_id = HUN_the_gyori_program
@@ -1769,10 +2029,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}	
-		completion_reward = {		
-			add_political_power = 50
-			army_experience = 20
+		completion_reward = {					
 			add_ideas = rongyos_garda
+						add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.4
+				uses = 1
+				category = land_doctrine
+			}	
 		}
 	}
 	
@@ -1787,7 +2051,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}	
-		completion_reward = {
+		completion_reward = {		
 			army_experience = 10		
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
@@ -1835,7 +2099,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}	
-		completion_reward = {	
+		completion_reward = {
+			add_political_power = 50		
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5

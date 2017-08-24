@@ -66,8 +66,7 @@ focus_tree = {
 							owns_state = 72		#Zaolzie
 							owns_state = 74		#Eastern Sudetenland
 							owns_state = 75		#Moravia
-							owns_state = 80		#North Bucovina
-							owns_state = 762	#South Bucovina
+							owns_state = 80		#North Bucovina						
 							owns_state = 88		#Krakow
 							owns_state = 89		#Stanislawow
 							owns_state = 91		#Lwow
@@ -266,8 +265,7 @@ focus_tree = {
 				if = { limit = { 72 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 72 }		#Zaolzie
 				if = { limit = { 74 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 74 }		#Eastern Sudetenland
 				if = { limit = { 75 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 75 }		#Moravia
-				if = { limit = { 80 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 80 }		#North Bucovina
-				if = { limit = { 762 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 762 }		#South Bucovina
+				if = { limit = { 80 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 80 }		#North Bucovina			
 				if = { limit = { 88 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 88 }		#Krakow
 				if = { limit = { 89 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 89 }		#Stanislawow
 				if = { limit = { 91 = { has_state_flag = HUN_is_claimed_by_HUN } } owns_state = 91 }		#Lwow
@@ -306,8 +304,7 @@ focus_tree = {
 			if = { limit = { 72 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 72 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 74 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 74 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 75 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 75 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
-			if = { limit = { 80 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 80 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
-			if = { limit = { 762 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 762 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
+			if = { limit = { 80 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 80 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }			
 			if = { limit = { 88 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 88 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 89 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 89 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
 			if = { limit = { 91 = { NOT = { is_owned_by = ROOT } has_state_flag = HUN_is_claimed_by_HUN } } 91 = { custom_trigger_tooltip = { tooltip = HUN_is_still_not_owned_by_root is_owned_by = ROOT } } }
@@ -1085,8 +1082,7 @@ focus_tree = {
 						if = { limit = { NOT = { 88 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 88 }		#Krakow	
 						if = { limit = { NOT = { 89 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 89 }		#Stanislawow
 						if = { limit = { NOT = { 91 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 91 }		#Lwow		
-						if = { limit = { NOT = { 80 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 80 }		#North Bucovina
-						if = { limit = { NOT = { 762 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 762 }		#South Bucovina
+						if = { limit = { NOT = { 80 = { has_state_flag = HUN_claim_forbidden } } } add_state_claim = 80 }		#North Bucovina			
 						
 						#Without realism, all claims are immediately cores	
 						else = {
@@ -1105,8 +1101,7 @@ focus_tree = {
 							if = { limit = { NOT = { 88 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 88 }		#Krakow	
 							if = { limit = { NOT = { 89 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 89 }		#Stanislawow
 							if = { limit = { NOT = { 91 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 91 }		#Lwow		
-							if = { limit = { NOT = { 80 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 80 }		#North Bucovina	
-							if = { limit = { NOT = { 762 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 762 }		#South Bucovina						
+							if = { limit = { NOT = { 80 = { has_state_flag = HUN_claim_forbidden } } } add_state_core = 80 }		#North Bucovina								
 						}
 					}
 				}

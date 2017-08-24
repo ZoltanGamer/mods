@@ -2,12 +2,12 @@
 state={
 	id=777
 	name="STATE_777"
-	manpower=463100
+	manpower=163100
 	
 	state_category = town
 
 	resources={
-		tungsten=1
+		tungsten=8
 	}
 	
 	history={
@@ -19,6 +19,6 @@ state={
 	}
 
 	provinces={
-		711 9670 9685
+		711 6731 9670 9685
 	}
 }

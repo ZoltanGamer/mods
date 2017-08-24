@@ -282,8 +282,7 @@ country_event = {
 		}
 		add_political_power = 50
 		remove_unit_leader = 13
-		remove_unit_leader = 17
-		effect_tooltip = { HUN = { add_ideas = { assistance_from_german_general_staff } } }
+		remove_unit_leader = 17		
 		hidden_effect = { 
 			HUN = { 
 				set_country_flag = HUN_germany_full_help
@@ -298,8 +297,7 @@ country_event = {
 		ai_chance = {
 			factor = 20
 		}
-		add_political_power = 50
-		effect_tooltip = { HUN = { add_ideas = { assistance_from_german_general_staff } } }
+		add_political_power = 50		
 		hidden_effect = { 
 			HUN = { 
 				set_country_flag = HUN_germany_partial_help

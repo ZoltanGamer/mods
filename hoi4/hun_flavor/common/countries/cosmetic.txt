@@ -9,19 +9,9 @@ INS_HOL = {
     color_ui = rgb { 255 179 96 }
 }
 
-HUN_AHU = {
-	color = rgb { 202  105  34 }
-	color_ui = rgb { 202  105  34 }
-}
-
 HUN_AHC = {
 	color = rgb { 142  141  94 }
 	color_ui = rgb { 142  141  94 }
-}
-
-HUN_AHU_WHITE = {
-	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
 }
 
 HUN_AHF = {
@@ -32,9 +22,4 @@ HUN_AHF = {
 HUN_AHF_WHITE = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
-}
-
-HUN_DNF = {
-	color = rgb { 140  98  55 }
-	color_ui = rgb { 140  98  55 }
 }

@@ -2,13 +2,12 @@
 state={
 	id=771
 	name="STATE_771" # Croatia
-	manpower = 1705800
+	manpower = 1005800
 	
-	state_category = large_town
+	state_category = town
 	
 	resources={
-		steel=2
-                aluminium=8
+      aluminium=45
 	}
 
 	history={

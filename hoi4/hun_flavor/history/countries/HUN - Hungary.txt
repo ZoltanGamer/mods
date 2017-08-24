@@ -32,10 +32,9 @@ set_party_name = { ideology = neutrality long_name = HUN_nemzeti_egyseg_part_lon
 set_party_name = { ideology = fascism long_name = HUN_arrow_cross_party_long name = HUN_arrow_cross_party }
 set_country_flag = HUN_rakosi_leader_of_com
 set_country_flag = HUN_realism
-add_ideas = { trianon_restrictions }
-add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 producer = HUN }
-
-if = { limit = { is_ahu = yes } drop_cosmetic_tag = yes }
+add_ideas = { trianon_restrictions 
+disarmed_nation
+}
 
 set_politics = {
 

@@ -30,10 +30,13 @@ country_event = {
 	option = {
 		name = hungary.2.a
 		HUN = { 
+			transfer_state = 777 	#Northern Partium							
+			transfer_state = 778 	#Northern Partium							
 			transfer_state = 76		#North Transylvania
 			add_state_core = 76		#North Transylvania
-			transfer_state = 752 	#Maramaros
-			transfer_state = 753 	#Northern Partium
+			transfer_state = 83		#Southern Partium
+			transfer_state = 752	#Maramaros
+			transfer_state = 753	#Northern Partium
 		}
 		hidden_effect = {
 			country_event = { days = 1 id = news.15 }
@@ -52,7 +55,12 @@ country_event = {
 	
 	option = {
 		name = hungary.2.a
-		HUN = { 
+		HUN = { 				
+			transfer_state = 777 	#Northern Partium
+			transfer_state = 778 	#Northern Partium
+			transfer_state = 773 	#Northern Partium
+			transfer_state = 775 	#Northern Partium
+			transfer_state = 774 	#Northern Partium
 			transfer_state = 76		#North Transylvania
 			add_state_core = 76		#North Transylvania
 			transfer_state = 83		#Southern Partium
@@ -77,6 +85,8 @@ country_event = {
 	
 	option = {
 		name = hungary.4.a
+		add_state_claim = 777 	#Northern Partium								
+		add_state_claim = 83		#Southern Partium		
 		add_state_claim = 76 	#North Transylvania
 		add_state_claim = 752 	#Maramaros
 		add_state_claim = 753 	#Northern Partium
@@ -97,6 +107,10 @@ country_event = {
 	
 	option = {
 		name = hungary.4.a
+		add_state_claim = 777 	#Northern Partium
+		add_state_claim = 773 	#Northern Partium
+		add_state_claim = 775 	#Northern Partium
+		add_state_claim = 774 	#Northern Partium					
 		add_state_claim = 76	#Northern Transylvania
 		add_state_claim = 83	#Southern Partium
 		add_state_claim = 84	#Transylvania
